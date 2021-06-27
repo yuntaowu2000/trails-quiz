@@ -1,0 +1,143 @@
+/* (A) WRAPPER */
+#quizWrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.question {
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* (B) QUESTION */
+.trailsQuizQn {
+  padding: 20px;
+  background: #4c93ba;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+/* (C) ANSWERS */
+.trailsQuizAns {
+  margin: 10px 0;
+  /*display: grid;*/
+  /*grid-template-columns: auto auto;*/
+  /*grid-gap: 10px;*/
+}
+/* .trailsQuizAns input[type=radio] { display: none; } */
+
+.trailsQuizAnsUnselected {
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  max-width:600px; 
+  word-wrap:break-word;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.trailsQuizAnsUnselected:hover {
+background: #cecece;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  max-width:600px; 
+  word-wrap:break-word;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.trailsQuizAnsCorrect {
+  color : #1caa4e; 
+  background: #b8b8b8;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  max-width:600px; 
+  word-wrap:break-word;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.trailsQuizAnsWrong {
+  background: #b8b8b8;
+  color: #e00000;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  max-width:600px; 
+  word-wrap:break-word;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.trailsQuizAnsSelected {
+  background: #b8b8b8;
+  color: #474747;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  max-width:600px; 
+  word-wrap:break-word;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.trailsQuizExplain {
+  background: #60cd86;
+  border-radius:5px;
+  color: #474747;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  max-width:600px; 
+  word-wrap:break-word;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.result {
+  color: #474747;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  max-width:600px; 
+  word-wrap:break-word;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.unselectedAnswer{
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  max-width:600px; 
+  word-wrap:break-word;
+  margin-top: 0px;
+  margin-bottom: 10px;    
+}
+
+.trailsQuizSubmit {
+  background: #fafafa;
+  border: 1px solid #60a03f;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  max-width:600px; 
+  word-wrap:break-word;
+}
+
+.correctAnswer{
+color : #1caa4e; 
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  max-width:600px; 
+  word-wrap:break-word;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.trailsButtonWrapper {
+  text-align: center;
+}
