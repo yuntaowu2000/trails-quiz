@@ -1,2 +1,5 @@
 node_modules
 cloudflare-backend/wrangler.toml
+cloudflare-backend/.cargo-ok
+cloudflare-backend/.prettierrc
+cloudflare-backend/package.json
