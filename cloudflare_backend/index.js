@@ -3740,6 +3740,6 @@ async function handleRequest(request) {
       result.push(data[i]);
   }
   return new Response(JSON.stringify(result), {
-    headers: { 'content-type': 'application/json' },
+    headers: { 'content-type': 'application/json', "Access-Control-Allow-Origin": "https://trails-game.com" },
   })
 }

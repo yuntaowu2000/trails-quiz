@@ -1,4 +1,5 @@
 let url="https://my-app.fc-trails-game.workers.dev/"
+let data = [];
 
 let shuffle = (f) => f.sort(() => Math.random() - 0.5);
 
@@ -163,7 +164,7 @@ function submit() {
   submitButton.innerHTML = "retry";
 }
 
-function setupPage(data) {
+function setupPage() {
   for (let i = 0; i < userChoice.length; i++) {
     userChoice[i] = -1;
   }
@@ -196,10 +197,11 @@ function setupPage(data) {
 
 function start() {
   let questionNum = 5;
-  fetch(url + "?qn=" + questionNum, {mode: "no-cors"}).then((result) => {
+  fetch(url + "?qn=" + questionNum).then((result) => {
     console.log(result);
-    result.json().then((data) => {
-      setupPage(data);
+    result.json().then((d) => {
+      data = d;
+      setupPage();
     });
   });
 }
