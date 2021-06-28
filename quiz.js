@@ -193,7 +193,7 @@ function submit() {
 
   submitButton.removeEventListener("click", submit);
   submitButton.addEventListener("click", start);
-  submitButton.innerHTML = "retry";
+  submitButton.innerHTML = "Retry";
 }
 
 function setupPage() {
@@ -223,7 +223,7 @@ function setupPage() {
         break;
     }
   }
-  submitButton.innerHTML = "submit";
+  submitButton.innerHTML = "Submit";
   submitButton.removeEventListener("click", start);
   submitButton.addEventListener("click", submit);
 }
@@ -236,5 +236,4 @@ async function start() {
   setupPage();
 }
 
-submitButton.innerHTML = "start";
 submitButton.addEventListener("click", start);
