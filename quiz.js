@@ -9,6 +9,8 @@ let quizWrap = document.getElementById("quizWrap");
 let submitButton = document.getElementById("submitButton");
 let actualQuestions = [];
 let userAns = [];
+let userResult = [];
+let qStats = [];
 
 class Question {
   constructor(data, i) {
@@ -94,10 +96,12 @@ class MCWithTextOnly extends Question {
     if (userAns[this.i] == this.getCorrectResult()) {
         document.getElementById(selectedid).className = "trailsQuizAnsCorrect";
         correctCount += 1;
+        userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
     } else {
         if (userAns[this.i] != -1) {
             document.getElementById(selectedid).className = "trailsQuizAnsWrong";
         }
+        userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
   }
 }
@@ -146,10 +150,12 @@ class MCWithImg extends Question {
     if (userAns[this.i] == this.getCorrectResult()) {
         document.getElementById(selectedid).className = "trailsQuizAnsCorrect";
         correctCount += 1;
+        userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
     } else {
         if (userAns[this.i] != -1) {
             document.getElementById(selectedid).className = "trailsQuizAnsWrong";
         }
+        userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
   }
 }
@@ -169,15 +175,27 @@ function showExplanationAndResult() {
   let qs = document.getElementsByClassName("question");
   for (let i = 0; i < data.length; i++) {
     let explaindiv = document.createElement("div");
-      explaindiv.innerHTML = data[i].explain;
-      explaindiv.className = "trailsQuizExplain";
-      qs[i].appendChild(explaindiv);
+    explaindiv.innerHTML = data[i].explain;
+    explaindiv.className = "trailsQuizExplain";
+    qs[i].appendChild(explaindiv);
+
+    let qStatsdiv = document.createElement("div");
+    qStatsdiv.innerHTML = "100 % people got right on this question";
+    qStatsdiv.className = "trailsQuizExplain";
+    qs[i].appendChild(qStatsdiv);
   }
 
   let result = document.createElement("div");
-  result.innerHTML = "You got " + correctCount + " correct out of 5";
+  result.innerHTML = "<p>You got " + correctCount + " correct out of 5</p>" + "<p>You have beaten 100% of the quiz takers</p>";
   result.className = "trailsQuizExplain";
   quizWrap.appendChild(result);
+}
+
+async function getQStats() {
+  console.log("user result: " + JSON.stringify(userResult));
+  // let qstatsdata = await fetch(url + "quiz-stats?userResult=" + JSON.stringify(userResult));
+  // qStats = JSON.parse(qstatsdata);
+  console.log("qstats: " + JSON.stringify(qStats));
 }
 
 function submit() {
@@ -189,6 +207,7 @@ function submit() {
       actualQuestions[i].checkAns();
   }
 
+  getQStats();
   showExplanationAndResult();
 
   submitButton.removeEventListener("click", submit);
@@ -199,6 +218,8 @@ function submit() {
 function setupPage() {
   correctCount = 0;
   userAns = [];
+  userResult = [];
+  qStats = [];
   quizWrap.querySelectorAll('*').forEach(n => n.remove());
 
   shuffle(data);
