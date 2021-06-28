@@ -171,7 +171,12 @@ function removeChoiceListeners() {
   }
 }
 
-function showExplanationAndResult() {
+async function showExplanationAndResult() {
+  console.log("user result: " + JSON.stringify(userResult));
+  let qstatsdata = await fetch(url + "quiz-stats?userResult=" + JSON.stringify(userResult));
+  qStats = await qstatsdata.json();
+  console.log(qStats);
+
   let qs = document.getElementsByClassName("question");
   for (let i = 0; i < data.length; i++) {
     let explaindiv = document.createElement("div");
@@ -180,22 +185,15 @@ function showExplanationAndResult() {
     qs[i].appendChild(explaindiv);
 
     let qStatsdiv = document.createElement("div");
-    qStatsdiv.innerHTML = "100 % people got right on this question";
+    qStatsdiv.innerHTML = qStats[i] + "% people got right on this question";
     qStatsdiv.className = "trailsQuizExplain";
     qs[i].appendChild(qStatsdiv);
   }
 
   let result = document.createElement("div");
-  result.innerHTML = "<p>You got " + correctCount + " correct out of 5</p>" + "<p>You have beaten 100% of the quiz takers</p>";
+  result.innerHTML = "<p>You got " + correctCount + " correct out of 5</p>" + "<p>You have beaten "+ qStats[qStats.length - 1] + "% of the quiz takers</p>";
   result.className = "trailsQuizExplain";
   quizWrap.appendChild(result);
-}
-
-async function getQStats() {
-  console.log("user result: " + JSON.stringify(userResult));
-  // let qstatsdata = await fetch(url + "quiz-stats?userResult=" + JSON.stringify(userResult));
-  // qStats = JSON.parse(qstatsdata);
-  console.log("qstats: " + JSON.stringify(qStats));
 }
 
 function submit() {
@@ -207,7 +205,6 @@ function submit() {
       actualQuestions[i].checkAns();
   }
 
-  getQStats();
   showExplanationAndResult();
 
   submitButton.removeEventListener("click", submit);

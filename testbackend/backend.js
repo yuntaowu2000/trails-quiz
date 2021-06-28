@@ -3,30 +3,31 @@ const rateLimit = require('express-rate-limit');
 const fs = require('fs');
 const URL = require('url').URL;
 const sqlite = require('sqlite');
+const sqlite3 = require('sqlite3');
+sqlite3.verbose();
 
 const app = express();
 const port = process.env.PORT || 5000;
 
-const limiter = rateLimit({
-    windowMs: 60 * 1000,
-    max: 1
-});
+// const limiter = rateLimit({
+//     windowMs: 60 * 1000,
+//     max: 1
+// });
 
-app.use(limiter);
+// app.use(limiter);
 app.listen(port, () => console.log(`Listening on port ${port}...`));
 
 // connect to database
-const db = await open({
-    filename: '~/trails-quiz/database.db',
-    driver: sqlite.Database
-})
-
-try {
-    await db.exec('CREATE TABLE IF NOT EXISTS singleQuestionData (qid INT PRIMARY KEY, correct INT, wrong INT)');
-    await db.exec('CREATE TABLE IF NOT EXISTS overallUserData (ipTimeStamp VARCHAR(255) PRIMARY KEY, score INT, userResult VARCHAR(255))');
-} catch(err) {
-    console.log(err);
-}
+let db;
+sqlite.open({
+    filename: 'quiz-database.db',
+    driver: sqlite3.Database
+}).then((d)=>{
+    db = d;
+    console.log(db);
+    db.run('CREATE TABLE IF NOT EXISTS singleQuestionData (qid INT PRIMARY KEY, correct INT, wrong INT)');
+    db.run('CREATE TABLE IF NOT EXISTS overallUserData (ipTimeStamp TEXT PRIMARY KEY, score INT, userResult TEXT)');
+});
 
 let data = fs.readFileSync("out.json");
 data = JSON.parse(data);
@@ -48,7 +49,6 @@ app.get("/quiz-questions", (req, res) => {
         result.push(data[i]);
     }
 
-    console.log(result);
     res.setHeader("Access-Control-Allow-Origin", "https://trails-game.com");
     res.setHeader("content-type", "application/json");
     res.send(result);
@@ -67,30 +67,44 @@ app.get("/quiz-stats", async (req, res) => {
         let qid = r["qid"];
         let result = r["result"];
 
+        const sqlr = await db.get('SELECT correct, wrong FROM singleQuestionData WHERE qid = ?', [qid]);
+
+        let qCorrectCount = 0;
+        let qWrongCount = 0;
+
+        if (typeof sqlr !== 'undefined' && sqlr !== null && sqlr.correct != null && sqlr.wrong != null) {
+            qCorrectCount = sqlr.correct;
+            qWrongCount = sqlr.wrong;
+        }
         if (result == "c") {
             correctCount++;
-            await db.exec(SQL`INSERT INTO singleQuestionData SET qid=${qid}, correct=1, wrong=0 ON DUPLICATE KEY UPDATE correct=correct+1`);
+            qCorrectCount++;
         } else {
-            await db.exec(SQL`INSERT INTO singleQuestionData SET qid=${qid}, correct=0, wrong=1 ON DUPLICATE KEY UPDATE wrong=wrong+1`);
+            qWrongCount++;
         }
 
-        let correctCount = await db.get(SQL`SELECT correct FROM singleQuestionData WHERE qid=${qid}`);
-        let wrongCount = await db.get(SQL`SELECT wrong FROM singleQuestionData WHERE qid=${qid}`);
+        await db.run('INSERT OR REPLACE INTO singleQuestionData(qid, correct, wrong) VALUES (:qid, :correct, :wrong)', {
+            ':qid': qid,
+            ':correct': qCorrectCount,
+            ':wrong': qWrongCount
+        });
 
-        ret.push(Math.round(correctCount / (correctCount + wrongCount)));
+        ret.push(Math.round(qCorrectCount / (qCorrectCount + qWrongCount) * 100));
     }
+
     let currIpTimeStamp = req.ip + "-" + new Date().toISOString();
-    console.log(currIpTimeStamp);
-    
-    let score = Math.round(correctCount / totalQ);
-    await db.exec(SQL`INSERT INTO overallUserData SET ipTimeStamp = ${currIpTimeStamp}, score=${score}, userResult=${userResultStr}`);
+    let score = Math.round(correctCount / totalQ * 100);
+    await db.run('INSERT INTO overallUserData(ipTimeStamp, score, userResult) VALUES (:ipTimeStamp, :score, :userResult)', {
+        ':ipTimeStamp': currIpTimeStamp,
+        ':score': score,
+        ':userResult': userResultStr
+    });
 
-    let totalUsers = await db.exec(SQL`SELECT COUNT(*) FROM overallUserData`);
-    let surpassUsers = await db.exec(SQL`SELECT COUNT(*) FROM overallUserData WHERE score < ${score}`);
+    let totalUsers = await db.get('SELECT COUNT(*) FROM overallUserData');
+    let surpassUsers = await db.get('SELECT COUNT(*) FROM overallUserData WHERE score < ?', [score]);
 
-    ret.push(Math.round(surpassUsers / totalUsers));
+    ret.push(Math.round(surpassUsers["COUNT(*)"] / totalUsers["COUNT(*)"] * 100));
 
-    console.log(ret);
     res.setHeader("Access-Control-Allow-Origin", "https://trails-game.com");
     res.setHeader("content-type", "application/json");
     res.send(ret);
