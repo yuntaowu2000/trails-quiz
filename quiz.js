@@ -1,4 +1,4 @@
-let url="https://my-app.fc-trails-game.workers.dev/"
+let url="https://api.trails-game.com/"
 let data = [];
 
 let shuffle = (f) => f.sort(() => Math.random() - 0.5);
@@ -197,7 +197,7 @@ function setupPage() {
 
 function start() {
   let questionNum = 5;
-  fetch(url + "?qn=" + questionNum).then((result) => {
+  fetch(url + "quiz-questions?qn=" + questionNum).then((result) => {
     console.log(result);
     result.json().then((d) => {
       data = d;

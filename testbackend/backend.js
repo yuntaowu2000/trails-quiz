@@ -30,6 +30,8 @@ app.get("/quiz-questions", (req, res) => {
     }
 
     console.log(result);
+    res.setHeader("Access-Control-Allow-Origin", "https://trails-game.com");
+    res.setHeader("content-type", "application/json");
     res.send(result);
 
 });
