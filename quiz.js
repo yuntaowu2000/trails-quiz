@@ -2,11 +2,13 @@ let url="https://api.trails-game.com/"
 let data = [];
 
 let shuffle = (f) => f.sort(() => Math.random() - 0.5);
+let questionNum = 5;
+let correctCount = 0;
 
 let quizWrap = document.getElementById("quizWrap");
 let submitButton = document.getElementById("submitButton");
 let actualQuestions = [];
-let userChoice = [-1, -1, -1, -1, -1];
+let userAns = [];
 
 class Question {
   constructor(data, i) {
@@ -70,8 +72,32 @@ class MCWithTextOnly extends Question {
       label.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid;
       
       // we have to record the lambda function for removal
-      label.addEventListener("click", () => select(this.i, this.currentQuestion.options[a].oid));
+      label.addEventListener("click", () => this.select(this.currentQuestion.options[a].oid));
       this.answers.appendChild(label);
+    }
+  }
+
+  select(a) {
+    if (userAns[this.i] != -1) {
+      let prevSelectedId = "q" + this.i + "a" + userAns[this.i];
+      document.getElementById(prevSelectedId).className = "trailsQuizAnsUnselected";
+    }
+    console.log("selected " + a + "for q " + this.i);
+    // select the new selection
+    let selectedId = "q" + this.i + "a" + a;
+    userAns[this.i] = a;
+    document.getElementById(selectedId).className = "trailsQuizAnsSelected";
+  }
+
+  checkAns() {
+    let selectedid = "q" + this.i + "a" + userAns[this.i];
+    if (userAns[this.i] == this.getCorrectResult()) {
+        document.getElementById(selectedid).className = "trailsQuizAnsCorrect";
+        correctCount += 1;
+    } else {
+        if (userAns[this.i] != -1) {
+            document.getElementById(selectedid).className = "trailsQuizAnsWrong";
+        }
     }
   }
 }
@@ -98,30 +124,37 @@ class MCWithImg extends Question {
       label.className = "trailsQuizAnsUnselected";
       label.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid;
       
-      label.addEventListener("click", () => select(this.i, this.currentQuestion.options[a].oid));
+      label.addEventListener("click", () => this.select(this.currentQuestion.options[a].oid));
       this.answers.appendChild(label);
+    }
+  }
+
+  select(a) {
+    if (userAns[this.i] != -1) {
+      let prevSelectedId = "q" + this.i + "a" + userAns[this.i];
+      document.getElementById(prevSelectedId).className = "trailsQuizAnsUnselected";
+    }
+    console.log("selected " + a + "for q " + this.i);
+    // select the new selection
+    let selectedId = "q" + this.i + "a" + a;
+    userAns[this.i] = a;
+    document.getElementById(selectedId).className = "trailsQuizAnsSelected";
+  }
+
+  checkAns() {
+    let selectedid = "q" + this.i + "a" + userAns[this.i];
+    if (userAns[this.i] == this.getCorrectResult()) {
+        document.getElementById(selectedid).className = "trailsQuizAnsCorrect";
+        correctCount += 1;
+    } else {
+        if (userAns[this.i] != -1) {
+            document.getElementById(selectedid).className = "trailsQuizAnsWrong";
+        }
     }
   }
 }
 
-function select(i, a) {
-
-  // unselect the previous selection if there is one.
-  if (userChoice[i] != -1) {
-      let prevSelectedId = "q" + i + "a" + userChoice[i];
-      document.getElementById(prevSelectedId).className = "trailsQuizAnsUnselected";
-  }
-
-  console.log("selected " + a + "for q " + i);
-  // select the new selection
-  let selectedId = "q" + i + "a" + a;
-  userChoice[i] = a;
-  document.getElementById(selectedId).className = "trailsQuizAnsSelected";
-}
-
-function submit() {
-
-  // remove listeners for all selections
+function removeChoiceListeners() {
   for (let i = 0; i < data.length; i++) {
     for (let a = 0; a < data[i].options.length; a++) {
       let id = "q" + i + "a" + data[i].options[a].oid;
@@ -130,25 +163,12 @@ function submit() {
       currElem.replaceWith(currElem.cloneNode(true));
     }
   }
+}
 
-  let correctCount = 0;
+function showExplanationAndResult() {
   let qs = document.getElementsByClassName("question");
-
-  // check if the user got all the correct result
-  for (let i = 0; i < userChoice.length; i++) {
-      let selectedid = "q" + i + "a" + userChoice[i];
-      if (userChoice[i] == actualQuestions[i].getCorrectResult()) {
-          document.getElementById(selectedid).className = "trailsQuizAnsCorrect";
-          correctCount += 1;
-      } else {
-          // let correctid = "q" + i + "a" + data2[i].a;
-          if (userChoice[i] != -1) {
-              document.getElementById(selectedid).className = "trailsQuizAnsWrong";
-          }
-          // document.getElementById(correctid).className = "trailsQuizAnsCorrect";
-      }
-      
-      let explaindiv = document.createElement("div");
+  for (let i = 0; i < data.length; i++) {
+    let explaindiv = document.createElement("div");
       explaindiv.innerHTML = data[i].explain;
       explaindiv.className = "trailsQuizExplain";
       qs[i].appendChild(explaindiv);
@@ -158,6 +178,18 @@ function submit() {
   result.innerHTML = "You got " + correctCount + " correct out of 5";
   result.className = "trailsQuizExplain";
   quizWrap.appendChild(result);
+}
+
+function submit() {
+
+  removeChoiceListeners();
+
+  // check if the user got all the correct result
+  for (let i = 0; i < data.length; i++) {
+      actualQuestions[i].checkAns();
+  }
+
+  showExplanationAndResult();
 
   submitButton.removeEventListener("click", submit);
   submitButton.addEventListener("click", start);
@@ -165,9 +197,8 @@ function submit() {
 }
 
 function setupPage() {
-  for (let i = 0; i < userChoice.length; i++) {
-    userChoice[i] = -1;
-  }
+  correctCount = 0;
+  userAns = [];
   quizWrap.querySelectorAll('*').forEach(n => n.remove());
 
   shuffle(data);
@@ -177,12 +208,14 @@ function setupPage() {
         let newMCTextq = new MCWithTextOnly(data[i], i);
         newMCTextq.show();
         actualQuestions.push(newMCTextq);
+        userAns.push(-1);
 
         break;
       case "MCWithImg":
         let newMCImgq = new MCWithImg(data[i], i);
         newMCImgq.show();
         actualQuestions.push(newMCImgq);
+        userAns.push(-1);
 
         break;
       default:
@@ -195,15 +228,13 @@ function setupPage() {
   submitButton.addEventListener("click", submit);
 }
 
-function start() {
-  let questionNum = 5;
-  fetch(url + "quiz-questions?qn=" + questionNum).then((result) => {
-    console.log(result);
-    result.json().then((d) => {
-      data = d;
-      setupPage();
-    });
-  });
+
+async function start() {
+  let result = await fetch(url + "quiz-questions?qn=" + questionNum);
+  console.log(result);
+  data = await result.json();
+  setupPage();
 }
 
-start();
+submitButton.innerHTML = "start";
+submitButton.addEventListener("click", start);
