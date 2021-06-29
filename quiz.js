@@ -160,13 +160,142 @@ class MCWithImg extends Question {
   }
 }
 
-function removeChoiceListeners() {
+class MCWithTextOnlyMultiAns extends MCWithTextOnly{
+  select(a) {
+    let selectedId = "q" + this.i + "a" + a;
+    if (userAns[this.i].indexOf(a) == -1) {
+      // user has not selected this option before
+      userAns[this.i].push(a);
+      document.getElementById(selectedId).className = "trailsQuizAnsSelected";
+    } else {
+      // remove the selection
+      userAns[this.i] = userAns[this.i].filter(data => data !== a);
+      document.getElementById(selectedId).className = "trailsQuizAnsUnselected";
+    }
+    console.log(userAns[this.i]);
+  }
+
+  checkAns() {
+    let correct = true;
+    for (let j = 0; j < userAns[this.i].length; j++) {
+      let selectedId = "q" + this.i + "a" + userAns[this.i][j];
+      if (this.currentQuestion.a.indexOf(userAns[this.i][j]) == -1) {
+        // user choice is not a correct answer
+        correct = false;
+        document.getElementById(selectedId).className = "trailsQuizAnsWrong";
+      } else {
+        document.getElementById(selectedId).className = "trailsQuizAnsCorrect";
+      }
+    }
+
+    if (userAns[this.i].length < this.currentQuestion.a.length) {
+      correct = false;
+      let missAns = document.createElement("div");
+      missAns.innerHTML = "Missing options";
+      missAns.className = "trailsQuizExplain";
+      this.qdiv.appendChild(missAns);
+    }
+
+    if (correct == true) {
+      userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
+      correctCount++;
+    } else {
+      userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
+    }
+  }
+}
+
+class MCWithImgMultiAns extends MCWithImg{
+  select(a) {
+    let selectedId = "q" + this.i + "a" + a;
+    if (userAns[this.i].indexOf(a) == -1) {
+      // user has not selected this option before
+      userAns[this.i].push(a);
+      document.getElementById(selectedId).className = "trailsQuizAnsSelected";
+    } else {
+      // remove the selection
+      userAns[this.i] = userAns[this.i].filter(data => data !== a);
+      document.getElementById(selectedId).className = "trailsQuizAnsUnselected";
+    }
+    console.log(userAns[this.i]);
+  }
+
+  checkAns() {
+    let correct = true;
+    for (let j = 0; j < userAns[this.i].length; j++) {
+      let selectedId = "q" + this.i + "a" + userAns[this.i][j];
+      if (this.currentQuestion.a.indexOf(userAns[this.i][j]) == -1) {
+        // user choice is not a correct answer
+        correct = false;
+        document.getElementById(selectedId).className = "trailsQuizAnsWrong";
+      } else {
+        document.getElementById(selectedId).className = "trailsQuizAnsCorrect";
+      }
+    }
+
+    if (userAns[this.i].length < this.currentQuestion.a.length) {
+      correct = false;
+      let missAns = document.createElement("div");
+      missAns.innerHTML = "Missing options";
+      missAns.className = "trailsQuizExplain";
+      this.qdiv.appendChild(missAns);
+    }
+
+    if (correct == true) {
+      userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
+      correctCount++;
+    } else {
+      userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
+    }
+  }
+}
+
+class TextQuestion extends Question {
+  show() {
+    super.showQuestion();
+    let inputField = document.createElement("input");
+    inputField.type = "text";
+    inputField.id = "q" + this.i + "input";
+    inputField.value = "";
+    inputField.addEventListener('change', () => this.updateAns(this.i));
+    this.inputField = inputField;
+    this.answers.appendChild(inputField);
+  }
+
+  updateAns(i) {
+    userAns[i] = this.inputField.value;
+    console.log(userAns[i]);
+  }
+
+  checkAns() {
+    if (userAns[this.i] == this.currentQuestion.a) {
+      this.answers.className = "trailsQuizAnsCorrect";
+      userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
+      correctCount++;
+    } else if (typeof this.currentQuestion.a === 'object'
+        && this.currentQuestion.a.indexOf(userAns[this.i].toLowerCase()) !== -1) {
+      this.answers.className = "trailsQuizAnsCorrect";
+      userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
+      correctCount++;
+    } else {
+      this.answers.className = "trailsQuizAnsCorrect";
+      userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
+    }
+  }
+}
+
+function removeInputListeners() {
   for (let i = 0; i < data.length; i++) {
-    for (let a = 0; a < data[i].options.length; a++) {
-      let id = "q" + i + "a" + data[i].options[a].oid;
-      let currElem = document.getElementById(id);
-      currElem.className = "unselectedAnswer";
-      currElem.replaceWith(currElem.cloneNode(true));
+    if (data[i].question.t != "Text") {
+      for (let a = 0; a < data[i].options.length; a++) {
+        let id = "q" + i + "a" + data[i].options[a].oid;
+        let currElem = document.getElementById(id);
+        currElem.className = "unselectedAnswer";
+        currElem.replaceWith(currElem.cloneNode(true));
+      }
+    } else {
+      let id = "q" + i + "input";
+      document.getElementById(id).disabled = true;
     }
   }
 }
@@ -198,7 +327,7 @@ async function showExplanationAndResult() {
 
 function submit() {
 
-  removeChoiceListeners();
+  removeInputListeners();
 
   // check if the user got all the correct result
   for (let i = 0; i < data.length; i++) {
@@ -234,6 +363,27 @@ function setupPage() {
         newMCImgq.show();
         actualQuestions.push(newMCImgq);
         userAns.push(-1);
+
+        break;
+      case "MCWithTextOnlyMultiAns":
+        let newMCTMA = new MCWithTextOnlyMultiAns(data[i], i);
+        newMCTMA.show();
+        actualQuestions.push(newMCTMA);
+        userAns.push([]);
+
+        break;
+      case "MCWithImgMultiAns":
+        let newMCIMA = new MCWithImgMultiAns(data[i], i);
+        newMCIMA.show();
+        actualQuestions.push(newMCIMA);
+        userAns.push([]);
+
+        break;
+      case "Text":
+        let newText = new TextQuestion(data[i], i);
+        newText.show();
+        actualQuestions.push(newText);
+        userAns.push("");
 
         break;
       default:
