@@ -29,10 +29,9 @@ sqlite.open({
     db.run('CREATE TABLE IF NOT EXISTS overallUserData (ipTimeStamp TEXT PRIMARY KEY, score INT, userResult TEXT)');
 });
 
-let data = fs.readFileSync("out.json");
-data = JSON.parse(data);
-
 app.get("/quiz-questions", (req, res) => {
+    let data = fs.readFileSync("out.json");
+    data = JSON.parse(data);
     let url = new URL(req.originalUrl, `http://${req.headers.host}`);
     let numQuestions = url.searchParams.get("qn");
 
@@ -49,7 +48,6 @@ app.get("/quiz-questions", (req, res) => {
         result.push(data[i]);
     }
 
-    res.setHeader("Access-Control-Allow-Origin", "https://trails-game.com");
     res.setHeader("content-type", "application/json");
     res.send(result);
 
@@ -105,7 +103,6 @@ app.get("/quiz-stats", async (req, res) => {
 
     ret.push(Math.round(surpassUsers["COUNT(*)"] / totalUsers["COUNT(*)"] * 100));
 
-    res.setHeader("Access-Control-Allow-Origin", "https://trails-game.com");
     res.setHeader("content-type", "application/json");
     res.send(ret);
 });
