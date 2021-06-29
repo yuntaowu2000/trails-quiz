@@ -278,12 +278,13 @@ class TextQuestion extends Question {
   }
 
   checkAns() {
-    if (userAns[this.i] == this.currentQuestion.a) {
+    if (userAns[this.i] == this.currentQuestion.a || userAns[this.i].toLowerCase() == this.currentQuestion.a) {
       this.answers.className = "trailsQuizAnsCorrect";
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
       correctCount++;
     } else if (typeof this.currentQuestion.a === 'object'
-        && this.currentQuestion.a.indexOf(userAns[this.i].toLowerCase()) !== -1) {
+        && (this.currentQuestion.a.indexOf(userAns[this.i].toLowerCase()) !== -1 ||
+        this.currentQuestion.a.indexOf(userAns[this.i]) !== -1) ) {
       this.answers.className = "trailsQuizAnsCorrect";
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
       correctCount++;
