@@ -23,11 +23,21 @@ class Question {
     qdiv.className = "question";
     quizWrap.appendChild(qdiv);
 
-    let question = document.createElement("div")
+    //create a container for question so that padding can be added.
+    let container = document.createElement("div");
+    container.className = "qnContainer";
+    qdiv.append(container);
+
+    let qnumber = document.createElement("div");
+    qnumber.className = "quizNumber";
+    qnumber.innerHTML = "第" + (this.i + 1) + "题";
+
+    let question = document.createElement("div");
     question.className = "trailsQuizQn";
     question.id = "trailsQuizQn" + this.i;
-    question.innerHTML = "#" + (this.i + 1) + ". " + this.currentQuestion.question.s;
-    qdiv.appendChild(question);
+    question.innerHTML = this.currentQuestion.question.s;
+    question.appendChild(qnumber); 
+    container.appendChild(question);
 
     this.qdiv = qdiv;
     if (this.currentQuestion.question.img.startsWith("https://")) {

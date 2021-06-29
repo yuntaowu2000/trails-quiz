@@ -4,19 +4,30 @@
   margin: 0 auto;
 }
 .question {
+  background: #efefef;
+  border-radius: 10px;
+  margin-top: 40px;
   padding-top: 0px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+  box-shadow: 5px 5px 9px 0 #cccccc
 }
 
 /* (B) QUESTION */
 .trailsQuizQn {
-  padding: 20px;
-  background: #4c93ba;
-  color: #fff;
+  position: relative;
+  background: #4c93ba00;
+  padding: 0px;
+  color: #000000;
   font-size: 24px;
-  border-radius: 10px;
+}
+
+.qnContainer {
+  padding: 15px 20px 10px 20px;
+  background: #ffffff00;
+  border-bottom:#bbbbbb solid;
+  border-width: 1px;
 }
 
 /* (C) ANSWERS */
@@ -29,6 +40,10 @@
 /* .trailsQuizAns input[type=radio] { display: none; } */
 
 .trailsQuizAnsUnselected {
+  box-shadow: 0 0 0 2px #47474700;
+  border: 2px solid #ffffff;
+  border-radius:2px;
+  background: #cecece;
   padding: 15px;
   font-size: 20px;
   cursor: pointer;
@@ -38,7 +53,10 @@
   margin-bottom: 10px;
 }
 .trailsQuizAnsUnselected:hover {
-background: #cecece;
+  box-shadow: 0 0 0 2px #474747;
+  border: 2px solid #ffffff;
+  border-radius:2px;
+  background: #cecece;
   padding: 15px;
   font-size: 20px;
   cursor: pointer;
@@ -48,8 +66,11 @@ background: #cecece;
   margin-bottom: 10px;
 }
 .trailsQuizAnsCorrect {
-  color : #1caa4e; 
-  background: #b8b8b8;
+  box-shadow: 0 0 0 2px #474747;
+  border: 2px solid #ffffff;
+  border-radius:2px;
+  color : #ffffff; 
+  background: #1caa4e;
   padding: 15px;
   font-size: 20px;
   cursor: pointer;
@@ -59,8 +80,11 @@ background: #cecece;
   margin-bottom: 10px;
 }
 .trailsQuizAnsWrong {
-  background: #b8b8b8;
-  color: #e00000;
+  box-shadow: 0 0 0 2px #474747;
+  border: 2px solid #ffffff;
+  border-radius:2px;
+  color: #ffffff;
+  background: #e00000;
   padding: 15px;
   font-size: 20px;
   cursor: pointer;
@@ -70,6 +94,9 @@ background: #cecece;
   margin-bottom: 10px;
 }
 .trailsQuizAnsSelected {
+  box-shadow: 0 0 0 2px #474747;
+  border: 2px solid #ffffff;
+  border-radius:2px;
   background: #b8b8b8;
   color: #474747;
   padding: 15px;
@@ -128,7 +155,7 @@ background: #cecece;
 }
 
 .correctAnswer{
-color : #1caa4e; 
+  color : #1caa4e; 
   padding: 15px;
   font-size: 20px;
   cursor: pointer;
@@ -140,4 +167,16 @@ color : #1caa4e;
 
 .trailsButtonWrapper {
   text-align: center;
+}
+
+.quizNumber{
+  position: absolute;
+  background: #355bae;
+  top: -35px;
+  left: 10px;
+  color: #ffffff;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
 }
