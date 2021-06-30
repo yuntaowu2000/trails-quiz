@@ -1,12 +1,30 @@
-let url="https://api.trails-game.com/"
+const url="https://api.trails-game.com/"
 let data = [];
 
-let shuffle = (f) => f.sort(() => Math.random() - 0.5);
-let questionNum = 5;
+const shuffle = (f) => f.sort(() => Math.random() - 0.5);
+const questionNum = 5;
+const timeAllowed = 600;
+
+let timeLeftInSecond = timeAllowed;
+const timer = document.getElementById("timer");
+function countdown() {
+  timeLeftInSecond--;
+  let mins = Math.floor(timeLeftInSecond / 60);
+  let secs = Math.floor(timeLeftInSecond % 60);
+
+  timer.innerHTML = mins + ":" + secs;
+  
+  if (timeLeftInSecond <= 0) {
+    timer.innerHTML = "Time is up";
+    submit();
+  }
+}
+let counter = 0; // setInterval returns a number (ID)
+
 let correctCount = 0;
 
-let quizWrap = document.getElementById("quizWrap");
-let submitButton = document.getElementById("submitButton");
+const quizWrap = document.getElementById("quizWrap");
+const submitButton = document.getElementById("submitButton");
 let actualQuestions = [];
 let userAns = [];
 let userResult = [];
@@ -338,6 +356,7 @@ async function showExplanationAndResult() {
 function submit() {
 
   removeInputListeners();
+  clearInterval(counter);
 
   // check if the user got all the correct result
   for (let i = 0; i < data.length; i++) {
@@ -405,6 +424,11 @@ function setupPage() {
   for (let e of elementorDiv) {
     e.style.height = "100%";
   }
+
+  //set up counter
+  timeLeftInSecond = timeAllowed;
+  counter = setInterval(countdown, 1000);
+
   submitButton.innerHTML = "Submit";
   submitButton.removeEventListener("click", start);
   submitButton.addEventListener("click", submit);
