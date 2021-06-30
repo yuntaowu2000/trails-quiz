@@ -5,9 +5,9 @@
 }
 .question {
   box-shadow: 2px 2px 2px 1px; 
-  background: #efefef;
+  background: #404040;
   border-radius: 10px;
-  margin-top: 40px;
+  margin-top: 60px;
   padding: 0px 20px 20px 20px;
 }
 
@@ -16,7 +16,7 @@
   position: relative;
   background: #4c93ba00;
   padding: 0px;
-  color: #000000;
+  color: #ffffff;
   font-size: 24px;
 }
 
@@ -38,9 +38,10 @@
 
 .trailsQuizAnsUnselected {
   box-shadow: 0 0 0 2px #47474700;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   border-radius:2px;
-  background: #cecece;
+  background: #404040;
   padding: 15px;
   font-size: 20px;
   cursor: pointer;
@@ -50,10 +51,11 @@
   margin-bottom: 10px;
 }
 .trailsQuizAnsUnselected:hover {
-  box-shadow: 0 0 0 2px #474747;
-  border: 2px solid #ffffff;
+  animation-name: select;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
   border-radius:2px;
-  background: #cecece;
+  background: #505050;
   padding: 15px;
   font-size: 20px;
   cursor: pointer;
@@ -62,6 +64,13 @@
   margin-top: 0px;
   margin-bottom: 10px;
 }
+
+@keyframes select {
+  0% {border: 4px solid #ffffff; padding: 12px;}
+  50% {border: 4px solid #000000; padding: 12px;}
+  100% {border: 4px solid #ffffff; padding: 12px;}
+}
+
 .trailsQuizAnsCorrect {
   box-shadow: 0 0 0 2px #474747;
   border: 2px solid #ffffff;
@@ -180,3 +189,35 @@
   height: 30px;
   font-size: 15px;
 }
+
+.result{
+  box-shadow: 3px 3px 0px 2px #474747;
+  opacity: 1;
+  position: absolute;
+  background: #355bae;
+  top: -35px;
+  left: 10px;
+  color: #ffffff;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.letter {
+  position:absolute;
+  top:10px;
+  left:10px;
+  font-size: 25px;
+  color: white;
+  height:30px;
+  width:30px;
+  text-align: center;
+}
+
+.circle {
+  position: relative;
+  align-items: center;
+}
+
+
