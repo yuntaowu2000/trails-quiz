@@ -330,7 +330,14 @@ function removeInputListeners() {
 
 async function showExplanationAndResult() {
   console.log("user result: " + JSON.stringify(userResult));
-  let qstatsdata = await fetch(url + "quiz-stats?userResult=" + JSON.stringify(userResult));
+  const options = {
+    method: "POST",
+    body: JSON.stringify(userResult),
+    headers: {
+      "Content-Type": "application/json",
+    }
+  }
+  let qstatsdata = await fetch(url + "quiz-stats", options);
   qStats = await qstatsdata.json();
   console.log(qStats);
 

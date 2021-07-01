@@ -15,6 +15,7 @@ const port = process.env.PORT || 5000;
 // });
 
 // app.use(limiter);
+app.use(express.json());
 app.listen(port, () => console.log(`Listening on port ${port}...`));
 
 // connect to database
@@ -53,10 +54,8 @@ app.get("/quiz-questions", (req, res) => {
 
 });
 
-app.get("/quiz-stats", async (req, res) => {
-    let url = new URL(req.originalUrl, `http://${req.headers.host}`);
-    let userResultStr = url.searchParams.get("userResult");
-    userResult = JSON.parse(userResultStr);
+app.post("/quiz-stats", async (req, res) => {
+    let userResult = req.body;
 
     let totalQ = userResult.length;
     let correctCount = 0;
@@ -95,7 +94,7 @@ app.get("/quiz-stats", async (req, res) => {
     await db.run('INSERT INTO overallUserData(ipTimeStamp, score, userResult) VALUES (:ipTimeStamp, :score, :userResult)', {
         ':ipTimeStamp': currIpTimeStamp,
         ':score': score,
-        ':userResult': userResultStr
+        ':userResult': JSON.stringify(userResult)
     });
 
     let totalUsers = await db.get('SELECT COUNT(*) FROM overallUserData');
