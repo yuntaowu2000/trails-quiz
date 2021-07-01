@@ -447,6 +447,7 @@ async function start() {
   console.log(result);
   data = await result.json();
   setupPage();
+  window.scrollTo(screenLeft, screenTop);
 }
 
 submitButton.addEventListener("click", start);
