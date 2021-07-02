@@ -1,3 +1,4 @@
+import time
 from nonebot import on_command
 from nonebot.adapters.cqhttp import Bot, Event
 from .data_source import draw_quiz_question
@@ -11,13 +12,19 @@ async def trails_quiz_handler(bot: Bot, event: Event):
     user_question_dict[str(event.get_user_id()) + "question"] = curr_question
     await trails_quiz.send(msg, at_sender=True)
 
-def checkCorrectness(curr_question, result):
+def check_correctness_with_multi_ans(curr_question, result):
     correct = True
     for r in result:
         if not(int(r) in curr_question["ans"]):
             correct = False
             break
     return correct
+
+def check_timestamp():
+    curr_time = time.time
+    for user in user_question_dict.keys():
+        if curr_time - user_question_dict[user]["timestamp"] > 600:
+            user_question_dict.pop(user)
 
 @trails_quiz.receive()
 async def ans_handle(bot: Bot, event: Event):
@@ -28,6 +35,8 @@ async def ans_handle(bot: Bot, event: Event):
     
     userReply = str(event.get_message())
     user_question_dict.pop(str(event.get_user_id()) + "question")
+
+    # check_timestamp()
 
     try:
         # single answer
@@ -44,7 +53,7 @@ async def ans_handle(bot: Bot, event: Event):
     if "MC" in curr_question["question"]["t"] and "MultiAns" in curr_question["question"]["t"]:
         if len(result) != len(curr_question["ans"]):
             await trails_quiz.finish("回答错误。" + curr_question["explain"], at_sender=True)
-        elif not checkCorrectness(curr_question, result):
+        elif not check_correctness_with_multi_ans(curr_question, result):
             await trails_quiz.finish("回答错误。" + curr_question["explain"], at_sender=True)
         else:
             await trails_quiz.finish("回答正确。" + curr_question["explain"], at_sender=True)
@@ -53,6 +62,3 @@ async def ans_handle(bot: Bot, event: Event):
             await trails_quiz.finish("回答正确。" + curr_question["explain"], at_sender=True)
         else:
             await trails_quiz.finish("回答错误。" + curr_question["explain"], at_sender=True)
-
-
-

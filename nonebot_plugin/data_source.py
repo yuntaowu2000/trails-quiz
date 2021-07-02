@@ -2,6 +2,7 @@ import os
 import random
 import nonebot
 import json
+import time
 from nonebot.adapters.cqhttp import MessageSegment
 
 driver: nonebot.Driver = nonebot.get_driver()
@@ -38,5 +39,6 @@ def draw_quiz_question():
             msg += MessageSegment.image(file=option["img"]) + "\n"
         i += 1
     curr_question["ans"] = ans
+    # curr_question["timestamp"] = time.time
     return curr_question, msg
     
