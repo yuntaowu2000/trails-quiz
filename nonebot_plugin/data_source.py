@@ -6,7 +6,7 @@ import time
 from nonebot.adapters.cqhttp import MessageSegment
 
 driver: nonebot.Driver = nonebot.get_driver()
-cachepath = ""
+cachepath = "/home/ubuntu/ELF_RSS/src/plugins/Quiz/"
 config: dict
 
 def draw_quiz_question():
