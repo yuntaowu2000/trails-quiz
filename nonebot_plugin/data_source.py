@@ -12,12 +12,14 @@ config: dict
 def draw_quiz_question():
     with open(os.path.join(cachepath, "quiz.json"), "r", encoding="utf-8") as f:
         questions = json.loads(f.read())
+        f.close()
+
     curr_question = questions[random.randint(0, len(questions) - 1)]
     while not "MC" in curr_question["question"]["t"]:
         curr_question = questions[random.randint(0, len(questions) - 1)]
     msg = ""
     if "MC" in curr_question["question"]["t"] and "MultiAns" in curr_question["question"]["t"]:
-        msg += "多选题： "
+        msg += "多选题（选项使用空格隔开）： "
     elif "MC" in curr_question["question"]["t"]:
         msg += "单选题： "
     msg += curr_question["question"]["s"] + "\n"
