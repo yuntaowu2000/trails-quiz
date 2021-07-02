@@ -29,7 +29,7 @@ def parse_text(result, sheet):
         curr_question["explain"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else ""
         for key in v.keys():
             if "正确答案" in key and v[key] is not None and str(v[key]).lower() != "nan":
-                curr_question["a"].append(str(v[key]))
+                curr_question["a"].append(str(v[key]).lower())
 
         result.append(curr_question)
 
