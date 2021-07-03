@@ -9,7 +9,7 @@ def parse_text_single_choice(result, sheet):
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithTextOnly", "s": str(v["题目"]), "img":""}
         curr_question["a"] = 0
-        curr_question["explain"] = str(v["注释"])
+        curr_question["explain"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else ""
         options = []
         options.append({"oid":0, "s": str(v["选项A"]), "img":""})
         options.append({"oid":1, "s": str(v["选项B"]), "img":""})
