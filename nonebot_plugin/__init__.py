@@ -49,6 +49,8 @@ def check_correctness_with_multi_ans(curr_question, result):
     return correct
 
 def check_timestamp():
+    # remove the user question if the user has not responded for more than 10 min
+    # to avoid memory leak
     curr_time = time.time
     for user in user_question_dict.keys():
         if curr_time - user_question_dict[user]["timestamp"] > 600:
@@ -64,7 +66,7 @@ async def ans_handle(bot: Bot, event: Event):
     userReply = str(event.get_message())
     user_question_dict.pop(str(event.get_user_id()) + "question")
 
-    # check_timestamp()
+    check_timestamp()
 
     try:
         # single answer
@@ -80,9 +82,9 @@ async def ans_handle(bot: Bot, event: Event):
     
     if "MC" in curr_question["question"]["t"] and "MultiAns" in curr_question["question"]["t"]:
         if len(result) != len(curr_question["ans"]):
-            await trails_quiz.finish("回答错误。" + curr_question["explain"], at_sender=True)
+            await trails_quiz.finish("回答错误。" + curr_question["explain2"], at_sender=True)
         elif not check_correctness_with_multi_ans(curr_question, result):
-            await trails_quiz.finish("回答错误。" + curr_question["explain"], at_sender=True)
+            await trails_quiz.finish("回答错误。" + curr_question["explain2"], at_sender=True)
         else:
             my_redis.incr(str(event.get_user_id()) + "correct", 1)
             await trails_quiz.finish("回答正确。" + curr_question["explain"], at_sender=True)
@@ -91,7 +93,7 @@ async def ans_handle(bot: Bot, event: Event):
             my_redis.incr(str(event.get_user_id()) + "correct", 1)
             await trails_quiz.finish("回答正确。" + curr_question["explain"], at_sender=True)
         else:
-            await trails_quiz.finish("回答错误。" + curr_question["explain"], at_sender=True)
+            await trails_quiz.finish("回答错误。" + curr_question["explain2"], at_sender=True)
 
 @trails_quiz_result.handle()
 async def trails_quiz_result_handler(bot: Bot, event: Event):

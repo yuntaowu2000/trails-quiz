@@ -344,7 +344,11 @@ async function showExplanationAndResult() {
   let qs = document.getElementsByClassName("question");
   for (let i = 0; i < data.length; i++) {
     let explaindiv = document.createElement("div");
-    explaindiv.innerHTML = data[i].explain;
+    if (userResult[i]["result"] == "c") {
+      explaindiv.innerHTML = data[i].explain;
+    } else {
+      explaindiv.innerHTML = data[i].explain2;
+    }
     explaindiv.className = "trailsQuizExplain";
     qs[i].appendChild(explaindiv);
 

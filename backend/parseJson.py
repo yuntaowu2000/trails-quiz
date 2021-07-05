@@ -9,7 +9,8 @@ def parse_text_single_choice(result, sheet):
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithTextOnly", "s": str(v["题目"]), "img":""}
         curr_question["a"] = 0
-        curr_question["explain"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else ""
+        curr_question["explain"] = str(v["回答正确时注释"]) if str(v["回答正确时注释"]).lower() != "nan" else ""
+        curr_question["explain2"] = str(v["回答错误时注释"]) if str(v["回答错误时注释"]).lower() != "nan" else curr_question["explain"]
         options = []
         options.append({"oid":0, "s": str(v["选项A"]), "img":""})
         options.append({"oid":1, "s": str(v["选项B"]), "img":""})
@@ -27,6 +28,7 @@ def parse_text(result, sheet):
         curr_question["question"] = {"id": v["ID"], "t": "Text", "s": v["题目"], "img":""}
         curr_question["a"] = []
         curr_question["explain"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else ""
+        curr_question["explain2"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else curr_question["explain"]
         for key in v.keys():
             if "正确答案" in key and v[key] is not None and str(v[key]).lower() != "nan":
                 curr_question["a"].append(str(v[key]).lower())
