@@ -57,12 +57,12 @@ def run():
     sheet = pd.read_excel("C:\\Users\\yunta\\Desktop\\trails-game\\trails-quiz\\backend\\quiz.xlsx", None)
     result = []
 
-    # parse_text_single_choice(result, sheet)
-    parse_img_single_choice(result, sheet)
+    parse_text_single_choice(result, sheet)
+    # parse_img_single_choice(result, sheet)
     with open("quiz.json", "w") as f:
         f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
     
-    # parse_text(result, sheet)
+    parse_text(result, sheet)
     with open("out.json", "w") as f:
         f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
 
