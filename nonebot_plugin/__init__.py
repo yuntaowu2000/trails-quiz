@@ -26,9 +26,7 @@ async def trails_quiz_handler(bot: Bot, event: Event):
         my_redis.set(todaystr + str(event.get_user_id()), 1, ex=round(ttl))
     else:
         daycount = int(my_redis.get(todaystr + str(event.get_user_id())))
-        print("got daycount: {0}".format(daycount))
         my_redis.incr(todaystr + str(event.get_user_id()), 1)
-        print("incr succeed")
 
     if daycount >= 5:
         await trails_quiz.finish("今日答题次数已满，明天0时重置答题次数，可使用 .kquiz分 查看今日quiz结果。请期待网站正式版quiz上线，不限次数。", at_sender=True)
