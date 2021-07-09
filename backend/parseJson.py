@@ -1,5 +1,12 @@
 import pandas as pd
 import json
+import requests
+import threading
+
+def header_check(text, link, failed_links: dict):
+    result = requests.head(link)
+    if result.status_code != 200 and result.status_code != 301:
+        failed_links[text] = "{0}, code: {1}".format(link, result.status_code)
 
 def parse_text_single_choice(result, sheet):
     values = sheet["文字单选"].to_dict(orient="records")
@@ -19,7 +26,7 @@ def parse_text_single_choice(result, sheet):
         curr_question["options"] = options
         result.append(curr_question)
 
-def parse_img_single_choice(result, sheet):
+def parse_img_single_choice(result, sheet, thread_list, failed_links):
     values = sheet["图片单选"].to_dict(orient="records")
     for v in values:
         if v["题目"] is None or str(v["题目"]).lower() == "nan":
@@ -34,6 +41,11 @@ def parse_img_single_choice(result, sheet):
         options.append({"oid":1, "s": str(v["选项B"]), "img":str(v["选项B图片链接"])})
         options.append({"oid":2, "s": str(v["选项C"]), "img":str(v["选项C图片链接"])})
         options.append({"oid":3, "s": str(v["选项D"]), "img":str(v["选项D图片链接"])})
+        for c in ["选项A", "选项B", "选项C", "选项D"]:
+            t = threading.Thread(target=lambda:header_check(str(v["ID"]) + str(v[c]), str(v[c + "图片链接"]), failed_links))
+            t.start()
+            thread_list.append(t)
+
         curr_question["options"] = options
         result.append(curr_question)
 
@@ -56,9 +68,15 @@ def parse_text(result, sheet):
 def run():
     sheet = pd.read_excel("C:\\Users\\yunta\\Desktop\\trails-game\\trails-quiz\\backend\\quiz.xlsx", None)
     result = []
+    thread_list = []
+    failed_links = {}
 
     parse_text_single_choice(result, sheet)
-    # parse_img_single_choice(result, sheet)
+    parse_img_single_choice(result, sheet, thread_list, failed_links)
+
+    if len(failed_links) > 0:
+        raise ValueError("failed. failed_links: {0}".format(failed_links))
+
     with open("quiz.json", "w") as f:
         f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
     

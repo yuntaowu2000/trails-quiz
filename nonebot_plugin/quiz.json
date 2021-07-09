@@ -9898,5 +9898,1985 @@
             "s": "空之轨迹FC EVO中，所有奖杯的个数是？",
             "t": "MCWithTextOnly"
         }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是未来，未来的效果2和效果3都能每回合自动回复HP（效果2在战斗开始·危机时才能发动）",
+        "explain2": "正确答案是未来，未来的效果2和效果3都能每回合自动回复HP（效果2在战斗开始·危机时才能发动）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/未来-150x150.png",
+                "oid": 0,
+                "s": "未来"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/圣典-150x150.png",
+                "oid": 1,
+                "s": "圣典"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/处女-150x150.png",
+                "oid": 2,
+                "s": "处女"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/水星-150x150.png",
+                "oid": 3,
+                "s": "水星"
+            }
+        ],
+        "question": {
+            "id": 2001,
+            "img": "",
+            "s": "创轨中下列哪个核心回路拥有每回合自动回复HP的功能？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是水星，水星的效果3每回合回复EP15（满级数据），此外水星还能增加60%的魔法暴击率",
+        "explain2": "正确答案是水星，水星的效果3每回合回复EP15（满级数据），此外水星还能增加60%的魔法暴击率",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/水星-150x150.png",
+                "oid": 0,
+                "s": "水星"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/猫妖-150x150.png",
+                "oid": 1,
+                "s": "猫妖"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/歌后-150x150.png",
+                "oid": 2,
+                "s": "歌后"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵药-150x150.png",
+                "oid": 3,
+                "s": "灵药"
+            }
+        ],
+        "question": {
+            "id": 2002,
+            "img": "",
+            "s": "创轨中下列哪个核心回路拥有每回合自动回复EP的功能？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是火神，火神的效果2每回合CP+7（满级数据），火神也是割草回路是选择之一",
+        "explain2": "正确答案是火神，火神的效果2每回合CP+7（满级数据），火神也是割草回路是选择之一",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/火神-150x150.png",
+                "oid": 0,
+                "s": "火神"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/王者-150x150.png",
+                "oid": 1,
+                "s": "王者"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/英杰-150x150.png",
+                "oid": 2,
+                "s": "英杰"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/骑兵-150x150.png",
+                "oid": 3,
+                "s": "骑兵"
+            }
+        ],
+        "question": {
+            "id": 2003,
+            "img": "",
+            "s": "创轨中下列哪个核心回路拥有每回合自动回复CP的功能？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是阳光，相信很多人的第一反应是火神，但是阳光也可以通过歼敌增加CP（满级+24）",
+        "explain2": "正确答案是阳光，相信很多人的第一反应是火神，但是阳光也可以通过歼敌增加CP（满级+24）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/阳光-150x150.png",
+                "oid": 0,
+                "s": "阳光"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/骑兵-150x150.png",
+                "oid": 1,
+                "s": "骑兵"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/纹章-150x150.png",
+                "oid": 2,
+                "s": "纹章"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/天蝎-150x150.png",
+                "oid": 3,
+                "s": "天蝎"
+            }
+        ],
+        "question": {
+            "id": 2004,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以通过歼敌增加CP？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是神盾，满级可以100%吸引敌人注意，不过这个回路相比碧轨时已经有些淡出江湖",
+        "explain2": "正确答案是神盾，满级可以100%吸引敌人注意，不过这个回路相比碧轨时已经有些淡出江湖",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神盾-150x150.png",
+                "oid": 0,
+                "s": "神盾"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/护符-150x150.png",
+                "oid": 1,
+                "s": "护符"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/大智-150x150.png",
+                "oid": 2,
+                "s": "大智"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/侏儒-150x150.png",
+                "oid": 3,
+                "s": "侏儒"
+            }
+        ],
+        "question": {
+            "id": 2005,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以吸引敌人？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是大智，在陷入无法战斗前发动起死回生，HP回复150%·CP+200（每场战斗限两次）（满级数据）",
+        "explain2": "正确答案是大智，在陷入无法战斗前发动起死回生，HP回复150%·CP+200（每场战斗限两次）（满级数据）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/大智-150x150.png",
+                "oid": 0,
+                "s": "大智"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/阳光-150x150.png",
+                "oid": 1,
+                "s": "阳光"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神女-150x150.png",
+                "oid": 2,
+                "s": "神女"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/水星-150x150.png",
+                "oid": 3,
+                "s": "水星"
+            }
+        ],
+        "question": {
+            "id": 2006,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以起死回生？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是神矛，满级+10%（其他三个选项+7%），虽然只差3%，但是神矛自带+爆伤值，暴击流的必选",
+        "explain2": "正确答案是神矛，满级+10%（其他三个选项+7%），虽然只差3%，但是神矛自带+爆伤值，暴击流的必选",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神矛-150x150.png",
+                "oid": 0,
+                "s": "神矛"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/伪神-150x150.png",
+                "oid": 1,
+                "s": "伪神"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/北风-150x150.png",
+                "oid": 2,
+                "s": "北风"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/贤者-150x150.png",
+                "oid": 3,
+                "s": "贤者\t"
+            }
+        ],
+        "question": {
+            "id": 2007,
+            "img": "",
+            "s": "创轨中下列哪个核心回路增加的暴击率最多？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是纹章，掉落道具数增加（仅限装备者），取得道具数最多+3，对敌人破防或者打倒敌人时发动，刷道具的必选",
+        "explain2": "正确答案是纹章，掉落道具数增加（仅限装备者），取得道具数最多+3，对敌人破防或者打倒敌人时发动，刷道具的必选",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/纹章-150x150.png",
+                "oid": 0,
+                "s": "纹章"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/适能-150x150.png",
+                "oid": 1,
+                "s": "适能"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/睿智-150x150.png",
+                "oid": 2,
+                "s": "睿智"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝剑-150x150.png",
+                "oid": 3,
+                "s": "宝剑"
+            }
+        ],
+        "question": {
+            "id": 2008,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以增加掉落道具数？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是灵殿，击杀敌人时回复HP，每击杀一名回复HP24%（满级数据），再加上HP越多物理伤害越高的效果1，续航很强",
+        "explain2": "正确答案是灵殿，击杀敌人时回复HP，每击杀一名回复HP24%（满级数据），再加上HP越多物理伤害越高的效果1，续航很强",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵殿-150x150.png",
+                "oid": 0,
+                "s": "灵殿"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/精后-150x150.png",
+                "oid": 1,
+                "s": "精后"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/天蝎-150x150.png",
+                "oid": 2,
+                "s": "天蝎"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝盒-150x150.png",
+                "oid": 3,
+                "s": "宝盒"
+            }
+        ],
+        "question": {
+            "id": 2009,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以通过歼敌增加HP？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是兽眸，一哥马克邦入队时自动装备",
+        "explain2": "正确答案是兽眸，一哥马克邦入队时自动装备",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/兽眸-150x150.png",
+                "oid": 0,
+                "s": "兽眸"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神女-150x150.png",
+                "oid": 1,
+                "s": "神女"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵殿-150x150.png",
+                "oid": 2,
+                "s": "灵殿"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝盒-150x150.png",
+                "oid": 3,
+                "s": "宝盒"
+            }
+        ],
+        "question": {
+            "id": 2010,
+            "img": "",
+            "s": "创轨中下列哪个核心回路是最晚追加的？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是大智，可以减少地属性魔法发动后的硬直时间（硬直时间2/5）",
+        "explain2": "正确答案是大智，可以减少地属性魔法发动后的硬直时间（硬直时间2/5）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/大智-150x150.png",
+                "oid": 0,
+                "s": "大智"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/勇气-150x150.png",
+                "oid": 1,
+                "s": "勇气"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/运转-150x150.png",
+                "oid": 2,
+                "s": "运转"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/无限-150x150.png",
+                "oid": 3,
+                "s": "无限"
+            }
+        ],
+        "question": {
+            "id": 2011,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以减少地属性魔法发动后的硬直时间？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是处女，可以减少水属性魔法发动后的硬直时间（硬直时间2/5）",
+        "explain2": "正确答案是处女，可以减少水属性魔法发动后的硬直时间（硬直时间2/5）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/处女-150x150.png",
+                "oid": 0,
+                "s": "处女"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/猫妖-150x150.png",
+                "oid": 1,
+                "s": "猫妖"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/歌后-150x150.png",
+                "oid": 2,
+                "s": "歌后"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/智者-150x150.png",
+                "oid": 3,
+                "s": "智者"
+            }
+        ],
+        "question": {
+            "id": 2012,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以减少水属性魔法发动后的硬直时间？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是织女，可以减少火属性魔法发动后的硬直时间（硬直时间2/5）",
+        "explain2": "正确答案是织女，可以减少火属性魔法发动后的硬直时间（硬直时间2/5）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/织女-150x150.png",
+                "oid": 0,
+                "s": "织女"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/魔女-150x150.png",
+                "oid": 1,
+                "s": "魔女"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神女-150x150.png",
+                "oid": 2,
+                "s": "神女"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/骑兵-150x150.png",
+                "oid": 3,
+                "s": "骑兵"
+            }
+        ],
+        "question": {
+            "id": 2013,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以减少火属性魔法发动后的硬直时间？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是宝典，可以减少风属性魔法发动后的硬直时间（硬直时间2/5）",
+        "explain2": "正确答案是宝典，可以减少风属性魔法发动后的硬直时间（硬直时间2/5）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝典-150x150.png",
+                "oid": 0,
+                "s": "宝典"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/暴风-150x150.png",
+                "oid": 1,
+                "s": "暴风"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/雷神-150x150.png",
+                "oid": 2,
+                "s": "雷神"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/草薙-150x150.png",
+                "oid": 3,
+                "s": "草薙"
+            }
+        ],
+        "question": {
+            "id": 2014,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以减少风属性魔法发动后的硬直时间？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是灵猫，可以减少时属性魔法发动后的硬直时间（硬直时间2/5）",
+        "explain2": "正确答案是灵猫，可以减少时属性魔法发动后的硬直时间（硬直时间2/5）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵猫-150x150.png",
+                "oid": 0,
+                "s": "灵猫"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/西风-150x150.png",
+                "oid": 1,
+                "s": "西风"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/幻胧-150x150.png",
+                "oid": 2,
+                "s": "幻胧"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/昴宿-150x150.png",
+                "oid": 3,
+                "s": "昴宿"
+            }
+        ],
+        "question": {
+            "id": 2015,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以减少时属性魔法发动后的硬直时间？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是睿智，可以减少空属性魔法发动后的硬直时间（硬直时间2/5）",
+        "explain2": "正确答案是睿智，可以减少空属性魔法发动后的硬直时间（硬直时间2/5）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/睿智-150x150.png",
+                "oid": 0,
+                "s": "睿智"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/永恒-150x150.png",
+                "oid": 1,
+                "s": "永恒"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/适能-150x150.png",
+                "oid": 2,
+                "s": "适能"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/北风-150x150.png",
+                "oid": 3,
+                "s": "北风"
+            }
+        ],
+        "question": {
+            "id": 2016,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以减少空属性魔法发动后的硬直时间？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是精后，可以减少幻属性魔法发动后的硬直时间（硬直时间2/5）",
+        "explain2": "正确答案是精后，可以减少幻属性魔法发动后的硬直时间（硬直时间2/5）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/精后-150x150.png",
+                "oid": 0,
+                "s": "精后"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/百变-150x150.png",
+                "oid": 1,
+                "s": "百变"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/丛云-150x150.png",
+                "oid": 2,
+                "s": "丛云"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/太古-150x150.png",
+                "oid": 3,
+                "s": "太古"
+            }
+        ],
+        "question": {
+            "id": 2017,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以减少幻属性魔法发动后的硬直时间？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是蓝狮，可以减少S技发动后的硬直时间（硬直时间2/5），与王者一样",
+        "explain2": "正确答案是蓝狮，可以减少S技发动后的硬直时间（硬直时间2/5），与王者一样",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/蓝狮-150x150.png",
+                "oid": 0,
+                "s": "蓝狮"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/天狼-150x150.png",
+                "oid": 1,
+                "s": "天狼"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/昴宿-150x150.png",
+                "oid": 2,
+                "s": "昴宿"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/精灵-150x150.png",
+                "oid": 3,
+                "s": "精灵"
+            }
+        ],
+        "question": {
+            "id": 2018,
+            "img": "",
+            "s": "创轨中下列哪个核心回路可以减少S技发动后的硬直时间？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是克蕾雅；无限号令耗费5BP，1次行动/破防伤害值+400%，加速（配合强破防或许有奇效）",
+        "explain2": "正确答案是克蕾雅；无限号令耗费5BP，1次行动/破防伤害值+400%，加速（配合强破防或许有奇效）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_604-150x150.jpg",
+                "oid": 0,
+                "s": "克蕾雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_605-150x150.jpg",
+                "oid": 1,
+                "s": "雷克特"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_621-150x150.jpg",
+                "oid": 2,
+                "s": "科洛丝"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/12/icon_539-150x150.jpg",
+                "oid": 3,
+                "s": "雪伦"
+            }
+        ],
+        "question": {
+            "id": 2019,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）可以加速？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是乔治；神镯防御耗费5BP，10次行动/吸收魔法攻击，完全防御（看起来很美好）",
+        "explain2": "正确答案是乔治；神镯防御耗费5BP，10次行动/吸收魔法攻击，完全防御（看起来很美好）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_596-150x150.jpg",
+                "oid": 0,
+                "s": "乔治"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_540-150x150.jpg",
+                "oid": 1,
+                "s": "安洁莉卡"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_611-150x150.jpg",
+                "oid": 2,
+                "s": "托娃"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_602-150x150.jpg",
+                "oid": 3,
+                "s": "克洛"
+            }
+        ],
+        "question": {
+            "id": 2020,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）可以同时做到吸收魔法伤害&完全防御？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是亚尔缇娜；黑色水晶耗费4BP，4次行动/绝对反弹，HP、EP20%回复（初期救命的神指令）",
+        "explain2": "正确答案是亚尔缇娜；黑色水晶耗费4BP，4次行动/绝对反弹，HP、EP20%回复（初期救命的神指令）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/altina-150x150.jpg",
+                "oid": 0,
+                "s": "亚尔缇娜"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/musse-150x150.jpg",
+                "oid": 1,
+                "s": "妙婕"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/juna-150x150.jpg",
+                "oid": 2,
+                "s": "悠娜"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/kurt-150x150.jpg",
+                "oid": 3,
+                "s": "库尔特"
+            }
+        ],
+        "question": {
+            "id": 2021,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）可以绝对反弹？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是娜狄雅；分析完毕耗费2BP，8次行动/破防伤害值+700%，5回合所有能力↑（大）（与小说一样的神奇）",
+        "explain2": "正确答案是娜狄雅；分析完毕耗费2BP，8次行动/破防伤害值+700%，5回合所有能力↑（大）（与小说一样的神奇）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/nadia-150x150.jpg",
+                "oid": 0,
+                "s": "娜狄雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/swin-150x150.jpg",
+                "oid": 1,
+                "s": "斯温"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/c-150x150.jpg",
+                "oid": 2,
+                "s": "卢法斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/lapis-150x150.jpg",
+                "oid": 3,
+                "s": "拉碧丝"
+            }
+        ],
+        "question": {
+            "id": 2022,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）可以增加全能力？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是克洛提德；秘术 苍孔雀耗费5BP，4次行动/赋予伤害值+100%（4次行动还是少了点）",
+        "explain2": "正确答案是克洛提德；秘术 苍孔雀耗费5BP，4次行动/赋予伤害值+100%（4次行动还是少了点）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_576-150x150.jpg",
+                "oid": 0,
+                "s": "克洛提德"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_605-150x150.jpg",
+                "oid": 1,
+                "s": "雷克特"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_602-150x150.jpg",
+                "oid": 2,
+                "s": "克洛"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/rean-150x150.jpg",
+                "oid": 3,
+                "s": "黎恩"
+            }
+        ],
+        "question": {
+            "id": 2023,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）增加的伤害值最多？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是米莉亚姆；白色点缀耗费4BP，8次行动/受伤害值0.1倍（单纯的减伤未必是最合适的）",
+        "explain2": "正确答案是米莉亚姆；白色点缀耗费4BP，8次行动/受伤害值0.1倍（单纯的减伤未必是最合适的）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_536-150x150.jpg",
+                "oid": 0,
+                "s": "米莉亚姆"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/lloyd-150x150.jpg",
+                "oid": 1,
+                "s": "罗伊德"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/rean-150x150.jpg",
+                "oid": 2,
+                "s": "黎恩"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_611-150x150.jpg",
+                "oid": 3,
+                "s": "托娃"
+            }
+        ],
+        "question": {
+            "id": 2024,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）减少的伤害值最多？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是克蕾雅；无限号令耗费5BP，1次行动/破防伤害值+400%，加速（顺带一提，悠大锤的阵法被削弱的真惨......）",
+        "explain2": "正确答案是克蕾雅；无限号令耗费5BP，1次行动/破防伤害值+400%，加速（顺带一提，悠大锤的阵法被削弱的真惨......）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_604-150x150.jpg",
+                "oid": 0,
+                "s": "克蕾雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_581-150x150.jpg",
+                "oid": 1,
+                "s": "盖乌斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_570-150x150.jpg",
+                "oid": 2,
+                "s": "亚莉莎"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/juna-150x150.jpg",
+                "oid": 3,
+                "s": "悠娜"
+            }
+        ],
+        "question": {
+            "id": 2025,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）增加的破防值最多？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是莎拉；焰迅雷光耗费5BP，1次行动/硬直时间0.2倍，加速（这个确实有些鸡肋啊）",
+        "explain2": "正确答案是莎拉；焰迅雷光耗费5BP，1次行动/硬直时间0.2倍，加速（这个确实有些鸡肋啊）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_612-150x150.jpg",
+                "oid": 0,
+                "s": "莎拉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_578-150x150.jpg",
+                "oid": 1,
+                "s": "马奇亚斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_584-150x150.jpg",
+                "oid": 2,
+                "s": "菲"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_595-150x150.jpg",
+                "oid": 3,
+                "s": "杜巴莉"
+            }
+        ],
+        "question": {
+            "id": 2026,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）减少的硬直时间最多？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是菲；西风之劲耗费3BP，10次行动/僵直时间0.5倍，2回合心眼（反击流YYDS）",
+        "explain2": "正确答案是菲；西风之劲耗费3BP，10次行动/僵直时间0.5倍，2回合心眼（反击流YYDS）",
+        "options": [
+            {
+                "img": "https://trails-game.com/wp-content/uploads/2020/08/icon_584-150x150.jpg",
+                "oid": 0,
+                "s": "菲"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_612-150x150.jpg",
+                "oid": 1,
+                "s": "莎拉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_604-150x150.jpg",
+                "oid": 2,
+                "s": "克蕾雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/swin-150x150.jpg",
+                "oid": 3,
+                "s": "斯温"
+            }
+        ],
+        "question": {
+            "id": 2027,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）可以赋予心眼状态？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是雪拉扎德；天堂之吻耗费5BP，1次行动/100%暴击，加速（1次必暴击...有些没法看）",
+        "explain2": "正确答案是雪拉扎德；天堂之吻耗费5BP，1次行动/100%暴击，加速（1次必暴击...有些没法看）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_620-150x150.jpg",
+                "oid": 0,
+                "s": "雪拉扎德"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_610-150x150.jpg",
+                "oid": 1,
+                "s": "爱丽榭"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/lloyd-150x150.jpg",
+                "oid": 2,
+                "s": "罗伊德"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_598-150x150.jpg",
+                "oid": 3,
+                "s": "马克邦"
+            }
+        ],
+        "question": {
+            "id": 2028,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）可以同时暴击率100%&加速？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是杜巴莉；电光剑耗费4BP，6次行动/僵直时间0.4倍，2回合STR、SPD↑（中）（虽然不能加速，神速同志的阵法对于破防后的敌人很有效）",
+        "explain2": "正确答案是杜巴莉；电光剑耗费4BP，6次行动/僵直时间0.4倍，2回合STR、SPD↑（中）（虽然不能加速，神速同志的阵法对于破防后的敌人很有效）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_595-150x150.jpg",
+                "oid": 0,
+                "s": "杜巴莉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/elie-150x150.jpg",
+                "oid": 1,
+                "s": "艾莉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_604-150x150.jpg",
+                "oid": 2,
+                "s": "克蕾雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_612-150x150.jpg",
+                "oid": 3,
+                "s": "莎拉"
+            }
+        ],
+        "question": {
+            "id": 2029,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）不能加速的是？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是罗赛莉亚；秘术 红神乐耗费5BP，4次行动/消耗EP0，1回合ATS↑（大）（在大家都250级的情况下，EP0的必要性也不是特别高了）",
+        "explain2": "正确答案是罗赛莉亚；秘术 红神乐耗费5BP，4次行动/消耗EP0，1回合ATS↑（大）（在大家都250级的情况下，EP0的必要性也不是特别高了）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_575-150x150.jpg",
+                "oid": 0,
+                "s": "罗赛莉亚"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_570-150x150.jpg",
+                "oid": 1,
+                "s": "亚莉莎"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/elie-150x150.jpg",
+                "oid": 2,
+                "s": "艾莉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_574-150x150.jpg",
+                "oid": 3,
+                "s": "艾玛"
+            }
+        ],
+        "question": {
+            "id": 2030,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）可以EP0的是？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是雪伦；影技 幻梦蝶耗费4BP，4次行动/100%回避，HP25%回复，CP+25（可惜CP加的少了点）",
+        "explain2": "正确答案是雪伦；影技 幻梦蝶耗费4BP，4次行动/100%回避，HP25%回复，CP+25（可惜CP加的少了点）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/12/icon_539-150x150.jpg",
+                "oid": 0,
+                "s": "雪伦"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_610-150x150.jpg",
+                "oid": 1,
+                "s": "爱丽榭"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_540-150x150.jpg",
+                "oid": 2,
+                "s": "安洁莉卡"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_590-150x150.jpg",
+                "oid": 3,
+                "s": "琪雅"
+            }
+        ],
+        "question": {
+            "id": 2031,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）增加的回避率最多？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是艾莉；魔击钟声耗费5BP，4次行动/消耗EP1/10，加速（比起EP减耗，可能有人图的是加速）",
+        "explain2": "正确答案是艾莉；魔击钟声耗费5BP，4次行动/消耗EP1/10，加速（比起EP减耗，可能有人图的是加速）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/elie-150x150.jpg",
+                "oid": 0,
+                "s": "艾莉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/musse-150x150.jpg",
+                "oid": 1,
+                "s": "妙婕"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/nadia-150x150.jpg",
+                "oid": 2,
+                "s": "娜狄雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_517-150x150.jpg",
+                "oid": 3,
+                "s": "奥利维尔"
+            }
+        ],
+        "question": {
+            "id": 2032,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）减轻EP消耗最多（EP0除外）？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是瓦吉；圣约十字耗费3BP，8次行动/驱动时间1/5，2回合ATS↑（中）（名义上的魔武双修，还是走魔更舒服）",
+        "explain2": "正确答案是瓦吉；圣约十字耗费3BP，8次行动/驱动时间1/5，2回合ATS↑（中）（名义上的魔武双修，还是走魔更舒服）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/lazy-150x150.jpg",
+                "oid": 0,
+                "s": "瓦吉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/c-150x150.jpg",
+                "oid": 1,
+                "s": "卢法斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/06/renne-150x150.png",
+                "oid": 2,
+                "s": "玲"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_612-150x150.jpg",
+                "oid": 3,
+                "s": "莎拉"
+            }
+        ],
+        "question": {
+            "id": 2033,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）减少驱动时间最多（零驱动除外）？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是马克邦；湮灭烈焰耗费8BP，7次行动/100%暴击，CP+100（不愧是NO.Ⅰ）",
+        "explain2": "正确答案是马克邦；湮灭烈焰耗费8BP，7次行动/100%暴击，CP+100（不愧是NO.Ⅰ）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_598-150x150.jpg",
+                "oid": 0,
+                "s": "马克邦"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_576-150x150.jpg",
+                "oid": 1,
+                "s": "克洛提德"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_590-150x150.jpg",
+                "oid": 2,
+                "s": "琪雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_620-150x150.jpg",
+                "oid": 3,
+                "s": "雪拉扎德"
+            }
+        ],
+        "question": {
+            "id": 2034,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）BP消耗最高？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是拉碧丝；帕拉斯人偶耗费3BP，12次行动/受伤害值0.4倍，HP20%回复（初期很实用的阵法）",
+        "explain2": "正确答案是拉碧丝；帕拉斯人偶耗费3BP，12次行动/受伤害值0.4倍，HP20%回复（初期很实用的阵法）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/lapis-150x150.jpg",
+                "oid": 0,
+                "s": "拉碧丝"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_513-150x150.jpg",
+                "oid": 1,
+                "s": "阿加特"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/c-150x150.jpg",
+                "oid": 2,
+                "s": "卢法斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_517-150x150.jpg",
+                "oid": 3,
+                "s": "奥利维尔"
+            }
+        ],
+        "question": {
+            "id": 2035,
+            "img": "",
+            "s": "创轨中下列哪个角色的阵（Order）行动数（即存在的回合数）最多？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是缇妲，破甲障碍粉碎者STR+2,520（与五人并列第一）",
+        "explain2": "正确答案是缇妲，破甲障碍粉碎者STR+2,520（与五人并列第一）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_20-150x150.png",
+                "oid": 0,
+                "s": "缇妲"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_65-150x150.png",
+                "oid": 1,
+                "s": "罗伊德"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_39-150x150.png",
+                "oid": 2,
+                "s": "卢法斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_48-150x150.png",
+                "oid": 3,
+                "s": "艾丝蒂尔"
+            }
+        ],
+        "question": {
+            "id": 2036,
+            "img": "",
+            "s": "创轨中下列角色谁的最终武器增加的STR数值最大？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是克洛，苍刃贝尔加里恩（剑士模式）SPD+5，全人物独一份",
+        "explain2": "正确答案是克洛，苍刃贝尔加里恩（剑士模式）SPD+5，全人物独一份",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_47-150x150.png",
+                "oid": 0,
+                "s": "克洛"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_49-150x150.png",
+                "oid": 1,
+                "s": "菲"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_43-150x150.png",
+                "oid": 2,
+                "s": "斯温"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_55-150x150.png",
+                "oid": 3,
+                "s": "约修亚"
+            }
+        ],
+        "question": {
+            "id": 2037,
+            "img": "",
+            "s": "创轨中下列角色谁的最终武器同时增加SPD？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是罗伊德，陨星强击者DEF+300",
+        "explain2": "正确答案是罗伊德，陨星强击者DEF+300",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_65-150x150.png",
+                "oid": 0,
+                "s": "罗伊德"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_45-150x150.png",
+                "oid": 1,
+                "s": "艾莉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_53-150x150.png",
+                "oid": 2,
+                "s": "兰迪"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_58-150x150.png",
+                "oid": 3,
+                "s": "缇欧"
+            }
+        ],
+        "question": {
+            "id": 2038,
+            "img": "",
+            "s": "创轨中下列角色谁的最终武器同时增加DEF？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "\t正确答案是拉碧丝，你们觉得拿斧子的三位谁最帅呢？",
+        "explain2": "\t正确答案是拉碧丝，你们觉得拿斧子的三位谁最帅呢？",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_56-150x150.png",
+                "oid": 0,
+                "s": "\t拉碧丝"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_53-150x150.png",
+                "oid": 1,
+                "s": "兰迪"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_37-150x150.png",
+                "oid": 2,
+                "s": "亚修"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_40-150x150.png",
+                "oid": 3,
+                "s": "玲"
+            }
+        ],
+        "question": {
+            "id": 2039,
+            "img": "",
+            "s": "创轨中煌斧永恒之心是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是劳拉，她的成长（武艺）速度也是很惊人啊",
+        "explain2": "正确答案是劳拉，她的成长（武艺）速度也是很惊人啊",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_46-150x150.png",
+                "oid": 0,
+                "s": "劳拉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_60-150x150.png",
+                "oid": 1,
+                "s": "亚里欧斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_31-150x150.png",
+                "oid": 2,
+                "s": "尤西斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_39-150x150.png",
+                "oid": 3,
+                "s": "卢法斯"
+            }
+        ],
+        "question": {
+            "id": 2040,
+            "img": "",
+            "s": "创轨中宝剑格兰德林格是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是亚里欧斯，俱利伽罗即不动明王",
+        "explain2": "正确答案是亚里欧斯，俱利伽罗即不动明王",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_60-150x150.png",
+                "oid": 0,
+                "s": "亚里欧斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_63-150x150.png",
+                "oid": 1,
+                "s": "黎恩"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_32-150x150.png",
+                "oid": 2,
+                "s": "莉夏"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_35-150x150.png",
+                "oid": 3,
+                "s": "瓦吉"
+            }
+        ],
+        "question": {
+            "id": 2041,
+            "img": "",
+            "s": "创轨中俱利伽罗太刀是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是罗伊德，这个武器联想到罗爷的S技动画，着实威风",
+        "explain2": "正确答案是罗伊德，这个武器联想到罗爷的S技动画，着实威风",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_65-150x150.png",
+                "oid": 0,
+                "s": "罗伊德"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_35-150x150.png",
+                "oid": 1,
+                "s": "瓦吉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_53-150x150.png",
+                "oid": 2,
+                "s": "兰迪"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_42-150x150.png",
+                "oid": 3,
+                "s": "盖乌斯"
+            }
+        ],
+        "question": {
+            "id": 2042,
+            "img": "",
+            "s": "创轨中陨星强击者是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是盖乌斯，此枪（十字枪）非彼枪（导力枪）",
+        "explain2": "正确答案是盖乌斯，此枪（十字枪）非彼枪（导力枪）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_42-150x150.png",
+                "oid": 0,
+                "s": "盖乌斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_45-150x150.png",
+                "oid": 1,
+                "s": "艾莉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_23-150x150.png",
+                "oid": 2,
+                "s": "奥利维尔"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_57-150x150.png",
+                "oid": 3,
+                "s": "马奇亚斯"
+            }
+        ],
+        "question": {
+            "id": 2043,
+            "img": "",
+            "s": "创轨中霸枪马克白是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是黎恩，可惜在创轨的最后小篇章断刀了，不知道黎恩会带什么刀归来",
+        "explain2": "正确答案是黎恩，可惜在创轨的最后小篇章断刀了，不知道黎恩会带什么刀归来",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_63-150x150.png",
+                "oid": 0,
+                "s": "黎恩"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_60-150x150.png",
+                "oid": 1,
+                "s": "亚里欧斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_55-150x150.png",
+                "oid": 2,
+                "s": "约修亚"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_33-150x150.png",
+                "oid": 3,
+                "s": "库尔特"
+            }
+        ],
+        "question": {
+            "id": 2044,
+            "img": "",
+            "s": "创轨中神刀「绯天」是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是悠娜，天槌阿玛蒂亚（打击手模式）MOV+2，全人物独一份",
+        "explain2": "正确答案是悠娜，天槌阿玛蒂亚（打击手模式）MOV+2，全人物独一份",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_30-150x150.png",
+                "oid": 0,
+                "s": "悠娜"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_47-150x150.png",
+                "oid": 1,
+                "s": "克洛"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_43-150x150.png",
+                "oid": 2,
+                "s": "斯温"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_52-150x150.png",
+                "oid": 3,
+                "s": "娜狄雅"
+            }
+        ],
+        "question": {
+            "id": 2045,
+            "img": "",
+            "s": "创轨中下列角色谁的最终武器同时增加MOV？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是亚里欧斯+8%暴击率，瓦吉和娜狄雅+7%，黎恩+6%",
+        "explain2": "正确答案是亚里欧斯+8%暴击率，瓦吉和娜狄雅+7%，黎恩+6%",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_60-150x150.png",
+                "oid": 0,
+                "s": "亚里欧斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_35-150x150.png",
+                "oid": 1,
+                "s": "瓦吉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_52-150x150.png",
+                "oid": 2,
+                "s": "娜狄雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_63-150x150.png",
+                "oid": 3,
+                "s": "黎恩"
+            }
+        ],
+        "question": {
+            "id": 2046,
+            "img": "",
+            "s": "创轨中下列角色谁的最终武器增加的暴击率最多？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是亚尔缇娜，不过她和米莉亚姆的武器不细看真能搞混",
+        "explain2": "正确答案是亚尔缇娜，不过她和米莉亚姆的武器不细看真能搞混",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_44-150x150.png",
+                "oid": 0,
+                "s": "亚尔缇娜"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_36-150x150.png",
+                "oid": 1,
+                "s": "米莉亚姆"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_20-150x150.png",
+                "oid": 2,
+                "s": "缇妲"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_56-150x150.png",
+                "oid": 3,
+                "s": "拉碧丝"
+            }
+        ],
+        "question": {
+            "id": 2047,
+            "img": "",
+            "s": "创轨中迪亚多拉之臂是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是瑟蕾奴，红镜铃铛射程+7，其余三人的最终武器射程+6（铃铛比导力枪还远）",
+        "explain2": "正确答案是瑟蕾奴，红镜铃铛射程+7，其余三人的最终武器射程+6（铃铛比导力枪还远）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/mg07_62-150x150.png",
+                "oid": 0,
+                "s": "瑟蕾奴"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_23-150x150.png",
+                "oid": 1,
+                "s": "奥利维尔"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_45-150x150.png",
+                "oid": 2,
+                "s": "艾莉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_59-150x150.png",
+                "oid": 3,
+                "s": "托娃"
+            }
+        ],
+        "question": {
+            "id": 2048,
+            "img": "",
+            "s": "创轨中下列角色谁的最终武器射程最远？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是兰迪，谁能分析下三把斧子的区别（兰迪、拉碧丝、亚修）？",
+        "explain2": "正确答案是兰迪，谁能分析下三把斧子的区别（兰迪、拉碧丝、亚修）？",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_53-150x150.png",
+                "oid": 0,
+                "s": "兰迪"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_56-150x150.png",
+                "oid": 1,
+                "s": "拉碧丝"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_52-150x150.png",
+                "oid": 2,
+                "s": "娜狄雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_37-150x150.png",
+                "oid": 3,
+                "s": "亚修"
+            }
+        ],
+        "question": {
+            "id": 2049,
+            "img": "",
+            "s": "创轨中刚斧瓦尔肯海特是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是卢法斯，顺带一提，创轨不能操控公主真是遗憾",
+        "explain2": "正确答案是卢法斯，顺带一提，创轨不能操控公主真是遗憾",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_39-150x150.png",
+                "oid": 0,
+                "s": "卢法斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_31-150x150.png",
+                "oid": 1,
+                "s": "尤西斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_63-150x150.png",
+                "oid": 2,
+                "s": "黎恩"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_18-150x150.png",
+                "oid": 3,
+                "s": "科洛丝"
+            }
+        ],
+        "question": {
+            "id": 2050,
+            "img": "",
+            "s": "创轨中辉剑欧尔克里斯特是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是莎拉，教官的武器也是别出一格",
+        "explain2": "正确答案是莎拉，教官的武器也是别出一格",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_34-150x150.png",
+                "oid": 0,
+                "s": "莎拉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_55-150x150.png",
+                "oid": 1,
+                "s": "约修亚"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_33-150x150.png",
+                "oid": 2,
+                "s": "库尔特"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_49-150x150.png",
+                "oid": 3,
+                "s": "菲"
+            }
+        ],
+        "question": {
+            "id": 2051,
+            "img": "",
+            "s": "创轨中乌尔德&诗寇蒂是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是亚修，希望走出心理阴影的亚修武艺能更上一层",
+        "explain2": "正确答案是亚修，希望走出心理阴影的亚修武艺能更上一层",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_42-150x150.png",
+                "oid": 0,
+                "s": "亚修"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_53-150x150.png",
+                "oid": 1,
+                "s": "兰迪"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_56-150x150.png",
+                "oid": 2,
+                "s": "拉碧丝"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_42-150x150.png",
+                "oid": 3,
+                "s": "盖乌斯"
+            }
+        ],
+        "question": {
+            "id": 2052,
+            "img": "",
+            "s": "创轨中轰斧哈瓦玛尔是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是克洛，这把武器能切换剑士形态和枪手形态",
+        "explain2": "正确答案是克洛，这把武器能切换剑士形态和枪手形态",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_47-150x150.png",
+                "oid": 0,
+                "s": "克洛"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_43-150x150.png",
+                "oid": 1,
+                "s": "斯温"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_55-150x150.png",
+                "oid": 2,
+                "s": "约修亚"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_49-150x150.png",
+                "oid": 3,
+                "s": "菲"
+            }
+        ],
+        "question": {
+            "id": 2053,
+            "img": "",
+            "s": "创轨中苍刃贝尔加里恩是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是尤西斯，兄弟一辉一煌，挺搭配的",
+        "explain2": "正确答案是尤西斯，兄弟一辉一煌，挺搭配的",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_31-150x150.png",
+                "oid": 0,
+                "s": "尤西斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_39-150x150.png",
+                "oid": 1,
+                "s": "卢法斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_33-150x150.png",
+                "oid": 2,
+                "s": "库尔特"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_46-150x150.png",
+                "oid": 3,
+                "s": "劳拉"
+            }
+        ],
+        "question": {
+            "id": 2054,
+            "img": "",
+            "s": "创轨中煌剑亚尔塞达因是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是奥利维尔，虽然失去了一只眼睛，奥瓜的枪法还是很准的",
+        "explain2": "正确答案是奥利维尔，虽然失去了一只眼睛，奥瓜的枪法还是很准的",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_23-150x150.png",
+                "oid": 0,
+                "s": "奥利维尔"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_45-150x150.png",
+                "oid": 1,
+                "s": "艾莉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_59-150x150.png",
+                "oid": 2,
+                "s": "托娃"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_50-150x150.png",
+                "oid": 3,
+                "s": "妙婕"
+            }
+        ],
+        "question": {
+            "id": 2055,
+            "img": "",
+            "s": "创轨中奏枪阿玛迪斯是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是悠娜，有趣的是罗伊德武器类似，但没有形态切换",
+        "explain2": "正确答案是悠娜，有趣的是罗伊德武器类似，但没有形态切换",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_30-150x150.png",
+                "oid": 0,
+                "s": "悠娜"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_57-150x150.png",
+                "oid": 1,
+                "s": "马奇亚斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_54-150x150.png",
+                "oid": 2,
+                "s": "艾玛"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_51-150x150.png",
+                "oid": 3,
+                "s": "艾略特"
+            }
+        ],
+        "question": {
+            "id": 2056,
+            "img": "",
+            "s": "创轨中下列角色谁的最终武器可以转换两种形态？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是约修亚，看了小约的立绘，果然是宝刀配英雄啊",
+        "explain2": "正确答案是约修亚，看了小约的立绘，果然是宝刀配英雄啊",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_55-150x150.png",
+                "oid": 0,
+                "s": "约修亚"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_43-150x150.png",
+                "oid": 1,
+                "s": "斯温"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_34-150x150.png",
+                "oid": 2,
+                "s": "莎拉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_49-150x150.png",
+                "oid": 3,
+                "s": "菲"
+            }
+        ],
+        "question": {
+            "id": 2057,
+            "img": "",
+            "s": "创轨中鬼切丸·村雨刀是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是玲，每次看到玲的武器，我都觉得“四次元口袋”真神奇",
+        "explain2": "正确答案是玲，每次看到玲的武器，我都觉得“四次元口袋”真神奇",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_40-150x150.png",
+                "oid": 0,
+                "s": "玲"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_35-150x150.png",
+                "oid": 1,
+                "s": "瓦吉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_32-150x150.png",
+                "oid": 2,
+                "s": "莉夏"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_56-150x150.png",
+                "oid": 3,
+                "s": "拉碧丝"
+            }
+        ],
+        "question": {
+            "id": 2058,
+            "img": "",
+            "s": "创轨中星镰沙利叶方舟是谁的最终武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是瑟蕾奴，瑟蕾奴的武器是铃铛",
+        "explain2": "正确答案是瑟蕾奴，瑟蕾奴的武器是铃铛",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/mg07_62-150x150.png",
+                "oid": 0,
+                "s": "瑟蕾奴"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_43-150x150.png",
+                "oid": 1,
+                "s": "斯温"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_55-150x150.png",
+                "oid": 2,
+                "s": "约修亚"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_33-150x150.png",
+                "oid": 3,
+                "s": "库尔特"
+            }
+        ],
+        "question": {
+            "id": 2059,
+            "img": "",
+            "s": "创轨中下列角色谁的最终武器是非双持武器？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是玲，从闪之轨迹Ⅳ开始CV由西原久美子换为悠木碧",
+        "explain2": "正确答案是玲，从闪之轨迹Ⅳ开始CV由西原久美子换为悠木碧",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_40-150x150.png",
+                "oid": 0,
+                "s": "玲"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_58-150x150.png",
+                "oid": 1,
+                "s": "缇欧"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_61-150x150.png",
+                "oid": 2,
+                "s": "琪雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/mg07_20-150x150.png",
+                "oid": 3,
+                "s": "缇妲"
+            }
+        ],
+        "question": {
+            "id": 2060,
+            "img": "",
+            "s": "下列角色更换过CV的是？",
+            "t": "MCWithImg"
+        }
     }
 ]
