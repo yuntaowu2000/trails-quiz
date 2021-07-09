@@ -19,6 +19,24 @@ def parse_text_single_choice(result, sheet):
         curr_question["options"] = options
         result.append(curr_question)
 
+def parse_img_single_choice(result, sheet):
+    values = sheet["图片单选"].to_dict(orient="records")
+    for v in values:
+        if v["题目"] is None or str(v["题目"]).lower() == "nan":
+            continue
+        curr_question = {}
+        curr_question["question"] = {"id": v["ID"], "t": "MCWithImg", "s": str(v["题目"]), "img":""}
+        curr_question["a"] = 0
+        curr_question["explain"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else ""
+        curr_question["explain2"] = curr_question["explain"]
+        options = []
+        options.append({"oid":0, "s": str(v["选项A"]), "img":str(v["选项A图片链接"])})
+        options.append({"oid":1, "s": str(v["选项B"]), "img":str(v["选项B图片链接"])})
+        options.append({"oid":2, "s": str(v["选项C"]), "img":str(v["选项C图片链接"])})
+        options.append({"oid":3, "s": str(v["选项D"]), "img":str(v["选项D图片链接"])})
+        curr_question["options"] = options
+        result.append(curr_question)
+
 def parse_text(result, sheet):
     values = sheet["文字问答"].to_dict(orient="records")
     for v in values:
@@ -38,11 +56,13 @@ def parse_text(result, sheet):
 def run():
     sheet = pd.read_excel("C:\\Users\\yunta\\Desktop\\trails-game\\trails-quiz\\backend\\quiz.xlsx", None)
     result = []
-    parse_text_single_choice(result, sheet)
+
+    # parse_text_single_choice(result, sheet)
+    parse_img_single_choice(result, sheet)
     with open("quiz.json", "w") as f:
         f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
     
-    parse_text(result, sheet)
+    # parse_text(result, sheet)
     with open("out.json", "w") as f:
         f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
 
