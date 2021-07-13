@@ -15,6 +15,7 @@ def parse_text_single_choice(result, sheet):
             continue
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithTextOnly", "s": str(v["题目"]), "img":""}
+        curr_question["question"]["img"] = str(v["题目图片链接"]) if str(v["题目图片链接"]).lower() != "nan" else ""
         curr_question["a"] = 0
         curr_question["explain"] = str(v["回答正确时注释"]) if str(v["回答正确时注释"]).lower() != "nan" else ""
         curr_question["explain2"] = str(v["回答错误时注释"]) if str(v["回答错误时注释"]).lower() != "nan" else curr_question["explain"]
@@ -33,6 +34,7 @@ def parse_img_single_choice(result, sheet, thread_list, failed_links):
             continue
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithImg", "s": str(v["题目"]), "img":""}
+        curr_question["question"]["img"] = str(v["题目图片链接"]) if str(v["题目图片链接"]).lower() != "nan" else ""
         curr_question["a"] = 0
         curr_question["explain"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else ""
         curr_question["explain2"] = curr_question["explain"]
@@ -56,6 +58,7 @@ def parse_text(result, sheet):
             continue
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "Text", "s": v["题目"], "img":""}
+        curr_question["question"]["img"] = str(v["题目图片链接"]) if str(v["题目图片链接"]).lower() != "nan" else ""
         curr_question["a"] = []
         curr_question["explain"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else ""
         curr_question["explain2"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else curr_question["explain"]
