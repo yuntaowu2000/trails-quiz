@@ -8614,7 +8614,7 @@
     },
     {
         "a": 0,
-        "explain": "“你们这群家伙，怎么这么寡廉鲜耻？！“",
+        "explain": "“你们这群家伙，怎么这么寡廉鲜耻？！”",
         "explain2": "这股力量跟旧Ⅶ的教官也有关系",
         "options": [
             {
@@ -8647,7 +8647,7 @@
     },
     {
         "a": 0,
-        "explain": "奥图总管的遇难也让这场内战显得”真实了一点“",
+        "explain": "奥图总管的遇难也让这场内战显得“真实了一点”",
         "explain2": "其实我很想选猎兵或者结社（毕竟印象不好），但...",
         "options": [
             {
@@ -9615,17 +9615,17 @@
             {
                 "img": "",
                 "oid": 1,
-                "s": "魔力乌冠"
+                "s": "刷天使羊"
             },
             {
                 "img": "",
                 "oid": 2,
-                "s": "活性脚镯"
+                "s": "终章自动获得"
             },
             {
                 "img": "",
                 "oid": 3,
-                "s": "替身木偶"
+                "s": "到达满级后到协会报道赠送"
             }
         ],
         "question": {
@@ -9905,22 +9905,22 @@
         "explain2": "正确答案是未来，未来的效果2和效果3都能每回合自动回复HP（效果2在战斗开始·危机时才能发动）",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/未来-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/未来_hajimari-150x150.png",
                 "oid": 0,
                 "s": "未来"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/圣典-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/圣典_hajimari-150x150.png",
                 "oid": 1,
                 "s": "圣典"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/处女-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/处女_hajimari-150x150.png",
                 "oid": 2,
                 "s": "处女"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/水星-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/水星_hajimari-150x150.png",
                 "oid": 3,
                 "s": "水星"
             }
@@ -9938,22 +9938,22 @@
         "explain2": "正确答案是水星，水星的效果3每回合回复EP15（满级数据），此外水星还能增加60%的魔法暴击率",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/水星-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/水星_hajimari-150x150.png",
                 "oid": 0,
                 "s": "水星"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/猫妖-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/猫妖_hajimari-150x150.png",
                 "oid": 1,
                 "s": "猫妖"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/歌后-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/歌后_hajimari-150x150.png",
                 "oid": 2,
                 "s": "歌后"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵药-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵药_hajimari-150x150.png",
                 "oid": 3,
                 "s": "灵药"
             }
@@ -9971,22 +9971,22 @@
         "explain2": "正确答案是火神，火神的效果2每回合CP+7（满级数据），火神也是割草回路是选择之一",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/火神-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/火神_hajimari-150x150.png",
                 "oid": 0,
                 "s": "火神"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/王者-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/王者_hajimari-150x150.png",
                 "oid": 1,
                 "s": "王者"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/英杰-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/英杰_hajimari-150x150.png",
                 "oid": 2,
                 "s": "英杰"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/骑兵-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/骑兵_hajimari-150x150.png",
                 "oid": 3,
                 "s": "骑兵"
             }
@@ -10004,22 +10004,22 @@
         "explain2": "正确答案是阳光，相信很多人的第一反应是火神，但是阳光也可以通过歼敌增加CP（满级+24）",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/阳光-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/阳光_hajimari-150x150.png",
                 "oid": 0,
                 "s": "阳光"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/骑兵-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/骑兵_hajimari-150x150.png",
                 "oid": 1,
                 "s": "骑兵"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/纹章-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/纹章_hajimari-150x150.png",
                 "oid": 2,
                 "s": "纹章"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/天蝎-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/天蝎_hajimari-150x150.png",
                 "oid": 3,
                 "s": "天蝎"
             }
@@ -10037,22 +10037,22 @@
         "explain2": "正确答案是神盾，满级可以100%吸引敌人注意，不过这个回路相比碧轨时已经有些淡出江湖",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神盾-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神盾_hajimari-150x150.png",
                 "oid": 0,
                 "s": "神盾"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/护符-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/护符_hajimari-150x150.png",
                 "oid": 1,
                 "s": "护符"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/大智-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/大智_hajimari-150x150.png",
                 "oid": 2,
                 "s": "大智"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/侏儒-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/侏儒_hajimari-150x150.png",
                 "oid": 3,
                 "s": "侏儒"
             }
@@ -10070,22 +10070,22 @@
         "explain2": "正确答案是大智，在陷入无法战斗前发动起死回生，HP回复150%·CP+200（每场战斗限两次）（满级数据）",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/大智-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/大智_hajimari-150x150.png",
                 "oid": 0,
                 "s": "大智"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/阳光-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/阳光_hajimari-150x150.png",
                 "oid": 1,
                 "s": "阳光"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神女-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神女_hajimari-150x150.png",
                 "oid": 2,
                 "s": "神女"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/水星-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/水星_hajimari-150x150.png",
                 "oid": 3,
                 "s": "水星"
             }
@@ -10103,22 +10103,22 @@
         "explain2": "正确答案是神矛，满级+10%（其他三个选项+7%），虽然只差3%，但是神矛自带+爆伤值，暴击流的必选",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神矛-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神矛_hajimari-150x150.png",
                 "oid": 0,
                 "s": "神矛"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/伪神-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/伪神_hajimari-150x150.png",
                 "oid": 1,
                 "s": "伪神"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/北风-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/北风_hajimari-150x150.png",
                 "oid": 2,
                 "s": "北风"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/贤者-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/贤者_hajimari-150x150.png",
                 "oid": 3,
                 "s": "贤者\t"
             }
@@ -10136,22 +10136,22 @@
         "explain2": "正确答案是纹章，掉落道具数增加（仅限装备者），取得道具数最多+3，对敌人破防或者打倒敌人时发动，刷道具的必选",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/纹章-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/纹章_hajimari-150x150.png",
                 "oid": 0,
                 "s": "纹章"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/适能-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/适能_hajimari-150x150.png",
                 "oid": 1,
                 "s": "适能"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/睿智-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/睿智_hajimari-150x150.png",
                 "oid": 2,
                 "s": "睿智"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝剑-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝剑_hajimari-150x150.png",
                 "oid": 3,
                 "s": "宝剑"
             }
@@ -10169,22 +10169,22 @@
         "explain2": "正确答案是灵殿，击杀敌人时回复HP，每击杀一名回复HP24%（满级数据），再加上HP越多物理伤害越高的效果1，续航很强",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵殿-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵殿_hajimari-150x150.png",
                 "oid": 0,
                 "s": "灵殿"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/精后-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/精后_hajimari-150x150.png",
                 "oid": 1,
                 "s": "精后"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/天蝎-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/天蝎_hajimari-150x150.png",
                 "oid": 2,
                 "s": "天蝎"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝盒-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝盒_hajimari-150x150.png",
                 "oid": 3,
                 "s": "宝盒"
             }
@@ -10202,22 +10202,22 @@
         "explain2": "正确答案是兽眸，一哥马克邦入队时自动装备",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/兽眸-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/兽眸_hajimari-150x150.png",
                 "oid": 0,
                 "s": "兽眸"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神女-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神女_hajimari-150x150.png",
                 "oid": 1,
                 "s": "神女"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵殿-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵殿_hajimari.150x150.png",
                 "oid": 2,
                 "s": "灵殿"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝盒-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝盒_hajimari-150x150.png",
                 "oid": 3,
                 "s": "宝盒"
             }
@@ -10235,22 +10235,22 @@
         "explain2": "正确答案是大智，可以减少地属性魔法发动后的硬直时间（硬直时间2/5）",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/大智-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/大智_hajimari-150x150.png",
                 "oid": 0,
                 "s": "大智"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/勇气-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/勇气_hajimari-150x150.png",
                 "oid": 1,
                 "s": "勇气"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/运转-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/运转_hajimari-150x150.png",
                 "oid": 2,
                 "s": "运转"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/无限-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/无限_hajimari-150x150.png",
                 "oid": 3,
                 "s": "无限"
             }
@@ -10268,22 +10268,22 @@
         "explain2": "正确答案是处女，可以减少水属性魔法发动后的硬直时间（硬直时间2/5）",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/处女-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/处女_hajimari-150x150.png",
                 "oid": 0,
                 "s": "处女"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/猫妖-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/猫妖_hajimari-150x150.png",
                 "oid": 1,
                 "s": "猫妖"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/歌后-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/歌后_hajimari-150x150.png",
                 "oid": 2,
                 "s": "歌后"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/智者-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/智者_hajimari-150x150.png",
                 "oid": 3,
                 "s": "智者"
             }
@@ -10301,22 +10301,22 @@
         "explain2": "正确答案是织女，可以减少火属性魔法发动后的硬直时间（硬直时间2/5）",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/织女-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/织女_hajimari-150x150.png",
                 "oid": 0,
                 "s": "织女"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/魔女-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/魔女_hajimari-150x150.png",
                 "oid": 1,
                 "s": "魔女"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神女-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/神女_hajimari-150x150.png",
                 "oid": 2,
                 "s": "神女"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/骑兵-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/骑兵_hajimari-150x150.png",
                 "oid": 3,
                 "s": "骑兵"
             }
@@ -10334,22 +10334,22 @@
         "explain2": "正确答案是宝典，可以减少风属性魔法发动后的硬直时间（硬直时间2/5）",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝典-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/宝典_hajimari-150x150.png",
                 "oid": 0,
                 "s": "宝典"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/暴风-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/暴风_hajimari-150x150.png",
                 "oid": 1,
                 "s": "暴风"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/雷神-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/雷神_hajimari-150x150.png",
                 "oid": 2,
                 "s": "雷神"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/草薙-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/草薙_hajimari-150x150.png",
                 "oid": 3,
                 "s": "草薙"
             }
@@ -10367,22 +10367,22 @@
         "explain2": "正确答案是灵猫，可以减少时属性魔法发动后的硬直时间（硬直时间2/5）",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵猫-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/灵猫_hajimari-150x150.png",
                 "oid": 0,
                 "s": "灵猫"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/西风-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/西风_hajimari-150x150.png",
                 "oid": 1,
                 "s": "西风"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/幻胧-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/幻胧_hajimari-150x150.png",
                 "oid": 2,
                 "s": "幻胧"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/昴宿-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/昴宿_hajimari-150x150.png",
                 "oid": 3,
                 "s": "昴宿"
             }
@@ -10400,22 +10400,22 @@
         "explain2": "正确答案是睿智，可以减少空属性魔法发动后的硬直时间（硬直时间2/5）",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/睿智-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/睿智_hajimari-150x150.png",
                 "oid": 0,
                 "s": "睿智"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/永恒-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/永恒_hajimari-150x150.png",
                 "oid": 1,
                 "s": "永恒"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/适能-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/适能_hajimari-150x150.png",
                 "oid": 2,
                 "s": "适能"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/北风-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/北风_hajimari-150x150.png",
                 "oid": 3,
                 "s": "北风"
             }
@@ -10433,22 +10433,22 @@
         "explain2": "正确答案是精后，可以减少幻属性魔法发动后的硬直时间（硬直时间2/5）",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/精后-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/精后_hajimari-150x150.png",
                 "oid": 0,
                 "s": "精后"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/百变-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/百变_hajimari-150x150.png",
                 "oid": 1,
                 "s": "百变"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/丛云-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/丛云_hajimari-150x150.png",
                 "oid": 2,
                 "s": "丛云"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/太古-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/太古_hajimari-150x150.png",
                 "oid": 3,
                 "s": "太古"
             }
@@ -10466,22 +10466,22 @@
         "explain2": "正确答案是蓝狮，可以减少S技发动后的硬直时间（硬直时间2/5），与王者一样",
         "options": [
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/蓝狮-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/蓝狮_hajimari-150x150.png",
                 "oid": 0,
                 "s": "蓝狮"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/天狼-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/天狼_hajimari-150x150.png",
                 "oid": 1,
                 "s": "天狼"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/昴宿-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/昴宿_hajimari-150x150.png",
                 "oid": 2,
                 "s": "昴宿"
             },
             {
-                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/精灵-150x150.png",
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/精灵_hajimari-150x150.png",
                 "oid": 3,
                 "s": "精灵"
             }
@@ -10522,7 +10522,7 @@
         "question": {
             "id": 2019,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）可以加速？",
+            "s": "创轨中下列哪个角色的指令（Order）可以加速？",
             "t": "MCWithImg"
         }
     },
@@ -10555,7 +10555,7 @@
         "question": {
             "id": 2020,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）可以同时做到吸收魔法伤害&完全防御？",
+            "s": "创轨中下列哪个角色的指令（Order）可以同时做到吸收魔法伤害&完全防御？",
             "t": "MCWithImg"
         }
     },
@@ -10588,7 +10588,7 @@
         "question": {
             "id": 2021,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）可以绝对反弹？",
+            "s": "创轨中下列哪个角色的指令（Order）可以绝对反弹？",
             "t": "MCWithImg"
         }
     },
@@ -10621,7 +10621,7 @@
         "question": {
             "id": 2022,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）可以增加全能力？",
+            "s": "创轨中下列哪个角色的指令（Order）可以增加全能力？",
             "t": "MCWithImg"
         }
     },
@@ -10654,7 +10654,7 @@
         "question": {
             "id": 2023,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）增加的伤害值最多？",
+            "s": "创轨中下列哪个角色的指令（Order）增加的伤害值最多？",
             "t": "MCWithImg"
         }
     },
@@ -10687,14 +10687,14 @@
         "question": {
             "id": 2024,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）减少的伤害值最多？",
+            "s": "创轨中下列哪个角色的指令（Order）减少的伤害值最多？",
             "t": "MCWithImg"
         }
     },
     {
         "a": 0,
-        "explain": "正确答案是克蕾雅；无限号令耗费5BP，1次行动/破防伤害值+400%，加速（顺带一提，悠大锤的阵法被削弱的真惨......）",
-        "explain2": "正确答案是克蕾雅；无限号令耗费5BP，1次行动/破防伤害值+400%，加速（顺带一提，悠大锤的阵法被削弱的真惨......）",
+        "explain": "正确答案是克蕾雅；无限号令耗费5BP，1次行动/破防伤害值+400%，加速（顺带一提，悠大锤的指令被削弱的真惨......）",
+        "explain2": "正确答案是克蕾雅；无限号令耗费5BP，1次行动/破防伤害值+400%，加速（顺带一提，悠大锤的指令被削弱的真惨......）",
         "options": [
             {
                 "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_604-150x150.jpg",
@@ -10720,7 +10720,7 @@
         "question": {
             "id": 2025,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）增加的破防值最多？",
+            "s": "创轨中下列哪个角色的指令（Order）增加的破防值最多？",
             "t": "MCWithImg"
         }
     },
@@ -10753,7 +10753,7 @@
         "question": {
             "id": 2026,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）减少的硬直时间最多？",
+            "s": "创轨中下列哪个角色的指令（Order）减少的硬直时间最多？",
             "t": "MCWithImg"
         }
     },
@@ -10786,7 +10786,7 @@
         "question": {
             "id": 2027,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）可以赋予心眼状态？",
+            "s": "创轨中下列哪个角色的指令（Order）可以赋予心眼状态？",
             "t": "MCWithImg"
         }
     },
@@ -10819,14 +10819,14 @@
         "question": {
             "id": 2028,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）可以同时暴击率100%&加速？",
+            "s": "创轨中下列哪个角色的指令（Order）可以同时暴击率100%&加速？",
             "t": "MCWithImg"
         }
     },
     {
         "a": 0,
-        "explain": "正确答案是杜巴莉；电光剑耗费4BP，6次行动/僵直时间0.4倍，2回合STR、SPD↑（中）（虽然不能加速，神速同志的阵法对于破防后的敌人很有效）",
-        "explain2": "正确答案是杜巴莉；电光剑耗费4BP，6次行动/僵直时间0.4倍，2回合STR、SPD↑（中）（虽然不能加速，神速同志的阵法对于破防后的敌人很有效）",
+        "explain": "正确答案是杜巴莉；电光剑耗费4BP，6次行动/僵直时间0.4倍，2回合STR、SPD↑（中）（虽然不能加速，神速同志的指令对于破防后的敌人很有效）",
+        "explain2": "正确答案是杜巴莉；电光剑耗费4BP，6次行动/僵直时间0.4倍，2回合STR、SPD↑（中）（虽然不能加速，神速同志的指令对于破防后的敌人很有效）",
         "options": [
             {
                 "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_595-150x150.jpg",
@@ -10852,7 +10852,7 @@
         "question": {
             "id": 2029,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）不能加速的是？",
+            "s": "创轨中下列哪个角色的指令（Order）不能加速的是？",
             "t": "MCWithImg"
         }
     },
@@ -10885,7 +10885,7 @@
         "question": {
             "id": 2030,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）可以EP0的是？",
+            "s": "创轨中下列哪个角色的指令（Order）可以EP0的是？",
             "t": "MCWithImg"
         }
     },
@@ -10918,7 +10918,7 @@
         "question": {
             "id": 2031,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）增加的回避率最多？",
+            "s": "创轨中下列哪个角色的指令（Order）增加的回避率最多？",
             "t": "MCWithImg"
         }
     },
@@ -10951,7 +10951,7 @@
         "question": {
             "id": 2032,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）减轻EP消耗最多（EP0除外）？",
+            "s": "创轨中下列哪个角色的指令（Order）减轻EP消耗最多（EP0除外）？",
             "t": "MCWithImg"
         }
     },
@@ -10984,7 +10984,7 @@
         "question": {
             "id": 2033,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）减少驱动时间最多（零驱动除外）？",
+            "s": "创轨中下列哪个角色的指令（Order）减少驱动时间最多（零驱动除外）？",
             "t": "MCWithImg"
         }
     },
@@ -11017,14 +11017,14 @@
         "question": {
             "id": 2034,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）BP消耗最高？",
+            "s": "创轨中下列哪个角色的指令（Order）BP消耗最高？",
             "t": "MCWithImg"
         }
     },
     {
         "a": 0,
-        "explain": "正确答案是拉碧丝；帕拉斯人偶耗费3BP，12次行动/受伤害值0.4倍，HP20%回复（初期很实用的阵法）",
-        "explain2": "正确答案是拉碧丝；帕拉斯人偶耗费3BP，12次行动/受伤害值0.4倍，HP20%回复（初期很实用的阵法）",
+        "explain": "正确答案是拉碧丝；帕拉斯人偶耗费3BP，12次行动/受伤害值0.4倍，HP20%回复（初期很实用的指令）",
+        "explain2": "正确答案是拉碧丝；帕拉斯人偶耗费3BP，12次行动/受伤害值0.4倍，HP20%回复（初期很实用的指令）",
         "options": [
             {
                 "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/lapis-150x150.jpg",
@@ -11050,7 +11050,7 @@
         "question": {
             "id": 2035,
             "img": "",
-            "s": "创轨中下列哪个角色的阵（Order）行动数（即存在的回合数）最多？",
+            "s": "创轨中下列哪个角色的指令（Order）行动数（即存在的回合数）最多？",
             "t": "MCWithImg"
         }
     },
@@ -11876,6 +11876,633 @@
             "id": 2060,
             "img": "",
             "s": "下列角色更换过CV的是？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是闪之轨迹Ⅲ，呃...你可以想象下这是什么画面",
+        "explain2": "正确答案是闪之轨迹Ⅲ，呃...你可以想象下这是什么画面",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sen3_white.png",
+                "oid": 0,
+                "s": "闪之轨迹Ⅲ"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/vDtngebmChhvbqb-e1595695157145.jpg",
+                "oid": 1,
+                "s": "闪之轨迹Ⅰ"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/02/sen2.png",
+                "oid": 2,
+                "s": "闪之轨迹Ⅱ"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sen4.png",
+                "oid": 3,
+                "s": "闪之轨迹Ⅳ"
+            }
+        ],
+        "question": {
+            "id": 2061,
+            "img": "",
+            "s": "著名翻译错误“山里的海啸”首次出现在哪部作品？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是空之轨迹SC，娱乐通当初的翻译（严格来讲是转码）错误之一",
+        "explain2": "正确答案是空之轨迹SC，娱乐通当初的翻译（严格来讲是转码）错误之一",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sora_sc.png",
+                "oid": 0,
+                "s": "空之轨迹SC"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/空之轨迹FC.jpg",
+                "oid": 1,
+                "s": "空之轨迹FC"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sora_3rd.png",
+                "oid": 2,
+                "s": "空之轨迹3RD"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/akatsuki.png",
+                "oid": 3,
+                "s": "晓之轨迹"
+            }
+        ],
+        "question": {
+            "id": 2062,
+            "img": "",
+            "s": "著名翻译（转码）错误“俸俸伲购美病 ”首次出现在哪部作品？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是零之轨迹，这个对罗爷的描绘可以说“入木三分”",
+        "explain2": "正确答案是零之轨迹，这个对罗爷的描绘可以说“入木三分”",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/zero-1.png",
+                "oid": 0,
+                "s": "零之轨迹"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/ao.ac7093fe.png",
+                "oid": 1,
+                "s": "碧之轨迹"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/title_logo_w800.png",
+                "oid": 2,
+                "s": "创之轨迹"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/akatsuki.png",
+                "oid": 3,
+                "s": "晓之轨迹"
+            }
+        ],
+        "question": {
+            "id": 2063,
+            "img": "",
+            "s": "著名台词“披着弟系食草男子外皮，坐拥后宫三千的人生赢家”首次出现在哪部作品？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是碧之轨迹，这也是罗爷的名场面之一",
+        "explain2": "正确答案是碧之轨迹，这也是罗爷的名场面之一",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/ao.ac7093fe.png",
+                "oid": 0,
+                "s": "碧之轨迹"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/zero-1.png",
+                "oid": 1,
+                "s": "零之轨迹"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/title_logo_w800.png",
+                "oid": 2,
+                "s": "创之轨迹"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/akatsuki.png",
+                "oid": 3,
+                "s": "晓之轨迹"
+            }
+        ],
+        "question": {
+            "id": 2064,
+            "img": "",
+            "s": "著名台词“如果我赢了，你就是我的人了 ”首次出现在哪部作品？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是空之轨迹SC，娱乐通当初的翻译错误之一",
+        "explain2": "正确答案是空之轨迹SC，娱乐通当初的翻译错误之一",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sora_sc.png",
+                "oid": 0,
+                "s": "空之轨迹SC"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/空之轨迹FC.jpg",
+                "oid": 1,
+                "s": "空之轨迹FC"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sora_3rd.png",
+                "oid": 2,
+                "s": "空之轨迹3RD"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/akatsuki.png",
+                "oid": 3,
+                "s": "晓之轨迹"
+            }
+        ],
+        "question": {
+            "id": 2065,
+            "img": "",
+            "s": "著名翻译错误“先不说我美丽的羽毛”首次出现在哪部作品？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是空之轨迹SC，娱乐通当初的翻译错误之一",
+        "explain2": "正确答案是空之轨迹SC，娱乐通当初的翻译错误之一",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sora_sc.png",
+                "oid": 0,
+                "s": "空之轨迹SC"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/空之轨迹FC.jpg",
+                "oid": 1,
+                "s": "空之轨迹FC"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sora_3rd.png",
+                "oid": 2,
+                "s": "空之轨迹3RD"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/akatsuki.png",
+                "oid": 3,
+                "s": "晓之轨迹"
+            }
+        ],
+        "question": {
+            "id": 2066,
+            "img": "",
+            "s": "著名翻译错误“坚不可摧如钢铁 ”首次出现在哪部作品？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是碧之轨迹，虽然缇欧说出了如此台词，但是在创轨她对咪西的热爱仍然不减啊",
+        "explain2": "正确答案是碧之轨迹，虽然缇欧说出了如此台词，但是在创轨她对咪西的热爱仍然不减啊",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/ao.ac7093fe.png",
+                "oid": 0,
+                "s": "碧之轨迹"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/zero-1.png",
+                "oid": 1,
+                "s": "零之轨迹"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/title_logo_w800.png",
+                "oid": 2,
+                "s": "创之轨迹"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/akatsuki.png",
+                "oid": 3,
+                "s": "晓之轨迹"
+            }
+        ],
+        "question": {
+            "id": 2067,
+            "img": "",
+            "s": "著名台词“人就是这样慢慢长大的啊 ”首次出现在哪部作品？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是创之轨迹，黎之轨迹我们能看到安敦大神吗？但愿吧",
+        "explain2": "正确答案是创之轨迹，黎之轨迹我们能看到安敦大神吗？但愿吧",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/title_logo_w800.png",
+                "oid": 0,
+                "s": "创之轨迹"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sen4.png",
+                "oid": 1,
+                "s": "闪之轨迹Ⅳ"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/空之轨迹FC.jpg",
+                "oid": 2,
+                "s": "空之轨迹FC"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/02/sen2.png",
+                "oid": 3,
+                "s": "闪之轨迹Ⅱ"
+            }
+        ],
+        "question": {
+            "id": 2068,
+            "img": "",
+            "s": "著名配角安敦缺席了下列哪一部作品？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是空之轨迹SC，开了挂还没能赢下喝酒比赛，奥瓜你真行",
+        "explain2": "正确答案是空之轨迹SC，开了挂还没能赢下喝酒比赛，奥瓜你真行",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sora_sc.png",
+                "oid": 0,
+                "s": "空之轨迹SC"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/空之轨迹FC.jpg",
+                "oid": 1,
+                "s": "空之轨迹FC"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sora_3rd.png",
+                "oid": 2,
+                "s": "空之轨迹3RD"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/akatsuki.png",
+                "oid": 3,
+                "s": "晓之轨迹"
+            }
+        ],
+        "question": {
+            "id": 2069,
+            "img": "",
+            "s": "支线任务：千杯不醉的秘药出现在哪部作品？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是闪之轨迹Ⅲ，音乐盒放的音乐也是一首名曲，有兴趣可以看视频重温下",
+        "explain2": "正确答案是闪之轨迹Ⅲ，音乐盒放的音乐也是一首名曲，有兴趣可以看视频重温下",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sen3_white.png",
+                "oid": 0,
+                "s": "闪之轨迹Ⅲ"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/vDtngebmChhvbqb-e1595695157145.jpg",
+                "oid": 1,
+                "s": "闪之轨迹Ⅰ"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/02/sen2.png",
+                "oid": 2,
+                "s": "闪之轨迹Ⅱ"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/06/sen4.png",
+                "oid": 3,
+                "s": "闪之轨迹Ⅳ"
+            }
+        ],
+        "question": {
+            "id": 2070,
+            "img": "",
+            "s": "支线任务：往日的旋律出现在哪部作品？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是杜巴莉，CV大空直美在伊苏Ⅷ中配的是格莉泽尔达皇女（树海中也有出场，皇女卸任总督后会走向何方呢？）",
+        "explain2": "正确答案是杜巴莉，CV大空直美在伊苏Ⅷ中配的是格莉泽尔达皇女（树海中也有出场，皇女卸任总督后会走向何方呢？）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_595-150x150.jpg",
+                "oid": 0,
+                "s": "杜巴莉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/12/icon_539-150x150.jpg",
+                "oid": 1,
+                "s": "雪伦"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_607-150x150.jpg",
+                "oid": 2,
+                "s": "约修亚"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_600-150x150.jpg",
+                "oid": 3,
+                "s": "塞德里克"
+            }
+        ],
+        "question": {
+            "id": 2071,
+            "img": "",
+            "s": "下列角色的CV同时参演轨迹和伊苏Ⅷ的是？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是玲，CV悠木碧在伊苏Ⅷ中配的是伊娥（伊苏Ⅷ地下迷宫以及最后与伊娥的单挑想必折磨了不少玩家）",
+        "explain2": "正确答案是玲，CV悠木碧在伊苏Ⅷ中配的是伊娥（伊苏Ⅷ地下迷宫以及最后与伊娥的单挑想必折磨了不少玩家）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/06/renne-150x150.png",
+                "oid": 0,
+                "s": "玲"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_540-150x150.jpg",
+                "oid": 1,
+                "s": "安洁莉卡"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_590-150x150.jpg",
+                "oid": 2,
+                "s": "琪雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_591-150x150.jpg",
+                "oid": 3,
+                "s": "缇欧"
+            }
+        ],
+        "question": {
+            "id": 2072,
+            "img": "",
+            "s": "下列角色的CV同时参演轨迹和伊苏Ⅷ的是？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是菲莉，CV小仓唯在伊苏：塞尔塞塔的树海中配的是康莉莉卡（树海？恐怕印象最深的还是地图探索率99.9%）",
+        "explain2": "正确答案是菲莉，CV小仓唯在伊苏：塞尔塞塔的树海中配的是康莉莉卡（树海？恐怕印象最深的还是地图探索率99.9%）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/03/feri-300x300.png",
+                "oid": 0,
+                "s": "菲莉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/03/agnes-300x300.png",
+                "oid": 1,
+                "s": "亚妮艾丝"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/05/judith-300x300.png",
+                "oid": 2,
+                "s": "朱迪丝"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/05/risette-300x300.png",
+                "oid": 3,
+                "s": "莉婕特"
+            }
+        ],
+        "question": {
+            "id": 2073,
+            "img": "",
+            "s": "下列角色的CV同时参演轨迹和伊苏：塞尔塞塔的树海的是？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是托娃，CV野中蓝在伊苏：菲尔迦纳的誓约中配的是艾蕾娜·斯多达特（誓约是伊苏6FO组中最难的一部，心态崩了真会摔键盘）",
+        "explain2": "正确答案是托娃，CV野中蓝在伊苏：菲尔迦纳的誓约中配的是艾蕾娜·斯多达特（誓约是伊苏6FO组中最难的一部，心态崩了真会摔键盘）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_611-150x150.jpg",
+                "oid": 0,
+                "s": "托娃"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_596-150x150.jpg",
+                "oid": 1,
+                "s": "乔治"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_540-150x150.jpg",
+                "oid": 2,
+                "s": "安洁莉卡"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_602-150x150.jpg",
+                "oid": 3,
+                "s": "克洛"
+            }
+        ],
+        "question": {
+            "id": 2074,
+            "img": "",
+            "s": "下列角色的CV同时参演轨迹和伊苏：菲尔迦纳的誓约的是？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是爱丽榭，CV后藤沙绪里在伊苏：纳比斯汀的方舟中配的是伊莎（有些遗憾的是，STEAM版的伊苏6并没有配音，只能在广播剧听）",
+        "explain2": "正确答案是爱丽榭，CV后藤沙绪里在伊苏：纳比斯汀的方舟中配的是伊莎（有些遗憾的是，STEAM版的伊苏6并没有配音，只能在广播剧听）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_610-150x150.jpg",
+                "oid": 0,
+                "s": "爱丽榭"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_609-150x150.jpg",
+                "oid": 1,
+                "s": "艾尔芬"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/musse-150x150.jpg",
+                "oid": 2,
+                "s": "妙婕"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/nadia-150x150.jpg",
+                "oid": 3,
+                "s": "娜狄雅"
+            }
+        ],
+        "question": {
+            "id": 2075,
+            "img": "",
+            "s": "下列角色的CV同时参演轨迹和伊苏：纳比斯汀的方舟的是？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是雪伦，CV由加奈在双星物语（Ⅱ）中配的是主角爱尔温·德·穆普利亚（也就是单马尾公主）",
+        "explain2": "正确答案是雪伦，CV由加奈在双星物语（Ⅱ）中配的是主角爱尔温·德·穆普利亚（也就是单马尾公主）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/12/icon_539-150x150.jpg",
+                "oid": 0,
+                "s": "雪伦"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_595-150x150.jpg",
+                "oid": 1,
+                "s": "杜巴莉"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_607-150x150.jpg",
+                "oid": 2,
+                "s": "约修亚"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_621-150x150.jpg",
+                "oid": 3,
+                "s": "科洛丝"
+            }
+        ],
+        "question": {
+            "id": 2076,
+            "img": "",
+            "s": "下列角色的CV同时参演轨迹和双星物语（含Ⅱ代）的是？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是缇妲，CV今野宏美在双星物语（Ⅱ）中配的是皮皮洛（隨心所欲的性格啊）",
+        "explain2": "正确答案是缇妲，CV今野宏美在双星物语（Ⅱ）中配的是皮皮洛（隨心所欲的性格啊）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_512-150x150.jpg",
+                "oid": 0,
+                "s": "缇妲"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_513-150x150.jpg",
+                "oid": 1,
+                "s": "阿加特"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/nadia-150x150.jpg",
+                "oid": 2,
+                "s": "娜狄雅"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/07/swin-150x150.jpg",
+                "oid": 3,
+                "s": "斯温"
+            }
+        ],
+        "question": {
+            "id": 2077,
+            "img": "",
+            "s": "下列角色的CV同时参演轨迹和双星物语（含Ⅱ代）的是？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是艾略特，CV白石涼子在双星物语（Ⅱ）中配的是布库尔（借此也想请教下大家，双星物语入坑难吗？）",
+        "explain2": "正确答案是艾略特，CV白石涼子在双星物语（Ⅱ）中配的是布库尔（借此也想请教下大家，双星物语入坑难吗？）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_577-150x150.jpg",
+                "oid": 0,
+                "s": "艾略特"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_578-150x150.jpg",
+                "oid": 1,
+                "s": "马奇亚斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_580-150x150.jpg",
+                "oid": 2,
+                "s": "尤西斯"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/icon_583-150x150.jpg",
+                "oid": 3,
+                "s": "卢法斯"
+            }
+        ],
+        "question": {
+            "id": 2078,
+            "img": "",
+            "s": "下列角色的CV同时参演轨迹和双星物语（含Ⅱ代）的是？",
+            "t": "MCWithImg"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "正确答案是库拉茨，CV野岛健儿在双星物语（Ⅱ）中配的是主角拉格那·瓦伦汀（如果他能在轨迹配个主角也行啊...）",
+        "explain2": "正确答案是库拉茨，CV野岛健儿在双星物语（Ⅱ）中配的是主角拉格那·瓦伦汀（如果他能在轨迹配个主角也行啊...）",
+        "options": [
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/04/库拉兹-150x150.png",
+                "oid": 0,
+                "s": "库拉兹"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/04/金-150x150.png",
+                "oid": 1,
+                "s": "金"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/04/克鲁茨-150x150.png",
+                "oid": 2,
+                "s": "克鲁茨"
+            },
+            {
+                "img": "https://cdn.trails-game.com/wp-content/uploads/2021/04/卡鲁娜-150x150.png",
+                "oid": 3,
+                "s": "卡鲁娜"
+            }
+        ],
+        "question": {
+            "id": 2079,
+            "img": "",
+            "s": "下列角色的CV同时参演轨迹和双星物语（含Ⅱ代）的是？",
             "t": "MCWithImg"
         }
     },
