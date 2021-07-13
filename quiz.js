@@ -77,10 +77,6 @@ class Question {
     this.answers = answers;
   }
 
-  getChoices() {
-    return this.currentQuestion.options;
-  }
-
   getCorrectResult() {
     return this.currentQuestion.a;
   }
@@ -101,7 +97,6 @@ class MCWithTextOnly extends Question {
       label.className = "trailsQuizAnsUnselected";
       label.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid;
       
-      // we have to record the lambda function for removal
       label.addEventListener("click", () => this.select(this.currentQuestion.options[a].oid));
       this.answers.appendChild(label);
     }
@@ -134,7 +129,7 @@ class MCWithTextOnly extends Question {
   }
 }
 
-class MCWithImg extends Question {
+class MCWithImg extends MCWithTextOnly {
   show() {
     super.showQuestion();
 
@@ -158,32 +153,6 @@ class MCWithImg extends Question {
       
       label.addEventListener("click", () => this.select(this.currentQuestion.options[a].oid));
       this.answers.appendChild(label);
-    }
-  }
-
-  select(a) {
-    if (userAns[this.i] != -1) {
-      let prevSelectedId = "q" + this.i + "a" + userAns[this.i];
-      document.getElementById(prevSelectedId).className = "trailsQuizAnsUnselected";
-    }
-    console.log("selected " + a + "for q " + this.i);
-    // select the new selection
-    let selectedId = "q" + this.i + "a" + a;
-    userAns[this.i] = a;
-    document.getElementById(selectedId).className = "trailsQuizAnsSelected";
-  }
-
-  checkAns() {
-    let selectedid = "q" + this.i + "a" + userAns[this.i];
-    if (userAns[this.i] == this.getCorrectResult()) {
-        document.getElementById(selectedid).className = "trailsQuizAnsCorrect";
-        correctCount += 1;
-        userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
-    } else {
-        if (userAns[this.i] != -1) {
-            document.getElementById(selectedid).className = "trailsQuizAnsWrong";
-        }
-        userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
   }
 }
@@ -312,6 +281,38 @@ class TextQuestion extends Question {
   }
 }
 
+class MCWithAudio extends MCWithTextOnly {
+  show() {
+    super.show();
+    let musicdiv = document.createElement("div");
+    musicdiv.className = "trailsQuizMusic";
+    let musicAudio = document.createElement("audio");
+    musicAudio.style="width:100%";
+    musicAudio.loop = true;
+    musicAudio.controls = true;
+    musicAudio.src = this.currentQuestion.audioLink;
+    musicAudio.innerHTML = "Your browser does not support the audio element.";
+    musicdiv.appendChild(musicAudio);
+    this.qdiv.insertBefore(musicdiv, this.answers);
+  }
+}
+
+class TextWithAudio extends TextQuestion {
+  show() {
+    super.show();
+    let musicdiv = document.createElement("div");
+    let musicAudio = document.createElement("audio");
+    musicdiv.className = "trailsQuizMusic";
+    musicAudio.style="width:100%";
+    musicAudio.loop = true;
+    musicAudio.controls = true;
+    musicAudio.src = this.currentQuestion.audioLink;
+    musicAudio.innerHTML = "Your browser does not support the audio element.";
+    musicdiv.appendChild(musicAudio);
+    this.qdiv.insertBefore(musicdiv, this.answers);
+  }
+}
+
 function removeInputListeners() {
   for (let i = 0; i < data.length; i++) {
     if (data[i].question.t != "Text") {
@@ -353,13 +354,13 @@ async function showExplanationAndResult() {
     qs[i].appendChild(explaindiv);
 
     let qStatsdiv = document.createElement("div");
-    qStatsdiv.innerHTML = qStats[i] + "% people got right on this question";
+    qStatsdiv.innerHTML = qStats[i] + "%的玩家答对了这道题";
     qStatsdiv.className = "trailsQuizExplain";
     qs[i].appendChild(qStatsdiv);
   }
 
   let result = document.createElement("div");
-  result.innerHTML = "<p>You got " + correctCount + " correct out of 5</p>" + "<p>You have beaten "+ qStats[qStats.length - 1] + "% of the quiz takers</p>";
+  result.innerHTML = "<p>" + questionNum + "道题中，你正确回答了" + correctCount + "道题</p>" + "<p>你超过了"+ qStats[qStats.length - 1] + "%的玩家</p>";
   result.className = "trailsQuizExplain";
   quizWrap.appendChild(result);
 }
@@ -378,7 +379,7 @@ function submit() {
 
   submitButton.removeEventListener("click", submit);
   submitButton.addEventListener("click", start);
-  submitButton.innerHTML = "Retry";
+  submitButton.innerHTML = "重试";
 }
 
 function setupPage() {
@@ -426,6 +427,20 @@ function setupPage() {
         userAns.push("");
 
         break;
+      case "MCWithAudio":
+        let newAudio = new MCWithAudio(data[i], i);
+        newAudio.show();
+        actualQuestions.push(newAudio);
+        userAns.push(-1);
+
+        break;
+      case "TextWithAudio":
+        let newAudioText = new TextWithAudio(data[i], i);
+        newAudioText.show();
+        actualQuestions.push(newAudioText);
+        userAns.push("");
+
+        break;
       default:
         // do nothing to show error
         break;
@@ -440,7 +455,7 @@ function setupPage() {
   timeLeftInSecond = timeAllowed;
   counter = setInterval(countdown, 1000);
 
-  submitButton.innerHTML = "Submit";
+  submitButton.innerHTML = "提交";
   submitButton.removeEventListener("click", start);
   submitButton.addEventListener("click", submit);
 }
