@@ -8,14 +8,22 @@ def header_check(text, link, failed_links: dict):
     if result.status_code != 200 and result.status_code != 301:
         failed_links[text] = "{0}, code: {1}".format(link, result.status_code)
 
-def parse_text_single_choice(result, sheet):
+def parse_text_single_choice(result, sheet, thread_list, failed_links):
     values = sheet["文字单选"].to_dict(orient="records")
     for v in values:
         if v["题目"] is None or str(v["题目"]).lower() == "nan":
             continue
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithTextOnly", "s": str(v["题目"]), "img":""}
-        curr_question["question"]["img"] = str(v["题目图片链接"]) if str(v["题目图片链接"]).lower() != "nan" else ""
+
+        if str(v["题目图片链接"]).lower() != "nan":
+            t = threading.Thread(target=lambda:header_check(str(v["ID"]) + "题目图片", str(v["题目图片链接"]), failed_links))
+            t.start()
+            thread_list.append(t)
+            curr_question["question"]["img"] = str(v["题目图片链接"]) 
+        else:
+            curr_question["question"]["img"] = ""
+
         curr_question["a"] = 0
         curr_question["explain"] = str(v["回答正确时注释"]) if str(v["回答正确时注释"]).lower() != "nan" else ""
         curr_question["explain2"] = str(v["回答错误时注释"]) if str(v["回答错误时注释"]).lower() != "nan" else curr_question["explain"]
@@ -34,7 +42,15 @@ def parse_img_single_choice(result, sheet, thread_list, failed_links):
             continue
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithImg", "s": str(v["题目"]), "img":""}
-        curr_question["question"]["img"] = str(v["题目图片链接"]) if str(v["题目图片链接"]).lower() != "nan" else ""
+        
+        if str(v["题目图片链接"]).lower() != "nan":
+            t = threading.Thread(target=lambda:header_check(str(v["ID"]) + "题目图片", str(v["题目图片链接"]), failed_links))
+            t.start()
+            thread_list.append(t)
+            curr_question["question"]["img"] = str(v["题目图片链接"]) 
+        else:
+            curr_question["question"]["img"] = ""
+
         curr_question["a"] = 0
         curr_question["explain"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else ""
         curr_question["explain2"] = curr_question["explain"]
@@ -51,14 +67,22 @@ def parse_img_single_choice(result, sheet, thread_list, failed_links):
         curr_question["options"] = options
         result.append(curr_question)
 
-def parse_text(result, sheet):
+def parse_text(result, sheet, thread_list, failed_links):
     values = sheet["文字问答"].to_dict(orient="records")
     for v in values:
         if v["题目"] is None or str(v["题目"]).lower() == "nan":
             continue
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "Text", "s": v["题目"], "img":""}
-        curr_question["question"]["img"] = str(v["题目图片链接"]) if str(v["题目图片链接"]).lower() != "nan" else ""
+        
+        if "题目图片链接" in v.keys() and str(v["题目图片链接"]).lower() != "nan":
+            t = threading.Thread(target=lambda:header_check(str(v["ID"]) + "题目图片", str(v["题目图片链接"]), failed_links))
+            t.start()
+            thread_list.append(t)
+            curr_question["question"]["img"] = str(v["题目图片链接"]) 
+        else:
+            curr_question["question"]["img"] = ""
+        
         curr_question["a"] = []
         curr_question["explain"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else ""
         curr_question["explain2"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else curr_question["explain"]
@@ -74,7 +98,7 @@ def run():
     thread_list = []
     failed_links = {}
 
-    parse_text_single_choice(result, sheet)
+    parse_text_single_choice(result, sheet, thread_list, failed_links)
     parse_img_single_choice(result, sheet, thread_list, failed_links)
 
     if len(failed_links) > 0:
@@ -83,7 +107,7 @@ def run():
     with open("quiz.json", "w") as f:
         f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
     
-    parse_text(result, sheet)
+    parse_text(result, sheet, thread_list, failed_links)
     with open("out.json", "w") as f:
         f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
 
