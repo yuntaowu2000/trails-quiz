@@ -115,6 +115,6 @@ async def trails_quiz_result_handler(bot: Bot, event: Event):
         total_count = int(my_redis.get(str(event.get_user_id()) + "total"))
         correct_count = int(my_redis.get(str(event.get_user_id()) + "correct")) if my_redis.get(str(event.get_user_id()) + "correct") is not None else 0
         ratio = round(correct_count / total_count * 100)
-        msg = "答题总数: {0}\n正确回答: {1}\n正确率: {2}%".format(total_count, correct_count, ratio)
+        msg = "\n答题总数: {0}\n正确回答: {1}\n正确率: {2}%".format(total_count, correct_count, ratio)
         await trails_quiz_result.send(msg, at_sender=True)
     return
