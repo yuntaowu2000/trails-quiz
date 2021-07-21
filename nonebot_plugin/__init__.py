@@ -17,9 +17,9 @@ async def get_audio_title(bot: Bot, event: Event):
         gid = ids[1]
         uid = ids[2]
         result = await bot.call_api("get_group_member_info", group_id=gid, user_id=uid)
-        return result["nickname"] + "题目音乐"
+        return result["nickname"] + "题目音频"
     else:
-        return str(event.get_user_id()) + "题目音乐"
+        return str(event.get_user_id()) + "题目音频"
 
 @trails_quiz.handle()
 async def trails_quiz_handler(bot: Bot, event: Event):
@@ -49,7 +49,7 @@ async def trails_quiz_handler(bot: Bot, event: Event):
     await trails_quiz.send(msg, at_sender=True)
     if "Audio" in curr_question["question"]["t"]:
         title = await get_audio_title(bot, event)
-        msg = MessageSegment.music_custom(curr_question["audioLink"], curr_question["audioLink"], title)
+        msg = MessageSegment.music_custom("https://trails-game.com", curr_question["audioLink"], title)
         await trails_quiz.send(msg, at_sender=True)
 
 def check_correctness_with_multi_ans(curr_question, result):
