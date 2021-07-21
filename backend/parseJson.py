@@ -16,7 +16,7 @@ def parse_text_single_choice(result, sheet, thread_list, failed_links):
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithTextOnly", "s": str(v["题目"]), "img":""}
 
-        if str(v["题目图片链接"]).lower() != "nan":
+        if "题目图片链接" in v.keys() and str(v["题目图片链接"]).lower() != "nan":
             t = threading.Thread(target=lambda:header_check(str(v["ID"]) + "题目图片", str(v["题目图片链接"]), failed_links))
             t.start()
             thread_list.append(t)
