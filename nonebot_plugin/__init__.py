@@ -48,7 +48,7 @@ async def trails_quiz_handler(bot: Bot, event: Event):
 
     await trails_quiz.send(msg, at_sender=True)
     if "Audio" in curr_question["question"]["t"]:
-        title = get_audio_title(bot, event)
+        title = await get_audio_title(bot, event)
         msg = MessageSegment.music_custom(curr_question["audioLink"], curr_question["audioLink"], title)
         await trails_quiz.send(msg, at_sender=True)
 
