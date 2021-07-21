@@ -92,6 +92,30 @@ def parse_text(result, sheet, thread_list, failed_links):
 
         result.append(curr_question)
 
+def parse_audio(result, sheet, thread_list, failed_links):
+    values = sheet["音频单选"].to_dict(orient="records")
+    for v in values:
+        if v["题目"] is None or str(v["题目"]).lower() == "nan" or v["题目音频链接"] is None or str(v["题目音频链接"]).lower() == "nan":
+            continue
+        curr_question = {}
+        curr_question["question"] = {"id": v["ID"], "t": "MCWithAudio", "s": v["题目"], "img":""}
+
+        t = threading.Thread(target=lambda:header_check(str(v["ID"]) + "题目音频链接", str(v["题目音频链接"]), failed_links))
+        t.start()
+        thread_list.append(t)
+        curr_question["audioLink"] = str(v["题目音频链接"])
+
+        curr_question["a"] = 0
+        curr_question["explain"] = str(v["回答正确时注释"]) if str(v["回答正确时注释"]).lower() != "nan" else ""
+        curr_question["explain2"] = str(v["回答错误时注释"]) if str(v["回答错误时注释"]).lower() != "nan" else curr_question["explain"]
+        options = []
+        options.append({"oid":0, "s": str(v["选项A"]), "img":""})
+        options.append({"oid":1, "s": str(v["选项B"]), "img":""})
+        options.append({"oid":2, "s": str(v["选项C"]), "img":""})
+        options.append({"oid":3, "s": str(v["选项D"]), "img":""})
+        curr_question["options"] = options
+        result.append(curr_question)
+
 def run():
     sheet = pd.read_excel("C:\\Users\\yunta\\Desktop\\trails-game\\trails-quiz\\backend\\quiz.xlsx", None)
     result = []
@@ -100,6 +124,7 @@ def run():
 
     parse_text_single_choice(result, sheet, thread_list, failed_links)
     parse_img_single_choice(result, sheet, thread_list, failed_links)
+    parse_audio(result, sheet, thread_list, failed_links)
 
     if len(failed_links) > 0:
         raise ValueError("failed. failed_links: {0}".format(failed_links))

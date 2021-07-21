@@ -288,7 +288,6 @@ class MCWithAudio extends MCWithTextOnly {
     musicdiv.className = "trailsQuizMusic";
     let musicAudio = document.createElement("audio");
     musicAudio.style="width:100%";
-    musicAudio.loop = true;
     musicAudio.controls = true;
     musicAudio.src = this.currentQuestion.audioLink;
     musicAudio.innerHTML = "Your browser does not support the audio element.";
@@ -304,7 +303,6 @@ class TextWithAudio extends TextQuestion {
     let musicAudio = document.createElement("audio");
     musicdiv.className = "trailsQuizMusic";
     musicAudio.style="width:100%";
-    musicAudio.loop = true;
     musicAudio.controls = true;
     musicAudio.src = this.currentQuestion.audioLink;
     musicAudio.innerHTML = "Your browser does not support the audio element.";

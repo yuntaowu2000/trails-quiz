@@ -2,7 +2,7 @@ import time
 import datetime
 import redis
 from nonebot import on_command
-from nonebot.adapters.cqhttp import Bot, Event
+from nonebot.adapters.cqhttp import Bot, Event, MessageSegment
 from .data_source import draw_quiz_question
 
 my_redis = redis.Redis(host='localhost', port=6379, db=0)
@@ -37,6 +37,9 @@ async def trails_quiz_handler(bot: Bot, event: Event):
     my_redis.incr(str(event.get_user_id()) + "total", 1)
 
     await trails_quiz.send(msg, at_sender=True)
+    if "Audio" in curr_question["question"]["t"]:
+        msg = MessageSegment.music_custom(curr_question["audioLink"], curr_question["audioLink"], str(event.get_user_id()))
+        await trails_quiz.send(msg, at_sender=True)
 
 def check_correctness_with_multi_ans(curr_question, result):
     correct = True
@@ -51,7 +54,7 @@ def check_timestamp():
     # to avoid memory leak
     curr_time = int(time.time())
     for user in user_question_dict.keys():
-        if curr_time - user_question_dict[user]["timestamp"] > 600:
+        if curr_time - user_question_dict[user]["timestamp"] > 300:
             user_question_dict.pop(user)
 
 @trails_quiz.receive()
