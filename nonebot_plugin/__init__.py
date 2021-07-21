@@ -11,6 +11,16 @@ trails_quiz = on_command(".kquiz", aliases={".trailsquiz", ".tQuiz", ".trailsQui
 trails_quiz_result = on_command(".kquiz分")
 user_question_dict = {}
 
+async def get_audio_title(bot: Bot, event: Event):
+    ids = str(event.get_session_id()).split("_")
+    if ids[0] == "group":
+        gid = ids[1]
+        uid = ids[2]
+        result = await bot.call_api("get_group_member_info", group_id=gid, user_id=uid)
+        return result["nickname"] + "题目音乐"
+    else:
+        return str(event.get_user_id()) + "题目音乐"
+
 @trails_quiz.handle()
 async def trails_quiz_handler(bot: Bot, event: Event):
     today = datetime.datetime.now()
@@ -38,7 +48,8 @@ async def trails_quiz_handler(bot: Bot, event: Event):
 
     await trails_quiz.send(msg, at_sender=True)
     if "Audio" in curr_question["question"]["t"]:
-        msg = MessageSegment.music_custom(curr_question["audioLink"], curr_question["audioLink"], str(event.get_user_id()))
+        title = get_audio_title(bot, event)
+        msg = MessageSegment.music_custom(curr_question["audioLink"], curr_question["audioLink"], title)
         await trails_quiz.send(msg, at_sender=True)
 
 def check_correctness_with_multi_ans(curr_question, result):
