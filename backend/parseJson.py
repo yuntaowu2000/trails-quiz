@@ -4,9 +4,12 @@ import requests
 import threading
 
 def header_check(text, link, failed_links: dict):
-    result = requests.head(link)
-    if result.status_code != 200 and result.status_code != 301:
-        failed_links[text] = "{0}, code: {1}".format(link, result.status_code)
+    try:
+        result = requests.head(link)
+        if result.status_code != 200 and result.status_code != 301:
+            failed_links[text] = "{0}, code: {1}".format(link, result.status_code)
+    except:
+        failed_links[text] = "{0}, invalid link".format(link)
 
 def parse_text_single_choice(result, sheet, thread_list, failed_links):
     values = sheet["文字单选"].to_dict(orient="records")
