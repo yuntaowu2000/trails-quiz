@@ -14,7 +14,7 @@ def header_check(text, link, failed_links: dict):
 def parse_text_single_choice(result, sheet, thread_list, failed_links):
     values = sheet["文字单选"].to_dict(orient="records")
     for v in values:
-        if v["题目"] is None or str(v["题目"]).lower() == "nan":
+        if v["题目"] is None or str(v["题目"]).lower() == "nan" or str(v["选项A"]).lower() == "nan":
             continue
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithTextOnly", "s": str(v["题目"]), "img":""}
@@ -41,7 +41,7 @@ def parse_text_single_choice(result, sheet, thread_list, failed_links):
 def parse_img_single_choice(result, sheet, thread_list, failed_links):
     values = sheet["图片单选"].to_dict(orient="records")
     for v in values:
-        if v["题目"] is None or str(v["题目"]).lower() == "nan":
+        if v["题目"] is None or str(v["题目"]).lower() == "nan" or str(v["选项A"]).lower() == "nan":
             continue
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithImg", "s": str(v["题目"]), "img":""}
@@ -98,7 +98,7 @@ def parse_text(result, sheet, thread_list, failed_links):
 def parse_audio(result, sheet, thread_list, failed_links):
     values = sheet["音频单选"].to_dict(orient="records")
     for v in values:
-        if v["题目"] is None or str(v["题目"]).lower() == "nan" or v["题目音频链接"] is None or str(v["题目音频链接"]).lower() == "nan":
+        if v["题目"] is None or str(v["题目"]).lower() == "nan" or v["题目音频链接"] is None or str(v["题目音频链接"]).lower() == "nan" or str(v["选项A"]).lower() == "nan":
             continue
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithAudio", "s": v["题目"], "img":""}
