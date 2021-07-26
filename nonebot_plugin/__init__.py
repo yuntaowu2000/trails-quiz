@@ -64,9 +64,13 @@ def check_timestamp():
     # remove the user question if the user has not responded for more than 10 min
     # to avoid memory leak
     curr_time = int(time.time())
-    for user in user_question_dict.keys():
-        if curr_time - user_question_dict[user]["timestamp"] > 300:
-            user_question_dict.pop(user)
+    key_list = user_question_dict.keys()
+    for user in key_list:
+        try:
+            if curr_time - user_question_dict[user]["timestamp"] > 300:
+                user_question_dict.pop(user)
+        except:
+            continue
 
 @trails_quiz.receive()
 async def ans_handle(bot: Bot, event: Event):
