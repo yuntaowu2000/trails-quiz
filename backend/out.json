@@ -12230,9 +12230,9 @@
                 "s": "葛里翁"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/赛那斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png",
                 "oid": 3,
-                "s": "赛那斯"
+                "s": "塞那斯"
             }
         ],
         "question": {
@@ -12258,9 +12258,9 @@
                 "s": "葛里翁"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/赛那斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png",
                 "oid": 2,
-                "s": "赛那斯"
+                "s": "塞那斯"
             },
             {
                 "img": "https://alioss.trails-game.com/images/hajimari/vm/黑皮_hajimari.png",
@@ -12286,9 +12286,9 @@
                 "s": "葛里翁"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/赛那斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png",
                 "oid": 1,
-                "s": "赛那斯"
+                "s": "塞那斯"
             },
             {
                 "img": "https://alioss.trails-game.com/images/hajimari/vm/黑皮_hajimari.png",
@@ -12310,13 +12310,13 @@
     },
     {
         "a": 0,
-        "explain": "正确答案是赛那斯（飞行；面板是5攻5体力）",
-        "explain2": "正确答案是赛那斯（飞行；面板是5攻5体力）",
+        "explain": "正确答案是塞那斯（飞行；面板是5攻5体力）",
+        "explain2": "正确答案是塞那斯（飞行；面板是5攻5体力）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/赛那斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png",
                 "oid": 0,
-                "s": "赛那斯"
+                "s": "塞那斯"
             },
             {
                 "img": "https://alioss.trails-game.com/images/hajimari/vm/黑皮_hajimari.png",
