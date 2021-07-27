@@ -50,7 +50,7 @@ async def trails_quiz_handler(bot: Bot, event: Event):
     await trails_quiz.send(msg, at_sender=True)
     if "Audio" in curr_question["question"]["t"]:
         title = await get_audio_title(bot, event)
-        msg = MessageSegment.music_custom("https://trails-game.com", curr_question["audioLink"], title, "https://cdn.trails-game.com/wp-content/uploads/2021/01/cup-2021-108x108-1.png")
+        msg = MessageSegment.music_custom("https://trails-game.com", curr_question["audioLink"], title, img_url="https://cdn.trails-game.com/wp-content/uploads/2021/01/cup-2021-108x108-1.png")
         await trails_quiz.send(msg, at_sender=True)
 
 def check_correctness_with_multi_ans(curr_question, result):
