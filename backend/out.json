@@ -8856,17 +8856,17 @@
             {
                 "img": "",
                 "oid": 1,
-                "s": "\t水5"
+                "s": "水5"
             },
             {
                 "img": "",
                 "oid": 2,
-                "s": "\t水8空2幻4"
+                "s": "水8空2幻4"
             },
             {
                 "img": "",
                 "oid": 3,
-                "s": "\t地4水3空2幻1"
+                "s": "地4水3空2幻1"
             }
         ],
         "question": {
@@ -9054,12 +9054,12 @@
             {
                 "img": "",
                 "oid": 1,
-                "s": "宝箱：封印区块\t"
+                "s": "宝箱：封印区块"
             },
             {
                 "img": "",
                 "oid": 2,
-                "s": "\t终章自动装备"
+                "s": "终章自动装备"
             },
             {
                 "img": "",
@@ -9681,7 +9681,7 @@
             {
                 "img": "",
                 "oid": 1,
-                "s": "\t加雷利亚要塞"
+                "s": "加雷利亚要塞"
             },
             {
                 "img": "",
@@ -9719,7 +9719,7 @@
             {
                 "img": "",
                 "oid": 2,
-                "s": "\t加雷利亚要塞"
+                "s": "加雷利亚要塞"
             },
             {
                 "img": "",
@@ -9874,7 +9874,7 @@
             {
                 "img": "",
                 "oid": 0,
-                "s": "\t加雷利亚要塞"
+                "s": "加雷利亚要塞"
             },
             {
                 "img": "",
@@ -9912,7 +9912,7 @@
             {
                 "img": "",
                 "oid": 1,
-                "s": "\t加雷利亚要塞"
+                "s": "加雷利亚要塞"
             },
             {
                 "img": "",
@@ -10961,22 +10961,22 @@
         "explain2": "正确答案是吟游诗人（3费；对一名敌人封锁行动1回合）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/吟游诗人_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/吟游诗人_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "吟游诗人"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "骑士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "魔女"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/忍者_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/忍者_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "忍者"
             }
@@ -10994,22 +10994,22 @@
         "explain2": "正确答案是骑士（30），吟游诗人（22）、魔女（24）、高阶游侠（26）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "骑士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "魔女"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/忍者_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/忍者_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "忍者"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/高阶游侠_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/高阶游侠_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "高阶游侠"
             }
@@ -11027,22 +11027,22 @@
         "explain2": "正确答案是魔女（5），吟游诗人（3）、骑士（2）、暴君（4）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "魔女"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/吟游诗人_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/吟游诗人_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "吟游诗人"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "骑士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "暴君"
             }
@@ -11060,22 +11060,22 @@
         "explain2": "正确答案是忍者，与高阶游侠是唯二可以远距攻击的VM精灵主卡牌",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/忍者_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/忍者_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "忍者"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/吟游诗人_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/吟游诗人_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "吟游诗人"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "骑士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "魔女"
             }
@@ -11093,22 +11093,22 @@
         "explain2": "正确答案是半兽人（1费；从牌库抽取一张卡牌；受到攻击时反击伤害+2）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/半兽人_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/半兽人_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "半兽人"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/高阶游侠_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/高阶游侠_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "高阶游侠"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/幻术师_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/幻术师_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "幻术师"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "魔女"
             }
@@ -11126,22 +11126,22 @@
         "explain2": "正确答案是高阶游侠，与忍者是唯二可以远距攻击的VM精灵主卡牌",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/高阶游侠_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/高阶游侠_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "高阶游侠"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/神圣修女_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/神圣修女_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "神圣修女"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/宝冠侠盗_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/宝冠侠盗_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "宝冠侠盗"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "暴君"
             }
@@ -11159,22 +11159,22 @@
         "explain2": "正确答案是幻术师（3费；在我方场地生成魔晶石）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/幻术师_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/幻术师_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "幻术师"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/灵魂战士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/灵魂战士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "灵魂战士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/上古圣灵_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/上古圣灵_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "上古圣灵"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/圣柜圣骑士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/圣柜圣骑士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "圣柜圣骑士"
             }
@@ -11192,22 +11192,22 @@
         "explain2": "正确答案是神圣修女（最早是第四章 梦幻回廊）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/神圣修女_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/神圣修女_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "神圣修女"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/灵魂战士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/灵魂战士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "灵魂战士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/宝冠侠盗_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/宝冠侠盗_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "宝冠侠盗"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "暴君"
             }
@@ -11225,22 +11225,22 @@
         "explain2": "正确答案是宝冠侠盗（2费；从牌库抽取1张手牌，使用卡牌消耗费用-1）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/宝冠侠盗_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/宝冠侠盗_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "宝冠侠盗"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/灵魂战士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/灵魂战士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "灵魂战士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "暴君"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/圣柜圣骑士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/圣柜圣骑士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "圣柜圣骑士"
             }
@@ -11258,22 +11258,22 @@
         "explain2": "正确答案是暴君（5），幻术师（1）、灵魂战士（4）、上古圣灵（1）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "暴君"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/幻术师_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/幻术师_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "幻术师"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/灵魂战士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/灵魂战士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "灵魂战士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/上古圣灵_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/上古圣灵_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "上古圣灵"
             }
@@ -11291,22 +11291,22 @@
         "explain2": "正确答案是灵魂战士道场中通过第三关(战胜米海尔)获得",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/灵魂战士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/灵魂战士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "灵魂战士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/半兽人_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/半兽人_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "半兽人"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/高阶游侠_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/高阶游侠_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "高阶游侠"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/幻术师_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/幻术师_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "幻术师"
             }
@@ -11324,22 +11324,22 @@
         "explain2": "正确答案是上古圣灵道场中通过第六关(战胜索尼娅)获得",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/上古圣灵_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/上古圣灵_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "上古圣灵"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/吟游诗人_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/吟游诗人_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "吟游诗人"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "骑士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/暴君_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "暴君"
             }
@@ -11357,22 +11357,22 @@
         "explain2": "正确答案是大剑士道场中通过第八关(战胜艾莉卡)获得",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/大剑士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/大剑士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "大剑士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/骑士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "骑士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "魔女"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/忍者_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/忍者_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "忍者"
             }
@@ -11390,22 +11390,22 @@
         "explain2": "正确答案是圣柜圣骑士道场中通过第九关(战胜玛提乌斯)获得",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/圣柜圣骑士_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/圣柜圣骑士_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "圣柜圣骑士"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/高阶游侠_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/高阶游侠_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "高阶游侠"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/幻术师_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/幻术师_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "幻术师"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔女_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "魔女"
             }
@@ -11423,22 +11423,22 @@
         "explain2": "正确答案是魔晶石（目标攻击力·体力+1；恢复1点费用）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔晶石_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔晶石_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "魔晶石"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/梅迪克_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/梅迪克_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "梅迪克"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/瓦尼许_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/瓦尼许_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "瓦尼许"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/气焰_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/气焰_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "气焰"
             }
@@ -11456,22 +11456,22 @@
         "explain2": "正确答案是梅迪克（目标体力+2；解除[封锁行动]；天属性卡牌攻击力+1）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/梅迪克_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/梅迪克_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "梅迪克"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/瓦尼许_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/瓦尼许_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "瓦尼许"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/气焰_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/气焰_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "气焰"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/防壁_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/防壁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "防壁"
             }
@@ -11489,22 +11489,22 @@
         "explain2": "正确答案是瓦尼许（对目标造成6点伤害；我方精灵主为圣柜圣骑士的情况下造成7点伤害）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/瓦尼许_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/瓦尼许_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "瓦尼许"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/甘居雷特_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/甘居雷特_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "甘居雷特"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/减缩_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/减缩_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "减缩"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/气焰_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/气焰_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "气焰"
             }
@@ -11522,22 +11522,22 @@
         "explain2": "正确答案是气焰（目标攻击力+2；火属性卡牌攻击力+3）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/气焰_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/气焰_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "气焰"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/防壁_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/防壁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "防壁"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/甘居雷特_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/甘居雷特_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "甘居雷特"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/驱逐_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/驱逐_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "驱逐"
             }
@@ -11555,22 +11555,22 @@
         "explain2": "正确答案是防壁（赋予目标[完全防御]1次；地属性卡牌体力+3）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/防壁_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/防壁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "防壁"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/甘居雷特_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/甘居雷特_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "甘居雷特"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/驱逐_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/驱逐_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "驱逐"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/涨潮_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/涨潮_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "涨潮"
             }
@@ -11588,22 +11588,22 @@
         "explain2": "正确答案是甘居雷特（对一名敌人封锁行动2回合；我方精灵主为魔女的场合下封锁3回合）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/甘居雷特_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/甘居雷特_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "甘居雷特"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/驱逐_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/驱逐_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "驱逐"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/涨潮_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/涨潮_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "涨潮"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/减缩_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/减缩_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "减缩"
             }
@@ -11621,22 +11621,22 @@
         "explain2": "正确答案是驱逐（破坏敌方1张手牌）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/驱逐_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/驱逐_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "驱逐"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/涨潮_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/涨潮_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "涨潮"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/减缩_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/减缩_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "减缩"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/灾祸_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/灾祸_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "灾祸"
             }
@@ -11654,22 +11654,22 @@
         "explain2": "正确答案是涨潮（场上水属性卡牌攻击力·体力+1；对敌方地·火·天属性卡牌造成2点伤害）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/涨潮_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/涨潮_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "涨潮"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/减缩_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/减缩_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "减缩"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/灾祸_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/灾祸_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "灾祸"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔晶石_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔晶石_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "魔晶石"
             }
@@ -11687,22 +11687,22 @@
         "explain2": "正确答案是减缩（使用卡牌所需mana减半（向上取整））",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/减缩_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/减缩_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "减缩"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/灾祸_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/灾祸_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "灾祸"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔晶石_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔晶石_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "魔晶石"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/梅迪克_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/梅迪克_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "梅迪克"
             }
@@ -11720,22 +11720,22 @@
         "explain2": "正确答案是灾祸（对一行敌人造成4点伤害）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/灾祸_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/灾祸_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "灾祸"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔晶石_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/魔晶石_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "魔晶石"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/梅迪克_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/梅迪克_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "梅迪克"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/瓦尼许_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/瓦尼许_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "瓦尼许"
             }
@@ -11753,22 +11753,22 @@
         "explain2": "正确答案是帕朗（左右两张卡牌无法被选为攻击目标）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/帕朗_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/帕朗_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "帕朗"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/鲁玛_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/鲁玛_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "鲁玛"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/艾菲_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/艾菲_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "艾菲"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/普罗_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/普罗_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "普罗"
             }
@@ -11786,22 +11786,22 @@
         "explain2": "正确答案是鲁玛（目标恢复2点体力）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/鲁玛_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/鲁玛_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "鲁玛"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/艾菲_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/艾菲_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "艾菲"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/普罗_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/普罗_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "普罗"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/达卡_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/达卡_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "达卡"
             }
@@ -11819,22 +11819,22 @@
         "explain2": "正确答案是艾菲（远距攻击）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/艾菲_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/艾菲_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "艾菲"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/普罗_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/普罗_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "普罗"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/达卡_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/达卡_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "达卡"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/巴梅德_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/巴梅德_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "巴梅德"
             }
@@ -11852,22 +11852,22 @@
         "explain2": "正确答案是普罗（对一行敌人造成2点伤害）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/普罗_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/普罗_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "普罗"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/达卡_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/达卡_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "达卡"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/巴梅德_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/巴梅德_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "巴梅德"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/帕朗_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/帕朗_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "帕朗"
             }
@@ -11885,22 +11885,22 @@
         "explain2": "正确答案是达卡（同行卡牌体力+1）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/达卡_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/达卡_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "达卡"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/巴梅德_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/巴梅德_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "巴梅德"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/帕朗_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/帕朗_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "帕朗"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/鲁玛_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/鲁玛_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "鲁玛"
             }
@@ -11918,22 +11918,22 @@
         "explain2": "正确答案是巴梅德（飞行；对一名敌人封锁行动2回合；打倒敌人时攻击力+1）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/巴梅德_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/巴梅德_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "巴梅德"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/帕朗_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/帕朗_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "帕朗"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/鲁玛_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/鲁玛_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "鲁玛"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/艾菲_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/艾菲_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "艾菲"
             }
@@ -11951,22 +11951,22 @@
         "explain2": "正确答案是雷居（被消灭时抽取1张卡牌）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷居_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷居_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "雷居"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/玛姆_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/玛姆_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "玛姆"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/赞米鲁_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/赞米鲁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "赞米鲁"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/拓卜斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/拓卜斯_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "拓卜斯"
             }
@@ -11984,22 +11984,22 @@
         "explain2": "正确答案是玛姆（目标恢复3点体力）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/玛姆_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/玛姆_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "玛姆"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/赞米鲁_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/赞米鲁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "赞米鲁"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/拓卜斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/拓卜斯_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "拓卜斯"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/基诺_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/基诺_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "基诺"
             }
@@ -12017,22 +12017,22 @@
         "explain2": "正确答案是赞米鲁（对一名敌人封锁行动1回合）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/赞米鲁_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/赞米鲁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "赞米鲁"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/拓卜斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/拓卜斯_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "拓卜斯"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/基诺_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/基诺_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "基诺"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/丹拓克_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/丹拓克_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "丹拓克"
             }
@@ -12050,22 +12050,22 @@
         "explain2": "正确答案是拓卜斯（远距攻击；被消灭时抽取1张卡牌）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/拓卜斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/拓卜斯_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "拓卜斯"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/基诺_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/基诺_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "基诺"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/丹拓克_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/丹拓克_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "丹拓克"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷居_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷居_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "雷居"
             }
@@ -12083,22 +12083,22 @@
         "explain2": "正确答案是基诺（对一名敌人造成2点伤害；左右两张卡牌无法被选为攻击目标）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/基诺_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/基诺_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "基诺"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/丹拓克_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/丹拓克_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "丹拓克"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷居_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷居_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "雷居"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/玛姆_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/玛姆_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "玛姆"
             }
@@ -12116,22 +12116,22 @@
         "explain2": "正确答案是丹拓克（对全体敌人造成4点伤害）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/丹拓克_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/丹拓克_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "丹拓克"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷居_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷居_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "雷居"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/玛姆_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/玛姆_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "玛姆"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/赞米鲁_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/赞米鲁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "赞米鲁"
             }
@@ -12149,22 +12149,22 @@
         "explain2": "正确答案是黑皮（所有24张地水天火属性卡牌中唯一的白板，也是特色）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/黑皮_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/黑皮_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "黑皮"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/达拉_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/达拉_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "达拉"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/布里克丝_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/布里克丝_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "布里克丝"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/欧恩_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/欧恩_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "欧恩"
             }
@@ -12182,22 +12182,22 @@
         "explain2": "正确答案是达拉（对一行敌人造成1点伤害；打倒敌人时攻击力+1）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/达拉_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/达拉_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "达拉"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/布里克丝_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/布里克丝_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "布里克丝"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/欧恩_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/欧恩_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "欧恩"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/葛里翁_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/葛里翁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "葛里翁"
             }
@@ -12215,22 +12215,22 @@
         "explain2": "正确答案是布里克丝（远距攻击），与闪3相比砍了不少",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/布里克丝_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/布里克丝_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "布里克丝"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/欧恩_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/欧恩_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "欧恩"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/葛里翁_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/葛里翁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "葛里翁"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "塞那斯"
             }
@@ -12248,22 +12248,22 @@
         "explain2": "正确答案是欧恩（打倒敌人时攻击力+1）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/欧恩_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/欧恩_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "欧恩"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/葛里翁_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/葛里翁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "葛里翁"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "塞那斯"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/黑皮_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/黑皮_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "黑皮"
             }
@@ -12281,22 +12281,22 @@
         "explain2": "正确答案是葛里翁（对一名敌人造成5点伤害；打倒敌人时攻击力+2）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/葛里翁_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/葛里翁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "葛里翁"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "塞那斯"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/黑皮_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/黑皮_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "黑皮"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/达拉_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/达拉_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "达拉"
             }
@@ -12314,22 +12314,22 @@
         "explain2": "正确答案是塞那斯（飞行；面板是5攻5体力）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/塞那斯_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "塞那斯"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/黑皮_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/黑皮_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "黑皮"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/达拉_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/达拉_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "达拉"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/布里克丝_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/布里克丝_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "布里克丝"
             }
@@ -12347,22 +12347,22 @@
         "explain2": "正确答案是佩里特（飞行；解除封锁行动）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/佩里特_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/佩里特_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "佩里特"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/琦男_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/琦男_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "琦男"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/莉亚贝_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/莉亚贝_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "莉亚贝"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/菲孚_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/菲孚_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "菲孚"
             }
@@ -12380,22 +12380,22 @@
         "explain2": "正确答案是琦男（飞行；对一名敌人造成2点伤害）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/琦男_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/琦男_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "琦男"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/莉亚贝_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/莉亚贝_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "莉亚贝"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/菲孚_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/菲孚_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "菲孚"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雅莫_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雅莫_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "雅莫"
             }
@@ -12413,22 +12413,22 @@
         "explain2": "正确答案是莉亚贝（飞行；对一行敌人造成2点伤害）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/莉亚贝_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/莉亚贝_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "莉亚贝"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/菲孚_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/菲孚_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "菲孚"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雅莫_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雅莫_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "雅莫"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷葛那_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷葛那_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "雷葛那"
             }
@@ -12446,22 +12446,22 @@
         "explain2": "正确答案是菲孚（飞行；目标恢复6点体力；被消灭时抽取1张卡牌）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/菲孚_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/菲孚_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "菲孚"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雅莫_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雅莫_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "雅莫"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷葛那_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷葛那_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "雷葛那"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/佩里特_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/佩里特_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "佩里特"
             }
@@ -12479,22 +12479,22 @@
         "explain2": "正确答案是雅莫（远距攻击、飞行；在前行时攻击力+2）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雅莫_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雅莫_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "雅莫"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷葛那_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷葛那_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "雷葛那"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/佩里特_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/佩里特_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "佩里特"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/琦男_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/琦男_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "琦男"
             }
@@ -12512,22 +12512,22 @@
         "explain2": "正确答案是雷葛那（飞行；对一行敌人造成3点伤害；我方天属性卡牌攻击力+1）",
         "options": [
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷葛那_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/雷葛那_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 0,
                 "s": "雷葛那"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/佩里特_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/佩里特_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 1,
                 "s": "佩里特"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/琦男_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/琦男_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
                 "s": "琦男"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/莉亚贝_hajimari.png",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/莉亚贝_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
                 "s": "莉亚贝"
             }
