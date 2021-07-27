@@ -1,4 +1,4 @@
-import time
+import json
 import datetime
 import redis
 from nonebot import on_command
@@ -9,7 +9,6 @@ my_redis = redis.Redis(host='localhost', port=6379, db=0)
 
 trails_quiz = on_command(".kquiz", aliases={".trailsquiz", ".tQuiz", ".trailsQuiz"})
 trails_quiz_result = on_command(".kquiz分")
-user_question_dict = {}
 
 async def get_audio_title(bot: Bot, event: Event):
     ids = str(event.get_session_id()).split("_")
@@ -43,7 +42,9 @@ async def trails_quiz_handler(bot: Bot, event: Event):
         return
 
     curr_question, msg = draw_quiz_question()
-    user_question_dict[str(event.get_user_id()) + "question"] = curr_question
+
+    # set time out to be 5 mins
+    my_redis.set(str(event.get_user_id()) + "curr_question", json.dumps(curr_question), ex=300)
     my_redis.incr(str(event.get_user_id()) + "total", 1)
 
     await trails_quiz.send(msg, at_sender=True)
@@ -60,29 +61,16 @@ def check_correctness_with_multi_ans(curr_question, result):
             break
     return correct
 
-def check_timestamp():
-    # remove the user question if the user has not responded for more than 10 min
-    # to avoid memory leak
-    curr_time = int(time.time())
-    key_list = user_question_dict.keys()
-    for user in key_list:
-        try:
-            if curr_time - user_question_dict[user]["timestamp"] > 300:
-                user_question_dict.pop(user)
-        except:
-            continue
-
 @trails_quiz.receive()
 async def ans_handle(bot: Bot, event: Event):
-    curr_question = user_question_dict[str(event.get_user_id()) + "question"]
+    curr_question = my_redis.get(str(event.get_user_id()) + "curr_question")
     if curr_question == None:
-        await trails_quiz.finish("目前没有题目", at_sender=True)
+        await trails_quiz.finish("题目已过期", at_sender=True)
         return
     
+    curr_question = json.loads(curr_question)
+    
     userReply = str(event.get_message())
-    user_question_dict.pop(str(event.get_user_id()) + "question")
-
-    check_timestamp()
 
     try:
         # single answer
@@ -94,8 +82,11 @@ async def ans_handle(bot: Bot, event: Event):
             for r in result:
                 r = int(r)
         except:
+            await trails_quiz.reject()
             return 
     
+    my_redis.delete(str(event.get_user_id()) + "curr_question")
+
     if "MC" in curr_question["question"]["t"] and "MultiAns" in curr_question["question"]["t"]:
         if len(result) != len(curr_question["ans"]):
             await trails_quiz.finish("回答错误。" + curr_question["explain2"], at_sender=True)
