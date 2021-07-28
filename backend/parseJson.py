@@ -99,6 +99,11 @@ def parse_audio(result, sheet, thread_list, failed_links):
         curr_question["question"] = {"id": v["ID"], "t": "MCWithAudio", "s": v["题目"], "img":""}
 
         parse_question_img(v, curr_question, thread_list, failed_links)
+        
+        t = threading.Thread(target=lambda:header_check(str(v["ID"]) + "题目音频链接", str(v["题目音频链接"]), failed_links))
+        t.start()
+        thread_list.append(t)
+        curr_question["audioLink"] = str(v["题目音频链接"])
 
         curr_question["a"] = 0
         parse_explanation(v, curr_question)
@@ -120,6 +125,9 @@ def run():
     parse_text_single_choice(result, sheet, thread_list, failed_links)
     parse_img_single_choice(result, sheet, thread_list, failed_links)
     parse_audio(result, sheet, thread_list, failed_links)
+
+    for t in thread_list:
+        t.join()
 
     if len(failed_links) > 0:
         raise ValueError("failed. failed_links: {0}".format(failed_links))
