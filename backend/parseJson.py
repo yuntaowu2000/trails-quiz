@@ -11,6 +11,19 @@ def header_check(text, link, failed_links: dict):
     except:
         failed_links[text] = "{0}, invalid link".format(link)
 
+def parse_explanation(v, curr_question):
+    curr_question["explain"] = str(v["回答正确时注释"]) if str(v["回答正确时注释"]).lower() != "nan" else ""
+    curr_question["explain2"] = str(v["回答错误时注释"]) if str(v["回答错误时注释"]).lower() != "nan" else ""
+
+def parse_question_img(v, curr_question, thread_list, failed_links):
+    if "题目图片链接" in v.keys() and str(v["题目图片链接"]).lower() != "nan":
+        t = threading.Thread(target=lambda:header_check(str(v["ID"]) + "题目图片", str(v["题目图片链接"]), failed_links))
+        t.start()
+        thread_list.append(t)
+        curr_question["question"]["img"] = str(v["题目图片链接"]) 
+    else:
+        curr_question["question"]["img"] = ""
+
 def parse_text_single_choice(result, sheet, thread_list, failed_links):
     values = sheet["文字单选"].to_dict(orient="records")
     for v in values:
@@ -19,17 +32,11 @@ def parse_text_single_choice(result, sheet, thread_list, failed_links):
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithTextOnly", "s": str(v["题目"]), "img":""}
 
-        if "题目链接" in v.keys() and str(v["题目链接"]).lower() != "nan":
-            t = threading.Thread(target=lambda:header_check(str(v["ID"]) + "题目图片", str(v["题目链接"]), failed_links))
-            t.start()
-            thread_list.append(t)
-            curr_question["question"]["img"] = str(v["题目链接"]) 
-        else:
-            curr_question["question"]["img"] = ""
+        parse_question_img(v, curr_question, thread_list, failed_links)
 
         curr_question["a"] = 0
-        curr_question["explain"] = str(v["回答正确时注释"]) if str(v["回答正确时注释"]).lower() != "nan" else ""
-        curr_question["explain2"] = str(v["回答错误时注释"]) if str(v["回答错误时注释"]).lower() != "nan" else curr_question["explain"]
+        parse_explanation(v, curr_question)
+
         options = []
         options.append({"oid":0, "s": str(v["选项A"]), "img":""})
         options.append({"oid":1, "s": str(v["选项B"]), "img":""})
@@ -46,17 +53,11 @@ def parse_img_single_choice(result, sheet, thread_list, failed_links):
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithImg", "s": str(v["题目"]), "img":""}
         
-        if str(v["题目图片链接"]).lower() != "nan":
-            t = threading.Thread(target=lambda:header_check(str(v["ID"]) + "题目图片", str(v["题目图片链接"]), failed_links))
-            t.start()
-            thread_list.append(t)
-            curr_question["question"]["img"] = str(v["题目图片链接"]) 
-        else:
-            curr_question["question"]["img"] = ""
+        parse_question_img(v, curr_question, thread_list, failed_links)
 
         curr_question["a"] = 0
-        curr_question["explain"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else ""
-        curr_question["explain2"] = curr_question["explain"]
+        parse_explanation(v, curr_question)
+
         options = []
         options.append({"oid":0, "s": str(v["选项A"]), "img":str(v["选项A图片链接"])})
         options.append({"oid":1, "s": str(v["选项B"]), "img":str(v["选项B图片链接"])})
@@ -78,17 +79,11 @@ def parse_text(result, sheet, thread_list, failed_links):
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "Text", "s": v["题目"], "img":""}
         
-        if "题目图片链接" in v.keys() and str(v["题目图片链接"]).lower() != "nan":
-            t = threading.Thread(target=lambda:header_check(str(v["ID"]) + "题目图片", str(v["题目图片链接"]), failed_links))
-            t.start()
-            thread_list.append(t)
-            curr_question["question"]["img"] = str(v["题目图片链接"]) 
-        else:
-            curr_question["question"]["img"] = ""
+        parse_question_img(v, curr_question, thread_list, failed_links)
         
         curr_question["a"] = []
-        curr_question["explain"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else ""
-        curr_question["explain2"] = str(v["注释"]) if str(v["注释"]).lower() != "nan" else curr_question["explain"]
+        parse_explanation(v, curr_question)
+
         for key in v.keys():
             if "正确答案" in key and v[key] is not None and str(v[key]).lower() != "nan":
                 curr_question["a"].append(str(v[key]).lower())
@@ -103,14 +98,11 @@ def parse_audio(result, sheet, thread_list, failed_links):
         curr_question = {}
         curr_question["question"] = {"id": v["ID"], "t": "MCWithAudio", "s": v["题目"], "img":""}
 
-        t = threading.Thread(target=lambda:header_check(str(v["ID"]) + "题目音频链接", str(v["题目音频链接"]), failed_links))
-        t.start()
-        thread_list.append(t)
-        curr_question["audioLink"] = str(v["题目音频链接"])
+        parse_question_img(v, curr_question, thread_list, failed_links)
 
         curr_question["a"] = 0
-        curr_question["explain"] = str(v["回答正确时注释"]) if str(v["回答正确时注释"]).lower() != "nan" else ""
-        curr_question["explain2"] = str(v["回答错误时注释"]) if str(v["回答错误时注释"]).lower() != "nan" else curr_question["explain"]
+        parse_explanation(v, curr_question)
+
         options = []
         options.append({"oid":0, "s": str(v["选项A"]), "img":""})
         options.append({"oid":1, "s": str(v["选项B"]), "img":""})
