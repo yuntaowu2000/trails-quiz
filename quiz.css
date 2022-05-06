@@ -221,6 +221,7 @@
 }
 
 .trailsTimer {
+  display: none;
   position: fixed;
   vertical-align: middle;
   right: 30px;
@@ -229,4 +230,5 @@
   color: black;
   border-radius: 50%;
   font-size: large;
+  padding: 40px;
 }
