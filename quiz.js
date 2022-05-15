@@ -141,6 +141,7 @@ const timeAllowed = 600;
 
 let timeLeftInSecond = timeAllowed;
 const timer = document.getElementById("timer");
+
 function countdown() {
   timeLeftInSecond--;
   let mins = Math.floor(timeLeftInSecond / 60);
@@ -153,8 +154,8 @@ function countdown() {
     submit();
   }
 }
-let counter = 0; // setInterval returns a number (ID)
 
+let counter = 0; // setInterval returns a number (ID)
 let correctCount = 0;
 
 const quizWrap = document.getElementById("quizWrap");
@@ -166,6 +167,10 @@ let qStats = [];
 
 class Question {
   constructor(data, i) {
+    /**
+     * @param data: information of a question
+     * @param i: index of a question
+     */
     this.currentQuestion = data;
     this.i = i;
   }
@@ -189,6 +194,8 @@ class Question {
     qdiv.append(question);
 
     this.qdiv = qdiv;
+
+    //the question contains image
     if (this.currentQuestion.question.img.startsWith("https://")) {
       // the current question contains an img for the question
       let qimg = document.createElement("div");
