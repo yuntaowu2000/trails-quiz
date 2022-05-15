@@ -243,6 +243,7 @@ class MCWithTextOnly extends Question {
       letter.innerHTML = char_mapping[a];
       container.appendChild(letter);
 
+      //display answers
       let box = document.createElement("div");
       box.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid;
       box.className = "box";
@@ -255,11 +256,14 @@ class MCWithTextOnly extends Question {
   }
 
   select(a) {
+    /**
+     *@param a:the oid of the option in a question
+    **/
     if (userAns[this.i] != -1) {
       let prevSelectedId = "q" + this.i + "a" + userAns[this.i];
       document.getElementById(prevSelectedId).classList.remove(this.classes);
     }
-    console.log("selected " + a + "for q " + this.i);
+    console.log("selected " + a + " for q " + this.i);
     // select the new selection
     let selectedId = "q" + this.i + "a" + a;
     userAns[this.i] = a;
