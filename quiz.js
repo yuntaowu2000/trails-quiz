@@ -329,6 +329,7 @@ class MCWithImg extends MCWithTextOnly {
   }
 }
 
+//Multiple answers
 class MCWithTextOnlyMultiAns extends MCWithTextOnly{
   select(a) {
     let selectedId = "q" + this.i + "a" + a;
