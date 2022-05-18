@@ -246,9 +246,9 @@ body, html {
 
 .letter {
   position:absolute;
-  top:11px;
+  top:9px;
   left:9px;
-  font-size: 17px;
+  font-size: 16px;
   color: #ffd453;
   height:23px;
   width:23px;
