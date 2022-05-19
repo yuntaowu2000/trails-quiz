@@ -488,3 +488,16 @@ body, html {
   background-color: white;
   color: black;
 }
+
+.trailsTimer {
+  display: none;
+  position: fixed;
+  vertical-align: middle;
+  right: 30px;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  font-size: large;
+  padding: 40px;
+}

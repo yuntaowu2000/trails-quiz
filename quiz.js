@@ -527,6 +527,7 @@ function submit() {
 
   removeInputListeners();
   clearInterval(counter);
+  timer.style.display = "none";
 
   // check if the user got all the correct result
   for (let i = 0; i < data.length; i++) {
@@ -612,6 +613,7 @@ function setupPage() {
   //set up counter
   timeLeftInSecond = timeAllowed;
   counter = setInterval(countdown, 1000);
+  timer.style.display = "block";
 
   submitButton.innerHTML = "提交";
   submitButton.removeEventListener("click", start);
