@@ -299,7 +299,7 @@ class MCWithImg extends MCWithTextOnly {
     for (let a = 0; a < this.currentQuestion.options.length; a++) {
 
       let container = document.createElement("div");
-      container.className = "container";
+      container.className = "container-img";
       container.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "container";
       container.innerHTML = container_anim;
       
