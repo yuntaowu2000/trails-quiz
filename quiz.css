@@ -204,16 +204,6 @@
   font-size: 15px;
 }
 
-.letter {
-  position:absolute;
-  top:10px;
-  left:10px;
-  font-size: 25px;
-  color: white;
-  height:30px;
-  width:30px;
-  text-align: center;
-}
 
 .circle {
   position: relative;
@@ -246,7 +236,7 @@ body, html {
 
 .letter {
   position:absolute;
-  top:11px;
+  top:9px;
   left:9px;
   font-size: 17px;
   color: #ffd453;
