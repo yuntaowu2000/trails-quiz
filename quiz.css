@@ -479,7 +479,9 @@ body, html {
   color: black;
 }
 
-.trailsTimer {
+/* (D) TIMER */
+
+/* .trailsTimer {
   display: none;
   position: fixed;
   vertical-align: middle;
@@ -490,5 +492,62 @@ body, html {
   border-radius: 50%;
   font-size: large;
   padding: 40px;
+} */
+.base-timer {
+  width: 110px;
+  height: 110px;
+  position: fixed;
+  vertical-align: middle;
+  right: 30px;
+  padding: 40px;
 }
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  color:white;
+  top:75px;
+  left:55px;
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
 
