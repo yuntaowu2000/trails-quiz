@@ -375,6 +375,7 @@ body, html {
   height: 125px;
   width: 125px;
   object-fit: contain;
+  transform: translate(-15px);
 }
  
 /* 测试用 */
