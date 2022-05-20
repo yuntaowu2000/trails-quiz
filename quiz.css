@@ -238,7 +238,7 @@ body, html {
 
 .letter {
   position:absolute;
-  top:9px;
+  top:7px;
   left:9px;
   font-size: 16px;
   color: #ffd453;
@@ -497,11 +497,10 @@ body, html {
   padding: 40px;
 } */
 .base-timer {
-  width: 110px;
-  height: 110px;
+  width: 185px;
   position: fixed;
   vertical-align: middle;
-  right: 30px;
+  right: 200px;
   padding: 40px;
 }
 
@@ -544,11 +543,11 @@ body, html {
 .base-timer__label {
   position: absolute;
   color:white;
-  top:75px;
-  left:55px;
+  top:78px;
+  left:54px;
   width: 80px;
   height: 80px;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
 }
 
