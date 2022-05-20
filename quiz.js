@@ -175,8 +175,7 @@ const COLOR_CODES = {
   }
 };
 
-let timePassed = 0;
-let timeLeft = timeAllowed;
+
 let timerInterval = null;
 let remainingPathColor = COLOR_CODES.info.color;
 
@@ -650,6 +649,8 @@ function setupPage() {
   userResult = [];
   qStats = [];
   quizWrap.querySelectorAll('*').forEach(n => n.remove());
+  timePassed = 0;
+  timeLeft = timeAllowed;
 
   shuffle(data);
   for (let i = 0; i < data.length; i++) {
