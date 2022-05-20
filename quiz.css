@@ -85,6 +85,7 @@
   word-wrap:break-word;
   margin-top: 0px;
   margin-bottom: 10px;
+  transform: translate(26px);
 }
 .trailsQuizAnsWrong {
   box-shadow: 0 0 0 2px #474747;
@@ -99,6 +100,7 @@
   word-wrap:break-word;
   margin-top: 0px;
   margin-bottom: 10px;
+  transform: translate(26px);
 }
 .trailsQuizAnsSelected {
   box-shadow: 0 0 0 2px #474747;
