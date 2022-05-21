@@ -364,12 +364,12 @@ class MCWithTextOnly extends Question {
     let selectedid = "q" + this.i + "a" + userAns[this.i];
     console.log(selectedid);
     if (userAns[this.i] == this.getCorrectResult()) {
-      document.getElementById(selectedid).className = "trailsQuizAnsCorrect";
+      document.getElementById(selectedid).style.backgroundColor="#1caa4e";
       correctCount += 1;
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
     } else {
       if (userAns[this.i] != -1) {
-          document.getElementById(selectedid).className = "trailsQuizAnsWrong";
+          document.getElementById(selectedid).style.backgroundColor="#e00000";
       }
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
@@ -442,9 +442,9 @@ class MCWithTextOnlyMultiAns extends MCWithTextOnly{
       if (this.currentQuestion.a.indexOf(userAns[this.i][j]) == -1) {
         // user choice is not a correct answer
         correct = false;
-        document.getElementById(selectedId).classList.add("trailsQuizAnsWrong");
+        document.getElementById(selectedId).style.backgroundColor="#e00000";
       } else {
-        document.getElementById(selectedId).classList.add("trailsQuizAnsCorrect");
+        document.getElementById(selectedId).style.backgroundColor="#1caa4e";
       }
     }
 
@@ -487,9 +487,9 @@ class MCWithImgMultiAns extends MCWithImg{
       if (this.currentQuestion.a.indexOf(userAns[this.i][j]) == -1) {
         // user choice is not a correct answer
         correct = false;
-        document.getElementById(selectedId).classList.add("trailsQuizAnsWrong");
+        document.getElementById(selectedId).style.backgroundColor="#e00000";
       } else {
-        document.getElementById(selectedId).classList.add("trailsQuizAnsCorrect");
+        document.getElementById(selectedId).style.backgroundColor="#1caa4e";
       }
     }
 
