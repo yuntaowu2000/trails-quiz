@@ -9,6 +9,7 @@
   border-radius: 10px;
   margin-top: 60px;
   padding: 0px 20px 20px 20px;
+  transform:translate(90px);
 }
 
 /* (B) QUESTION */
@@ -84,6 +85,7 @@
   word-wrap:break-word;
   margin-top: 0px;
   margin-bottom: 10px;
+  transform: translate(20px,18px);
 }
 .trailsQuizAnsWrong {
   box-shadow: 0 0 0 2px #474747;
@@ -98,6 +100,7 @@
   word-wrap:break-word;
   margin-top: 0px;
   margin-bottom: 10px;
+  transform: translate(20px,18px);
 }
 .trailsQuizAnsSelected {
   box-shadow: 0 0 0 2px #474747;
@@ -204,17 +207,6 @@
   font-size: 15px;
 }
 
-.letter {
-  position:absolute;
-  top:10px;
-  left:10px;
-  font-size: 25px;
-  color: white;
-  height:30px;
-  width:30px;
-  text-align: center;
-}
-
 .circle {
   position: relative;
   align-items: center;
@@ -246,9 +238,9 @@ body, html {
 
 .letter {
   position:absolute;
-  top:11px;
+  top:7px;
   left:9px;
-  font-size: 17px;
+  font-size: 16px;
   color: #ffd453;
   height:23px;
   width:23px;
@@ -385,6 +377,7 @@ body, html {
   height: 125px;
   width: 125px;
   object-fit: contain;
+  transform: translate(-15px);
 }
  
 /* 测试用 */
@@ -489,7 +482,9 @@ body, html {
   color: black;
 }
 
-.trailsTimer {
+/* (D) TIMER */
+
+/* .trailsTimer {
   display: none;
   position: fixed;
   vertical-align: middle;
@@ -500,4 +495,61 @@ body, html {
   border-radius: 50%;
   font-size: large;
   padding: 40px;
+} */
+.base-timer {
+  width: 185px;
+  position: fixed;
+  vertical-align: middle;
+  right: 200px;
+  padding: 40px;
 }
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  color:white;
+  top:78px;
+  left:54px;
+  width: 80px;
+  height: 80px;
+  font-size: 28px;
+  text-align: center;
+}
+
+
+

@@ -139,22 +139,114 @@ const shuffle = (f) => f.sort(() => Math.random() - 0.5);
 const questionNum = 5;
 const timeAllowed = 600;
 
-let timeLeftInSecond = timeAllowed;
-const timer = document.getElementById("timer");
-function countdown() {
-  timeLeftInSecond--;
-  let mins = Math.floor(timeLeftInSecond / 60);
-  let secs = Math.floor(timeLeftInSecond % 60);
+// let timeLeftInSecond = timeAllowed;
+// const timer = document.getElementById("timer");
 
-  timer.innerHTML = mins + ":" + secs;
+// function countdown() {
+//   timeLeftInSecond--;
+//   let mins = Math.floor(timeLeftInSecond / 60);
+//   let secs = Math.floor(timeLeftInSecond % 60);
+
+//   timer.innerHTML = mins + ":" + secs;
   
-  if (timeLeftInSecond <= 0) {
-    timer.innerHTML = "Time is up";
-    submit();
+//   if (timeLeftInSecond <= 0) {
+//     timer.innerHTML = "Time is up";
+//     submit();
+//   }
+// }
+
+//Timer
+const timer = document.getElementById("timer");
+const FULL_DASH_ARRAY = 283;
+const WARNING_THRESHOLD = 180;
+const ALERT_THRESHOLD = 60;
+
+const COLOR_CODES = {
+  info: {
+    color: "green"
+  },
+  warning: {
+    color: "orange",
+    threshold: WARNING_THRESHOLD
+  },
+  alert: {
+    color: "red",
+    threshold: ALERT_THRESHOLD
+  }
+};
+
+
+let timerInterval = null;
+let remainingPathColor = COLOR_CODES.info.color;
+
+function onTimesUp() {
+  timer.innerHTML = "Time is up";
+  submit();
+}
+
+function startTimer() {
+  timerInterval = setInterval(() => {
+    timePassed = timePassed += 1;
+    timeLeft = timeAllowed - timePassed;
+    document.getElementById("base-timer-label").innerHTML = formatTime(
+      timeLeft
+    );
+    setCircleDasharray();
+    setRemainingPathColor(timeLeft);
+
+    if (timeLeft === 0) {
+      onTimesUp();
+    }
+  }, 1000);
+  return timerInterval;
+}
+
+function formatTime(time) {
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+
+  if (seconds < 10) {
+    seconds = `0${seconds}`;
+  }
+
+  return `${minutes}:${seconds}`;
+}
+
+function setRemainingPathColor(timeLeft) {
+  const { alert, warning, info } = COLOR_CODES;
+  if (timeLeft <= alert.threshold) {
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.remove(warning.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.add(alert.color);
+  } else if (timeLeft <= warning.threshold) {
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.remove(info.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.add(warning.color);
   }
 }
-let counter = 0; // setInterval returns a number (ID)
 
+function calculateTimeFraction() {
+  const rawTimeFraction = timeLeft / timeAllowed;
+  return rawTimeFraction - (1 / timeAllowed) * (1 - rawTimeFraction);
+}
+
+function setCircleDasharray() {
+  const circleDasharray = `${(
+    calculateTimeFraction() * FULL_DASH_ARRAY
+  ).toFixed(0)} 283`;
+  document
+    .getElementById("base-timer-path-remaining")
+    .setAttribute("stroke-dasharray", circleDasharray);
+}
+
+
+let counter = 0; // setInterval returns a number (ID)
 let correctCount = 0;
 
 const quizWrap = document.getElementById("quizWrap");
@@ -166,6 +258,10 @@ let qStats = [];
 
 class Question {
   constructor(data, i) {
+    /**
+     * @param data: information of a question
+     * @param i: index of a question
+     */
     this.currentQuestion = data;
     this.i = i;
   }
@@ -189,6 +285,8 @@ class Question {
     qdiv.append(question);
 
     this.qdiv = qdiv;
+
+    //the question contains image
     if (this.currentQuestion.question.img.startsWith("https://")) {
       // the current question contains an img for the question
       let qimg = document.createElement("div");
@@ -248,11 +346,14 @@ class MCWithTextOnly extends Question {
   }
 
   select(a) {
+    /**
+     *@param a:the oid of the option in a question
+    **/
     if (userAns[this.i] != -1) {
       let prevSelectedId = "q" + this.i + "a" + userAns[this.i];
       document.getElementById(prevSelectedId).classList.remove(this.classes);
     }
-    console.log("selected " + a + "for q " + this.i);
+    console.log("selected " + a + " for q " + this.i);
     // select the new selection
     let selectedId = "q" + this.i + "a" + a;
     userAns[this.i] = a;
@@ -263,12 +364,12 @@ class MCWithTextOnly extends Question {
     let selectedid = "q" + this.i + "a" + userAns[this.i];
     console.log(selectedid);
     if (userAns[this.i] == this.getCorrectResult()) {
-      document.getElementById(selectedid).className = "trailsQuizAnsCorrect";
+      document.getElementById(selectedid).style.backgroundColor="#1caa4e";
       correctCount += 1;
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
     } else {
       if (userAns[this.i] != -1) {
-          document.getElementById(selectedid).className = "trailsQuizAnsWrong";
+          document.getElementById(selectedid).style.backgroundColor="#e00000";
       }
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
@@ -289,7 +390,7 @@ class MCWithImg extends MCWithTextOnly {
     for (let a = 0; a < this.currentQuestion.options.length; a++) {
 
       let container = document.createElement("div");
-      container.className = "container";
+      container.className = "container-img";
       container.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "container";
       container.innerHTML = container_anim;
       
@@ -318,6 +419,7 @@ class MCWithImg extends MCWithTextOnly {
   }
 }
 
+//Multiple answers
 class MCWithTextOnlyMultiAns extends MCWithTextOnly{
   select(a) {
     let selectedId = "q" + this.i + "a" + a;
@@ -340,9 +442,9 @@ class MCWithTextOnlyMultiAns extends MCWithTextOnly{
       if (this.currentQuestion.a.indexOf(userAns[this.i][j]) == -1) {
         // user choice is not a correct answer
         correct = false;
-        document.getElementById(selectedId).classList.add("trailsQuizAnsWrong");
+        document.getElementById(selectedId).style.backgroundColor="#e00000";
       } else {
-        document.getElementById(selectedId).classList.add("trailsQuizAnsCorrect");
+        document.getElementById(selectedId).style.backgroundColor="#1caa4e";
       }
     }
 
@@ -385,9 +487,9 @@ class MCWithImgMultiAns extends MCWithImg{
       if (this.currentQuestion.a.indexOf(userAns[this.i][j]) == -1) {
         // user choice is not a correct answer
         correct = false;
-        document.getElementById(selectedId).classList.add("trailsQuizAnsWrong");
+        document.getElementById(selectedId).style.backgroundColor="#e00000";
       } else {
-        document.getElementById(selectedId).classList.add("trailsQuizAnsCorrect");
+        document.getElementById(selectedId).style.backgroundColor="#1caa4e";
       }
     }
 
@@ -547,6 +649,8 @@ function setupPage() {
   userResult = [];
   qStats = [];
   quizWrap.querySelectorAll('*').forEach(n => n.remove());
+  timePassed = 0;
+  timeLeft = timeAllowed;
 
   shuffle(data);
   for (let i = 0; i < data.length; i++) {
@@ -610,11 +714,36 @@ function setupPage() {
     e.style.height = "100%";
   }
 
-  //set up counter
-  timeLeftInSecond = timeAllowed;
-  counter = setInterval(countdown, 1000);
-  timer.style.display = "block";
 
+  //set up counter
+  //timeLeftInSecond = timeAllowed;
+  timer.style.display = "block";
+  
+  //counter = setInterval(countdown, 1000);
+  timer.innerHTML = `
+  <div class="base-timer">
+    <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <g class="base-timer__circle">
+        <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+        <path
+          id="base-timer-path-remaining"
+          stroke-dasharray="283"
+          class="base-timer__path-remaining ${remainingPathColor}"
+          d="
+            M 50, 50
+            m -45, 0
+            a 45,45 0 1,0 90,0
+            a 45,45 0 1,0 -90,0
+          "
+        ></path>
+      </g>
+    </svg>
+    <span id="base-timer-label" class="base-timer__label">${formatTime(
+      timeLeft
+    )}</span>
+  </div>
+  `;
+  counter =startTimer();
   submitButton.innerHTML = "提交";
   submitButton.removeEventListener("click", start);
   submitButton.addEventListener("click", submit);
