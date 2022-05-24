@@ -557,7 +557,8 @@
     width: 185px;
     position: fixed;
     vertical-align: middle;
-    right: 200px;
+    top:200px;
+    right: 50px;
     padding: 40px;
   }
   
