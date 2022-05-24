@@ -442,9 +442,9 @@ class MCWithTextOnlyMultiAns extends MCWithTextOnly{
       if (this.currentQuestion.a.indexOf(userAns[this.i][j]) == -1) {
         // user choice is not a correct answer
         correct = false;
-        document.getElementById(selectedId).classList.add("trailsQuizAnsWrong");
+        document.getElementById(selectedId).style.backgroundColor="#e00000";
       } else {
-        document.getElementById(selectedId).classList.add("trailsQuizAnsCorrect");
+        document.getElementById(selectedId).style.backgroundColor="#1caa4e";
       }
     }
 
@@ -487,9 +487,9 @@ class MCWithImgMultiAns extends MCWithImg{
       if (this.currentQuestion.a.indexOf(userAns[this.i][j]) == -1) {
         // user choice is not a correct answer
         correct = false;
-        document.getElementById(selectedId).classList.add("trailsQuizAnsWrong");
+        document.getElementById(selectedId).style.backgroundColor="#e00000";
       } else {
-        document.getElementById(selectedId).classList.add("trailsQuizAnsCorrect");
+        document.getElementById(selectedId).style.backgroundColor="#1caa4e";
       }
     }
 
