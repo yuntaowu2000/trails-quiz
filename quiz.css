@@ -1158,7 +1158,7 @@
       padding: 40px;
     } */
     .base-timer {
-      width: 150px;
+      width: 130px;
       position: fixed;
       right: -25px;
       padding: 40px;
@@ -1203,10 +1203,10 @@
     .base-timer__label {
       position: absolute;
       color:white;
-      top:62px;
+      top:52px;
       width:40px;
-      left:54px;
-      font-size: 18px;
+      left:47px;
+      font-size: 15px;
       text-align: center;
     }
    }
