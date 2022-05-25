@@ -314,7 +314,7 @@ class Question {
 class MCWithTextOnly extends Question {
   constructor(data, i) {
     super(data, i);
-    this.classes = "choosed", "choosed-word";
+    this.classes =  "choosed-word";
   }
 
   show() {
@@ -364,12 +364,12 @@ class MCWithTextOnly extends Question {
     let selectedid = "q" + this.i + "a" + userAns[this.i];
     console.log(selectedid);
     if (userAns[this.i] == this.getCorrectResult()) {
-      document.getElementById(selectedid).style.backgroundColor="#1caa4e";
+      document.getElementById(selectedid).classList.add("trailsQuizAnsCorrect");
       correctCount += 1;
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
     } else {
       if (userAns[this.i] != -1) {
-          document.getElementById(selectedid).style.backgroundColor="#e00000";
+          document.getElementById(selectedid).classList.add("trailsQuizAnsWrong");
       }
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
@@ -379,7 +379,7 @@ class MCWithTextOnly extends Question {
 class MCWithImg extends MCWithTextOnly {
   constructor(data, i) {
     super(data, i);
-    this.classes = "choosed", "choosed-img";
+    this.classes = "choosed-img";
   }
 
   show() {
@@ -529,16 +529,16 @@ class TextQuestion extends Question {
 
   checkAns() {
     if (userAns[this.i] == this.currentQuestion.a) {
-      this.answers.className = "trailsQuizAnsCorrect";
+      this.answers.style.backgroundColor="#1caa4e";
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
       correctCount++;
     } else if (typeof this.currentQuestion.a === 'object'
         && this.currentQuestion.a.indexOf(userAns[this.i].toLowerCase()) !== -1) {
-      this.answers.className = "trailsQuizAnsCorrect";
+      this.answers.style.backgroundColor="#1caa4e";
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
       correctCount++;
     } else {
-      this.answers.className = "trailsQuizAnsCorrect";
+      this.answers.style.backgroundColor="#e00000";
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
   }
@@ -621,7 +621,7 @@ async function showExplanationAndResult() {
 
   let result = document.createElement("div");
   result.innerHTML = "<p>" + questionNum + "道题中，你正确回答了" + correctCount + "道题</p>" + "<p>你超过了"+ qStats[qStats.length - 1] + "%的玩家</p>";
-  result.className = "trailsQuizExplain";
+  result.className = "trailsQuizResult";
   quizWrap.appendChild(result);
 }
 
