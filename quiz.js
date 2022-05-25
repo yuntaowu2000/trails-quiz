@@ -2,158 +2,11 @@ const container_anim = "<svg class=\"svg\" version=\"1.0\" width=\"40\" height=\
 const char_mapping={0:"A",1:"B",2:"C",3:"D",4:"E",5:"F"};
 
 const url="https://api.trails-game.com/"
-let data = [{
-  "a": 0,
-  "explain": "要是他不是养子，全名就是「黎恩・奥斯本」吧",
-  "explain2": "再想想?来看看我们网站或者百度吧",
-  "options": [
-      {
-          "img": "",
-          "oid": 0,
-          "s": "舒华泽"
-      },
-      {
-          "img": "",
-          "oid": 1,
-          "s": "舒华兹"
-      },
-      {
-          "img": "",
-          "oid": 2,
-          "s": "舒派泽"
-      },
-      {
-          "img": "",
-          "oid": 3,
-          "s": "舒华塔"
-      }
-  ],
-  "question": {
-      "id": 1,
-      "img": "",
-      "s": "「闪之轨迹」主角黎恩姓什么？",
-      "t": "MCWithTextOnly"
-  }
-},
-{
-  "a": 0,
-  "explain": "肯恩和娜娜是对天真又有点成熟的可爱双胞胎呢",
-  "explain2": "再想想?来看看我们网站或者百度吧",
-  "options": [
-      {
-          "img": "",
-          "oid": 0,
-          "s": "娜娜"
-      },
-      {
-          "img": "",
-          "oid": 1,
-          "s": "莉娜"
-      },
-      {
-          "img": "",
-          "oid": 2,
-          "s": "蕾娜"
-      },
-      {
-          "img": "",
-          "oid": 3,
-          "s": "肯恩"
-      }
-  ],
-  "question": {
-      "id": 2,
-      "img": "",
-      "s": "以粉色头发给人留下深刻印象的女孩・悠娜，她的妹妹叫什么？",
-      "t": "MCWithTextOnly"
-  }
-},
-{
-  "a": 0,
-  "explain": "既是「地精」出身，又是施密特博士头号徒弟──发明了机甲兵的人吧",
-  "explain2": "再想想?来看看我们网站或者百度吧",
-  "options": [
-      {
-          "img": "",
-          "oid": 0,
-          "s": "弗兰兹"
-      },
-      {
-          "img": "",
-          "oid": 1,
-          "s": "特奥"
-      },
-      {
-          "img": "",
-          "oid": 2,
-          "s": "弗朗奇"
-      },
-      {
-          "img": "",
-          "oid": 3,
-          "s": "古恩"
-      }
-  ],
-  "question": {
-      "id": 3,
-      "img": "",
-      "s": "连保养导力装甲都难不倒的美女室长・亚莉莎，其父名为？",
-      "t": "MCWithTextOnly"
-  }
-},
-{
-  "a": 0,
-  "explain": "",
-  "explain2": "再想想? 或者百度",
-  "options": [
-      {
-          "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/未来_hajimari-150x150.png",
-          "oid": 0,
-          "s": "未来"
-      },
-      {
-          "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/圣典_hajimari-150x150.png",
-          "oid": 1,
-          "s": "圣典"
-      },
-      {
-          "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/处女_hajimari-150x150.png",
-          "oid": 2,
-          "s": "处女"
-      },
-      {
-          "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/水星_hajimari-150x150.png",
-          "oid": 3,
-          "s": "水星"
-      }
-  ],
-  "question": {
-      "id": 2001,
-      "img": "",
-      "s": "创轨中下列哪个核心回路拥有每回合自动回复HP的功能？",
-      "t": "MCWithImg"
-  }
-}];
+let data = [];
 
 const shuffle = (f) => f.sort(() => Math.random() - 0.5);
 const questionNum = 5;
 const timeAllowed = 600;
-
-// let timeLeftInSecond = timeAllowed;
-// const timer = document.getElementById("timer");
-
-// function countdown() {
-//   timeLeftInSecond--;
-//   let mins = Math.floor(timeLeftInSecond / 60);
-//   let secs = Math.floor(timeLeftInSecond % 60);
-
-//   timer.innerHTML = mins + ":" + secs;
-  
-//   if (timeLeftInSecond <= 0) {
-//     timer.innerHTML = "Time is up";
-//     submit();
-//   }
-// }
 
 //Timer
 const timer = document.getElementById("timer");
@@ -598,8 +451,8 @@ async function showExplanationAndResult() {
       "Content-Type": "application/json",
     }
   }
-  // let qstatsdata = await fetch(url + "quiz-stats", options);
-  // qStats = await qstatsdata.json();
+  let qstatsdata = await fetch(url + "quiz-stats", options);
+  qStats = await qstatsdata.json();
   console.log(qStats);
 
   let qs = document.getElementsByClassName("question");
@@ -645,6 +498,7 @@ function submit() {
 
 function setupPage() {
   correctCount = 0;
+  actualQuestions = [];
   userAns = [];
   userResult = [];
   qStats = [];
@@ -751,9 +605,8 @@ function setupPage() {
 
 
 async function start() {
-  // let result = await fetch(url + "quiz-questions?qn=" + questionNum);
-  // console.log(result);
-  // data = await result.json();
+  let result = await fetch(url + "quiz-questions?qn=" + questionNum);
+  data = await result.json();
   setupPage();
   window.scrollTo(screenLeft, screenTop);
 }
