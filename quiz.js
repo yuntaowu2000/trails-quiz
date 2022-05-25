@@ -529,16 +529,16 @@ class TextQuestion extends Question {
 
   checkAns() {
     if (userAns[this.i] == this.currentQuestion.a) {
-      this.answers.className = "trailsQuizAnsCorrect";
+      this.answers.style.backgroundColor="#1caa4e";
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
       correctCount++;
     } else if (typeof this.currentQuestion.a === 'object'
         && this.currentQuestion.a.indexOf(userAns[this.i].toLowerCase()) !== -1) {
-      this.answers.className = "trailsQuizAnsCorrect";
+      this.answers.style.backgroundColor="#1caa4e";
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
       correctCount++;
     } else {
-      this.answers.className = "trailsQuizAnsCorrect";
+      this.answers.style.backgroundColor="#e00000";
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
   }
