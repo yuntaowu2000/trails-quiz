@@ -231,15 +231,15 @@ class MCWithTextOnly extends Question {
       container.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "container";
       container.innerHTML = container_anim;
       
-      let letter = document.createElement("div");
+      let letter = document.createElement("img");
+      letter.src = char_mapping[a] + ".png";
       letter.className = "letter";
-      letter.innerHTML = char_mapping[a];
       container.appendChild(letter);
 
       let box = document.createElement("div");
       box.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid;
       box.className = "box";
-      box.innerHTML = this.currentQuestion.options[a].s;
+      box.innerHTML = this.currentQuestion.options[a].s+"asdfasgasdfa";
       container.appendChild(box);
       
       container.addEventListener("click", () => this.select(this.currentQuestion.options[a].oid));
@@ -289,26 +289,30 @@ class MCWithImg extends MCWithTextOnly {
     for (let a = 0; a < this.currentQuestion.options.length; a++) {
 
       let container = document.createElement("div");
-      container.className = "container";
+      container.className = "container-img";
       container.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "container";
       container.innerHTML = container_anim;
       
-      let letter = document.createElement("div");
+      let letter = document.createElement("img");
+      letter.src = char_mapping[a] + ".png";
       letter.className = "letter";
-      letter.innerHTML = char_mapping[a];
       container.appendChild(letter);
+
 
       let box = document.createElement("div");
       box.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid;
       box.className = "box";
 
       let img = document.createElement("img");
+      img.className = "img"
       img.src = this.currentQuestion.options[a].img;
       box.appendChild(img);
 
       let wordDesc = document.createElement("div");
+      wordDesc.className = "container-img-text"
       wordDesc.innerHTML = this.currentQuestion.options[a].s;
       box.appendChild(wordDesc);
+
 
       container.appendChild(box);
       
