@@ -3,10 +3,10 @@ import random
 import nonebot
 import json
 import time
-from nonebot.adapters.cqhttp import MessageSegment
+from nonebot.adapters.onebot.v11 import MessageSegment
 
 driver: nonebot.Driver = nonebot.get_driver()
-cachepath = "/home/ubuntu/ELF_RSS/src/plugins/Quiz/"
+cachepath = "/home/ubuntu/cafebot/ELF_RSS/trails-quiz/nonebot_plugin/"
 config: dict
 
 def draw_quiz_question():
