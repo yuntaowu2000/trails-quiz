@@ -5,7 +5,8 @@ import threading
 
 def header_check(text, link, failed_links: dict):
     try:
-        result = requests.head(link)
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.33"}
+        result = requests.head(link, headers=headers)
         if result.status_code != 200 and result.status_code != 301:
             failed_links[text] = "{0}, code: {1}".format(link, result.status_code)
     except:
@@ -30,7 +31,7 @@ def parse_text_single_choice(result, sheet, thread_list, failed_links):
         if v["题目"] is None or str(v["题目"]).lower() == "nan" or str(v["选项A"]).lower() == "nan":
             continue
         curr_question = {}
-        curr_question["question"] = {"id": v["ID"], "t": "MCWithTextOnly", "s": str(v["题目"]), "img":""}
+        curr_question["question"] = {"id":int( v["ID"]), "t": "MCWithTextOnly", "s": str(v["题目"]), "img":""}
 
         parse_question_img(v, curr_question, thread_list, failed_links)
 
@@ -51,7 +52,7 @@ def parse_img_single_choice(result, sheet, thread_list, failed_links):
         if v["题目"] is None or str(v["题目"]).lower() == "nan" or str(v["选项A"]).lower() == "nan":
             continue
         curr_question = {}
-        curr_question["question"] = {"id": v["ID"], "t": "MCWithImg", "s": str(v["题目"]), "img":""}
+        curr_question["question"] = {"id":int( v["ID"]), "t": "MCWithImg", "s": str(v["题目"]), "img":""}
         
         parse_question_img(v, curr_question, thread_list, failed_links)
 
@@ -77,7 +78,7 @@ def parse_text(result, sheet, thread_list, failed_links):
         if v["题目"] is None or str(v["题目"]).lower() == "nan":
             continue
         curr_question = {}
-        curr_question["question"] = {"id": v["ID"], "t": "Text", "s": v["题目"], "img":""}
+        curr_question["question"] = {"id":int( v["ID"]), "t": "Text", "s": v["题目"], "img":""}
         
         parse_question_img(v, curr_question, thread_list, failed_links)
         
@@ -96,7 +97,7 @@ def parse_audio(result, sheet, thread_list, failed_links):
         if v["题目"] is None or str(v["题目"]).lower() == "nan" or v["题目音频链接"] is None or str(v["题目音频链接"]).lower() == "nan" or str(v["选项A"]).lower() == "nan":
             continue
         curr_question = {}
-        curr_question["question"] = {"id": v["ID"], "t": "MCWithAudio", "s": v["题目"], "img":""}
+        curr_question["question"] = {"id":int( v["ID"]), "t": "MCWithAudio", "s": v["题目"], "img":""}
 
         parse_question_img(v, curr_question, thread_list, failed_links)
         
@@ -124,7 +125,6 @@ def run():
 
     parse_text_single_choice(result, sheet, thread_list, failed_links)
     parse_img_single_choice(result, sheet, thread_list, failed_links)
-    parse_audio(result, sheet, thread_list, failed_links)
 
     for t in thread_list:
         t.join()
@@ -134,7 +134,7 @@ def run():
 
     with open("quiz.json", "w") as f:
         f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
-    
+    parse_audio(result, sheet, thread_list, failed_links)
     parse_text(result, sheet, thread_list, failed_links)
     with open("out.json", "w") as f:
         f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
