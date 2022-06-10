@@ -2,7 +2,7 @@ import json
 import datetime
 import redis
 from nonebot import on_command
-from nonebot.adapters.cqhttp import Bot, Event, MessageSegment
+from nonebot.adapters.onebot.v11 import Bot, Event, MessageSegment
 from .data_source import draw_quiz_question
 
 my_redis = redis.Redis(host='localhost', port=6379, db=0)
@@ -38,7 +38,7 @@ async def trails_quiz_handler(bot: Bot, event: Event):
         my_redis.incr(todaystr + str(event.get_user_id()), 1)
 
     if daycount >= 5:
-        await trails_quiz.finish("今日答题次数已满，明天0时重置答题次数，可使用 .kquiz分 查看今日quiz结果。请期待网站正式版quiz上线，不限次数。", at_sender=True)
+        await trails_quiz.finish("今日答题次数已满，明天0时重置答题次数，可使用 .kquiz分 查看今日quiz结果。可前往https://trails-game.com/trails-quiz/ 进行答题，不限次数。", at_sender=True)
         return
 
     curr_question, msg = draw_quiz_question()
