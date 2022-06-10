@@ -216,7 +216,7 @@ class Question {
 class MCWithTextOnly extends Question {
   constructor(data, i) {
     super(data, i);
-    this.classes = "choosed";
+    this.classes = "mc-ans-selected";
   }
 
   show() {
@@ -278,7 +278,7 @@ class MCWithTextOnly extends Question {
 class MCWithImg extends MCWithTextOnly {
   constructor(data, i) {
     super(data, i);
-    this.classes = "choosed-img";
+    this.classes = "mc-ans-selected-img";
   }
 
   show() {
@@ -289,7 +289,7 @@ class MCWithImg extends MCWithTextOnly {
     for (let a = 0; a < this.currentQuestion.options.length; a++) {
 
       let container = document.createElement("div");
-      container.className = "container-img";
+      container.className = "mc-img-ans-container";
       container.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "container";
       container.innerHTML = container_anim;
       
@@ -309,7 +309,7 @@ class MCWithImg extends MCWithTextOnly {
 
       let wordDesc = document.createElement("div");
       wordDesc.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "text";
-      wordDesc.className = "container-img-text"
+      wordDesc.className = "mc-img-ans-container-text"
       wordDesc.innerHTML = this.currentQuestion.options[a].s;
       box.appendChild(wordDesc);
 
