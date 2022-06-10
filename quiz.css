@@ -8,6 +8,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 /*Styles for question card, question title and question content. Applies to all types of questions.*/
@@ -36,6 +40,12 @@ body {
   margin: 20px 20px 20px 20px;
   color: #ffcf91;
   font-weight: bold;
+}
+.letter {
+  position:absolute;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
 }
 
 /*Styles for multiple choice answers.*/
@@ -232,208 +242,12 @@ body {
   border-right:1.5px solid white;
 }
 
-.trailsQuizAnsUnselected {
-  box-shadow: 0 0 0 2px #47474700;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  border-radius:2px;
-  background: #404040;
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-  max-width:600px; 
-  word-wrap:break-word;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-.trailsQuizAnsUnselected:hover {
-  animation-name: select;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  border-radius:2px;
-  background: #505050;
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-  max-width:600px; 
-  word-wrap:break-word;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
 @keyframes select {
   0% {border: 4px solid #ffffff; padding: 12px;}
   50% {border: 4px solid #000000; padding: 12px;}
   100% {border: 4px solid #ffffff; padding: 12px;}
 }
 
-.trailsQuizAnsCorrect {
-  box-shadow: 0 0 0 2px #474747;
-  border: 2px solid #ffffff;
-  border-radius:2px;
-  color : #ffffff; 
-  background: #1caa4e;
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-  max-width:600px; 
-  word-wrap:break-word;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-.trailsQuizAnsWrong {
-  box-shadow: 0 0 0 2px #474747;
-  border: 2px solid #ffffff;
-  border-radius:2px;
-  color: #ffffff;
-  background: #e00000;
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-  max-width:600px; 
-  word-wrap:break-word;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-.trailsQuizAnsSelected {
-  box-shadow: 0 0 0 2px #474747;
-  border: 2px solid #ffffff;
-  border-radius:2px;
-  background: #b8b8b8;
-  color: #474747;
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-  max-width:600px; 
-  word-wrap:break-word;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.trailsQuizExplain {
-  background: #60cd86;
-  border-radius:5px;
-  color: #474747;
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-  max-width:600px; 
-  word-wrap:break-word;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.result {
-  color: #474747;
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-  max-width:600px; 
-  word-wrap:break-word;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.unselectedAnswer{
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-  max-width:600px; 
-  word-wrap:break-word;
-  margin-top: 0px;
-  margin-bottom: 10px;    
-}
-
-.trailsQuizSubmit {
-  background: #fafafa;
-  border: 1px solid #60a03f;
-  text-align: center;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-  max-width:600px; 
-  word-wrap:break-word;
-  z-index: 2;
-}
-
-.correctAnswer{
-  color : #1caa4e; 
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-  max-width:600px; 
-  word-wrap:break-word;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.trailsButtonWrapper {
-  text-align: center;
-}
-
-
-
-.result{
-  box-shadow: 3px 3px 0px 2px #474747;
-  opacity: 1;
-  position: absolute;
-  background: #355bae;
-  top: -35px;
-  left: 10px;
-  color: #ffffff;
-  text-align: center;
-  width: 100px;
-  height: 30px;
-  font-size: 15px;
-}
-
-
-.circle {
-  position: relative;
-  align-items: center;
-}
-
-body, html {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato', sans-serif;
-  background-color: black;
-}
-
-
-.letter {
-  position:absolute;
-  z-index: 4;
-  width: 40px;
-  height: 40px;
-}
-
-
-
-
-
-
-.polygon {
-  stroke:#fff4e3; 
-  stroke-width:2.5px; 
-  fill:#355bae;
-}
-
-
-
-
-
-
-
-
-
-
-
-.footer {
-  text-align: center;
-}
 .submit {
   width: 100px;
   margin: 20px auto;
