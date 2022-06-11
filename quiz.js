@@ -351,11 +351,13 @@ class MCWithTextOnly extends Question {
       document.getElementById(selectedid).classList.add("mc-ans-correct");
       correctCount += 1;
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
-    } else {
-      if (userAns[this.i] != -1) {
-          document.getElementById(selectedid).classList.add("mc-ans-wrong");
-      }
+    } else if (userAns[this.i] != -1) {
+      document.getElementById(selectedid).classList.add("mc-ans-wrong");
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
+    }
+    for (let a = 0; a < this.currentQuestion.options.length; a++) {
+      let id =  "q" + this.i + "a" + a + "container";
+      document.getElementById(id).classList.add("mc-ans-remove-hover");
     }
   }
 }

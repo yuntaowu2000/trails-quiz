@@ -244,6 +244,9 @@ body {
   background-color: #831c1c;
   color:white !important;
 }
+.mc-ans-remove-hover {
+  pointer-events: none;
+}
 
 @keyframes select {
   0% {border: 4px solid #ffffff; padding: 12px;}
