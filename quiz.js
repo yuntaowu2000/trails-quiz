@@ -348,12 +348,12 @@ class MCWithTextOnly extends Question {
     let selectedid = "q" + this.i + "a" + userAns[this.i];
     console.log(selectedid);
     if (userAns[this.i] == this.getCorrectResult()) {
-      document.getElementById(selectedid).classList.add("trailsQuizAnsCorrect");
+      document.getElementById(selectedid).classList.add("mc-ans-correct");
       correctCount += 1;
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
     } else {
       if (userAns[this.i] != -1) {
-          document.getElementById(selectedid).classList.add("trailsQuizAnsWrong");
+          document.getElementById(selectedid).classList.add("mc-ans-wrong");
       }
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
@@ -383,20 +383,14 @@ class MCWithImg extends MCWithTextOnly {
       letter.className = "letter";
       container.appendChild(letter);
 
-
       let box = document.createElement("div");
       box.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid;
       box.className = "mc-ans-box";
+      box.innerHTML = this.currentQuestion.options[a].s;
 
       let img = document.createElement("img");
       img.src = this.currentQuestion.options[a].img;
       box.appendChild(img);
-
-      let wordDesc = document.createElement("div");
-      wordDesc.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "text";
-      wordDesc.className = "mc-img-ans-container-text"
-      wordDesc.innerHTML = this.currentQuestion.options[a].s;
-      box.appendChild(wordDesc);
 
 
       container.appendChild(box);
@@ -430,9 +424,9 @@ class MCWithTextOnlyMultiAns extends MCWithTextOnly{
       if (this.currentQuestion.a.indexOf(userAns[this.i][j]) == -1) {
         // user choice is not a correct answer
         correct = false;
-        document.getElementById(selectedId).style.backgroundColor="#e00000";
+        document.getElementById(selectedId).classList.add("mc-ans-wrong");
       } else {
-        document.getElementById(selectedId).style.backgroundColor="#1caa4e";
+        document.getElementById(selectedId).classList.add("correct");
       }
     }
 
@@ -740,8 +734,8 @@ function setupPage() {
 
 
 async function start() {
-  let result = await fetch(url + "quiz-questions?qn=" + questionNum);
-  data = await result.json();
+  // let result = await fetch(url + "quiz-questions?qn=" + questionNum);
+  // data = await result.json();
   setupPage();
   window.scrollTo(screenLeft, screenTop);
 }

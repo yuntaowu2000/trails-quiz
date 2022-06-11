@@ -222,13 +222,6 @@ body {
   color:#2c2c2c;
   cursor: pointer;
 }
-.mc-ans-selected-text {
-  width: 125px;
-  text-align: center;
-  text-indent: 0;
-  transition: 0.3s;
-  color:#2c2c2c;
-}
 .mc-ans-selected-img:before {
   width : 145px;
   height : calc(100% + 20px);
@@ -240,6 +233,16 @@ body {
   height : calc(100% + 20px);
   border-bottom:1.5px solid white;
   border-right:1.5px solid white;
+}
+
+/*result state*/
+.mc-ans-correct {
+  background-color: #355bae;
+  color: white !important;
+}
+.mc-ans-wrong {
+  background-color: #831c1c;
+  color:white !important;
 }
 
 @keyframes select {
