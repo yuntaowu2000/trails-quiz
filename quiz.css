@@ -290,3 +290,86 @@ body {
   font-size: large;
   padding: 40px;
 }
+
+.trailsQuizExplain {
+  background: #60cd86;
+  border-radius:5px;
+  color: #474747;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  max-width:650px; 
+  word-wrap:break-word;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.trailsQuizResult {
+  background: #60cd86;
+  border-radius:5px;
+  color: #474747;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  width:800px; 
+  word-wrap:break-word;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  transform:translate(-116px);
+}
+
+.base-timer {
+  width: 185px;
+  position: fixed;
+  vertical-align: middle;
+  top:200px;
+  right: 50px;
+  padding: 40px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  color:white;
+  top:78px;
+  left:54px;
+  width: 80px;
+  height: 80px;
+  font-size: 28px;
+  text-align: center;
+}
