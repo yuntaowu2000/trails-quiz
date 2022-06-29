@@ -261,7 +261,7 @@ class Question {
     let title = document.createElement("div");
     title.className = "question-number";
     title.id = "trailsQuizQn" + this.i;
-    title.innerHTML = "第" + (this.i + 1) + "题";
+    title.innerHTML = `<div>第${this.i + 1}题</div>`;
     qdiv.append(title);
     
     let question = document.createElement("div");
@@ -285,7 +285,7 @@ class Question {
     }
 
     let answers = document.createElement("div");
-    answers.className = "trailsQuizAns";
+    answers.className = "ans-container";
     answers.id = "trailsQuizAns" + this.i;
     qdiv.appendChild(answers);
 
@@ -455,7 +455,7 @@ class MCWithTextOnlyMultiAns extends MCWithTextOnly{
       correct = false;
       let missAns = document.createElement("div");
       missAns.innerHTML = "Missing options";
-      missAns.className = "trailsQuizExplain";
+      missAns.className = "ans-explanation";
       this.qdiv.appendChild(missAns);
     }
 
@@ -500,7 +500,7 @@ class MCWithImgMultiAns extends MCWithImg{
       correct = false;
       let missAns = document.createElement("div");
       missAns.innerHTML = "Missing options";
-      missAns.className = "trailsQuizExplain";
+      missAns.className = "ans-explanation";
       this.qdiv.appendChild(missAns);
     }
 
@@ -613,18 +613,18 @@ async function showExplanationAndResult() {
     } else {
       explaindiv.innerHTML = data[i].explain2;
     }
-    explaindiv.className = "trailsQuizExplain";
+    explaindiv.className = "ans-explanation";
     qs[i].appendChild(explaindiv);
 
     let qStatsdiv = document.createElement("div");
     qStatsdiv.innerHTML = qStats[i] + "%的玩家答对了这道题";
-    qStatsdiv.className = "trailsQuizExplain";
+    qStatsdiv.className = "ans-explanation";
     qs[i].appendChild(qStatsdiv);
   }
 
   let result = document.createElement("div");
   result.innerHTML = "<p>" + questionNum + "道题中，你正确回答了" + correctCount + "道题</p>" + "<p>你超过了"+ qStats[qStats.length - 1] + "%的玩家</p>";
-  result.className = "trailsQuizResult";
+  result.className = "quiz-result";
   quizWrap.appendChild(result);
 }
 
