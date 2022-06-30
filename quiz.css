@@ -44,12 +44,7 @@ body {
   color: #ffcf91;
   font-weight: bold;
 }
-.letter {
-  position:absolute;
-  z-index: 4;
-  width: 40px;
-  height: 40px;
-}
+
 .ans-container {
   display: flex;
   flex-wrap: wrap;
@@ -92,12 +87,23 @@ body {
   height: 100%;
   object-fit: contain;
 }
+.mc-choice-id {
+  position: absolute;
+  align-items: center;
+  width: 50%;
+  max-width: 50px;
+}
+
+.letter {
+  position:absolute;
+  z-index: 4;
+  width: 80%;
+}
+
 .svg-gear {
   position: absolute;
   align-items: center;
   z-index: 2;
-  height: 40px;
-  width: 40px;
 }
 .svg-bg{
   position:absolute;
