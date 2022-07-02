@@ -5,68 +5,49 @@ const char_mapping={0:"a.png",1:"b.png",2:"c.png",3:"d.png",4:"e.png",5:"f.png"}
 const url="https://api.trails-game.com/";
 const img_url = "https://alioss.trails-game.com/images/quiz/";
 let data = [{
-  "a": 0,
-  "explain": "要是他不是养子，全名就是「黎恩・奥斯本」吧",
-  "explain2": "再想想?来看看我们网站或者百度吧",
-  "options": [
-      {
-          "img": "",
-          "oid": 0,
-          "s": "舒华泽"
-      },
-      {
-          "img": "",
-          "oid": 1,
-          "s": "舒华兹"
-      },
-      {
-          "img": "",
-          "oid": 2,
-          "s": "舒派泽"
-      },
-      {
-          "img": "",
-          "oid": 3,
-          "s": "舒华塔"
-      }
+  "a": [
+      "幻之至宝",
+      "碧之虚神"
   ],
+  "explain": "",
+  "explain2": "",
   "question": {
-      "id": 1,
+      "id": 4016,
       "img": "",
-      "s": "「闪之轨迹」主角黎恩姓什么？",
-      "t": "MCWithTextOnly"
+      "s": "由克罗伊斯家族为主的一派，则代替了空之女神，作为地上『神明』，为寻求哪个至宝而存在着？（四个字）",
+      "t": "Text"
   }
 },
 {
   "a": 0,
-  "explain": "肯恩和娜娜是对天真又有点成熟的可爱双胞胎呢",
+  "explain": "",
   "explain2": "再想想?来看看我们网站或者百度吧",
   "options": [
       {
           "img": "",
           "oid": 0,
-          "s": "娜娜"
+          "s": "奥洛克斯堡垒"
       },
       {
           "img": "",
           "oid": 1,
-          "s": "莉娜"
+          "s": "加雷利亚要塞"
       },
       {
           "img": "",
           "oid": 2,
-          "s": "蕾娜"
+          "s": "朱诺海上要塞"
       },
       {
           "img": "",
           "oid": 3,
-          "s": "肯恩"
+          "s": "双龙桥"
       }
   ],
   "question": {
-      "id": 2,
-      "img": "",
-      "s": "以粉色头发给人留下深刻印象的女孩・悠娜，她的妹妹叫什么？",
+      "id": 294,
+      "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/Aurochs_Fort.png",
+      "s": "本张风景照/设定集的地点是？",
       "t": "MCWithTextOnly"
   }
 },
@@ -135,6 +116,40 @@ let data = [{
       "s": "创轨中下列哪个核心回路拥有每回合自动回复HP的功能？",
       "t": "MCWithImg"
   }
+},
+{
+  "a": 0,
+  "audioLink": "https://alioss.trails-game.com/audio/ost/hajimari/01_20_ひとときの温もり.mp3",
+  "explain": "正确答案是阿尔摩利卡村（熟悉的旋律），BGM是《ひとときの温もり》",
+  "explain2": "再听听吧",
+  "options": [
+      {
+          "img": "",
+          "oid": 0,
+          "s": "阿尔摩利卡村"
+      },
+      {
+          "img": "",
+          "oid": 1,
+          "s": "悠米尔"
+      },
+      {
+          "img": "",
+          "oid": 2,
+          "s": "诺尔德高原"
+      },
+      {
+          "img": "",
+          "oid": 3,
+          "s": "托利斯塔"
+      }
+  ],
+  "question": {
+      "id": 5052,
+      "img": "",
+      "s": "本音频出自创轨中的下列哪个场景？",
+      "t": "MCWithAudio"
+  }
 }];
 
 const shuffle = (f) => f.sort(() => Math.random() - 0.5);
@@ -165,11 +180,6 @@ const COLOR_CODES = {
 let timerInterval = null;
 let remainingPathColor = COLOR_CODES.info.color;
 
-function onTimesUp() {
-  timer.innerHTML = "Time is up";
-  submit();
-}
-
 function startTimer() {
   timerInterval = setInterval(() => {
     timePassed = timePassed += 1;
@@ -181,7 +191,7 @@ function startTimer() {
     setRemainingPathColor(timeLeft);
 
     if (timeLeft === 0) {
-      onTimesUp();
+      submit();
     }
   }, 1000);
   return timerInterval;
@@ -194,7 +204,9 @@ function formatTime(time) {
   if (seconds < 10) {
     seconds = `0${seconds}`;
   }
-
+  if (time == 0) {
+    return "Time is up";
+  }
   return `${minutes}:${seconds}`;
 }
 
@@ -260,13 +272,13 @@ class Question {
     //create a container for question so that padding can be added.
     let title = document.createElement("div");
     title.className = "question-number";
-    title.id = "trailsQuizQn" + this.i;
+    title.id = `trailsQuizQn ${this.i}`;
     title.innerHTML = `<div>第${this.i + 1}题</div>`;
     qdiv.append(title);
     
     let question = document.createElement("div");
     question.className = "question-text";
-    question.id = "trailsQuizQn" + this.i;
+    question.id = `qnText ${this.i}`;
     question.innerHTML = this.currentQuestion.question.s;
     qdiv.append(question);
 
@@ -276,8 +288,8 @@ class Question {
     if (this.currentQuestion.question.img.startsWith("https://")) {
       // the current question contains an img for the question
       let qimg = document.createElement("div");
-      qimg.className = "trailsQuizQnImg";
-      qimg.id = "trailsQuizQnImg" + this.i;
+      qimg.className = "question-img";
+      qimg.id = `qnImg ${this.i}`;
       let imgBlock = document.createElement("img");
       imgBlock.src = this.currentQuestion.question.img;
       qimg.appendChild(imgBlock);
@@ -286,7 +298,7 @@ class Question {
 
     let answers = document.createElement("div");
     answers.className = "ans-container";
-    answers.id = "trailsQuizAns" + this.i;
+    answers.id = `ansContainter${this.i}`;
     qdiv.appendChild(answers);
 
     this.answers = answers;
@@ -306,12 +318,12 @@ class MCWithTextOnly extends Question {
   setupChoiceID(container, a) {
     let div = document.createElement("div");
     div.className = "mc-choice-id";
-    div.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "id";
+    div.id = `q${this.i}a${this.currentQuestion.options[a].oid}id`;
     div.innerHTML = poly_html;
     container.appendChild(div);
 
     let gear = document.createElement("div");
-    gear.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "gear";
+    gear.id = `q${this.i}a${this.currentQuestion.options[a].oid}gear`;
     gear.className = "svg-gear";
     gear.innerHTML = gear_html;
     div.appendChild(gear);
@@ -331,12 +343,12 @@ class MCWithTextOnly extends Question {
       
       let container = document.createElement("div");
       container.className = "mc-ans-container";
-      container.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "container";
+      container.id =  `q${this.i}a${this.currentQuestion.options[a].oid}container`;
 
       this.setupChoiceID(container, a);
 
       let box = document.createElement("div");
-      box.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid;
+      box.id = `q${this.i}a${this.currentQuestion.options[a].oid}`;
       box.className = "mc-ans-box";
       box.innerHTML = this.currentQuestion.options[a].s;
       container.appendChild(box);
@@ -351,34 +363,36 @@ class MCWithTextOnly extends Question {
      *@param a:the oid of the option in a question
     **/
     if (userAns[this.i] != -1) {
-      let prevSelectedId = "q" + this.i + "a" + userAns[this.i];
+      let prevSelectedId = `q${this.i}a${userAns[this.i]}`;
       document.getElementById(prevSelectedId).classList.remove(this.classes);
-      let prevGearId = "q" + this.i + "a" + userAns[this.i] + "gear";
+      let prevGearId = `q${this.i}a${userAns[this.i]}gear`;
       document.getElementById(prevGearId).classList.remove("svg-gear-selected");
     }
     console.log("selected " + a + " for q " + this.i);
     // select the new selection
-    let selectedId = "q" + this.i + "a" + a;
+    let selectedId = `q${this.i}a${a}`;
     userAns[this.i] = a;
     document.getElementById(selectedId).classList.add(this.classes);
-    let prevGearId = "q" + this.i + "a" + a + "gear";
+    let prevGearId = `q${this.i}a${a}gear`;
     document.getElementById(prevGearId).classList.add("svg-gear-selected");
 
   }
 
   checkAns() {
-    let selectedid = "q" + this.i + "a" + userAns[this.i];
-    console.log(selectedid);
+    let selectedId = `q${this.i}a${userAns[this.i]}`;
+    console.log(selectedId);
     if (userAns[this.i] == this.getCorrectResult()) {
-      document.getElementById(selectedid).classList.add("mc-ans-correct");
+      document.getElementById(selectedId).classList.add("mc-ans-correct");
       correctCount += 1;
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
-    } else if (userAns[this.i] != -1) {
-      document.getElementById(selectedid).classList.add("mc-ans-wrong");
+    } else {
+      if (userAns[this.i] != -1) {
+        document.getElementById(selectedId).classList.add("mc-ans-wrong");
+      }
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
     for (let a = 0; a < this.currentQuestion.options.length; a++) {
-      let id =  "q" + this.i + "a" + a + "container";
+      let id = `q${this.i}a${a}container`;
       document.getElementById(id).classList.add("mc-ans-remove-hover");
     }
   }
@@ -390,25 +404,6 @@ class MCWithImg extends MCWithTextOnly {
     this.classes = "mc-ans-selected-img";
   }
 
-  setupChoiceID(container, a) {
-    let div = document.createElement("div");
-    div.className = "mc-choice-id";
-    div.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "id";
-    div.innerHTML = poly_html;
-    container.appendChild(div);
-
-    let gear = document.createElement("div");
-    gear.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "gear";
-    gear.className = "svg-gear";
-    gear.innerHTML = gear_html;
-    div.appendChild(gear);
-
-    let letter = document.createElement("img");
-    letter.src = img_url + char_mapping[a];
-    letter.className = "letter";
-    div.appendChild(letter);
-  }
-
   show() {
     super.showQuestion();
 
@@ -418,20 +413,19 @@ class MCWithImg extends MCWithTextOnly {
 
       let container = document.createElement("div");
       container.className = "mc-img-ans-container";
-      container.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid + "container";
+      container.id = `q${this.i}a${this.currentQuestion.options[a].oid}container`;
 
       this.setupChoiceID(container, a);
 
       let box = document.createElement("div");
-      box.id = "q" + this.i + "a" + this.currentQuestion.options[a].oid;
+      box.id = `q${this.i}a${this.currentQuestion.options[a].oid}`;
       box.className = "mc-ans-box";
       box.innerHTML = this.currentQuestion.options[a].s;
 
       let img = document.createElement("img");
       img.src = this.currentQuestion.options[a].img;
       box.appendChild(img);
-
-
+      
       container.appendChild(box);
       
       container.addEventListener("click", () => this.select(this.currentQuestion.options[a].oid));
@@ -443,7 +437,7 @@ class MCWithImg extends MCWithTextOnly {
 //Multiple answers
 class MCWithTextOnlyMultiAns extends MCWithTextOnly{
   select(a) {
-    let selectedId = "q" + this.i + "a" + a;
+    let selectedId = `q${this.i}a${a}`;
     if (userAns[this.i].indexOf(a) == -1) {
       // user has not selected this option before
       userAns[this.i].push(a);
@@ -453,26 +447,25 @@ class MCWithTextOnlyMultiAns extends MCWithTextOnly{
       userAns[this.i] = userAns[this.i].filter(data => data !== a);
       document.getElementById(selectedId).classList.remove(this.classes);
     }
-    // console.log(userAns[this.i]);
   }
 
   checkAns() {
     let correct = true;
     for (let j = 0; j < userAns[this.i].length; j++) {
-      let selectedId = "q" + this.i + "a" + userAns[this.i][j];
+      let selectedId = `q${this.i}a${userAns[this.i][j]}`;
       if (this.currentQuestion.a.indexOf(userAns[this.i][j]) == -1) {
         // user choice is not a correct answer
         correct = false;
         document.getElementById(selectedId).classList.add("mc-ans-wrong");
       } else {
-        document.getElementById(selectedId).classList.add("correct");
+        document.getElementById(selectedId).classList.add("mc-ans-correct");
       }
     }
 
     if (userAns[this.i].length < this.currentQuestion.a.length) {
       correct = false;
       let missAns = document.createElement("div");
-      missAns.innerHTML = "Missing options";
+      missAns.innerHTML = "漏选";
       missAns.className = "ans-explanation";
       this.qdiv.appendChild(missAns);
     }
@@ -483,12 +476,16 @@ class MCWithTextOnlyMultiAns extends MCWithTextOnly{
     } else {
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
+    for (let a = 0; a < this.currentQuestion.options.length; a++) {
+      let id = `q${this.i}a${a}container`;
+      document.getElementById(id).classList.add("mc-ans-remove-hover");
+    }
   }
 }
 
 class MCWithImgMultiAns extends MCWithImg{
   select(a) {
-    let selectedId = "q" + this.i + "a" + a;
+    let selectedId = `q${this.i}a${a}`;
     if (userAns[this.i].indexOf(a) == -1) {
       // user has not selected this option before
       userAns[this.i].push(a);
@@ -504,20 +501,20 @@ class MCWithImgMultiAns extends MCWithImg{
   checkAns() {
     let correct = true;
     for (let j = 0; j < userAns[this.i].length; j++) {
-      let selectedId = "q" + this.i + "a" + userAns[this.i][j];
+      let selectedId = `q${this.i}a${userAns[this.i][j]}`;
       if (this.currentQuestion.a.indexOf(userAns[this.i][j]) == -1) {
         // user choice is not a correct answer
         correct = false;
-        document.getElementById(selectedId).style.backgroundColor="#e00000";
+        document.getElementById(selectedId).classList.add("mc-ans-wrong");
       } else {
-        document.getElementById(selectedId).style.backgroundColor="#1caa4e";
+        document.getElementById(selectedId).classList.add("mc-ans-correct");
       }
     }
 
     if (userAns[this.i].length < this.currentQuestion.a.length) {
       correct = false;
       let missAns = document.createElement("div");
-      missAns.innerHTML = "Missing options";
+      missAns.innerHTML = "漏选";
       missAns.className = "ans-explanation";
       this.qdiv.appendChild(missAns);
     }
@@ -528,6 +525,10 @@ class MCWithImgMultiAns extends MCWithImg{
     } else {
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
+    for (let a = 0; a < this.currentQuestion.options.length; a++) {
+      let id = `q${this.i}a${a}container`;
+      document.getElementById(id).classList.add("mc-ans-remove-hover");
+    }
   }
 }
 
@@ -536,7 +537,7 @@ class TextQuestion extends Question {
     super.showQuestion();
     let inputField = document.createElement("input");
     inputField.type = "text";
-    inputField.id = "q" + this.i + "input";
+    inputField.id = `q${this.i}Input`;
     inputField.value = "";
     inputField.addEventListener('change', () => this.updateAns(this.i));
     this.inputField = inputField;
@@ -550,16 +551,16 @@ class TextQuestion extends Question {
 
   checkAns() {
     if (userAns[this.i] == this.currentQuestion.a) {
-      this.answers.style.backgroundColor="#1caa4e";
+      this.answers.classList.add("mc-ans-correct");
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
       correctCount++;
     } else if (typeof this.currentQuestion.a === 'object'
         && this.currentQuestion.a.indexOf(userAns[this.i].toLowerCase()) !== -1) {
-      this.answers.style.backgroundColor="#1caa4e";
+      this.answers.classList.add("mc-ans-correct");
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "c"});
       correctCount++;
     } else {
-      this.answers.style.backgroundColor="#e00000";
+      this.answers.classList.add("mc-ans-wrong");
       userResult.push({"qid": this.currentQuestion.question.id, "result" : "w"});
     }
   }
@@ -569,9 +570,8 @@ class MCWithAudio extends MCWithTextOnly {
   show() {
     super.show();
     let musicdiv = document.createElement("div");
-    musicdiv.className = "trailsQuizMusic";
     let musicAudio = document.createElement("audio");
-    musicAudio.style="width:100%";
+    musicdiv.className = "question-music";
     musicAudio.controls = true;
     musicAudio.src = this.currentQuestion.audioLink;
     musicAudio.innerHTML = "Your browser does not support the audio element.";
@@ -585,8 +585,7 @@ class TextWithAudio extends TextQuestion {
     super.show();
     let musicdiv = document.createElement("div");
     let musicAudio = document.createElement("audio");
-    musicdiv.className = "trailsQuizMusic";
-    musicAudio.style="width:100%";
+    musicdiv.className = "question-music";
     musicAudio.controls = true;
     musicAudio.src = this.currentQuestion.audioLink;
     musicAudio.innerHTML = "Your browser does not support the audio element.";
@@ -599,12 +598,12 @@ function removeInputListeners() {
   for (let i = 0; i < data.length; i++) {
     if (data[i].question.t != "Text") {
       for (let a = 0; a < data[i].options.length; a++) {
-        let id = "q" + i + "a" + data[i].options[a].oid + "container";
+        let id = `q${i}a${data[i].options[a].oid}container`;
         let currContainer = document.getElementById(id);
         currContainer.replaceWith(currContainer.cloneNode(true));
       }
     } else {
-      let id = "q" + i + "input";
+      let id = `q${i}Input`;
       document.getElementById(id).disabled = true;
     }
   }
@@ -635,13 +634,13 @@ async function showExplanationAndResult() {
     qs[i].appendChild(explaindiv);
 
     let qStatsdiv = document.createElement("div");
-    qStatsdiv.innerHTML = qStats[i] + "%的玩家答对了这道题";
+    qStatsdiv.innerHTML =  `${qStats[i]}%的玩家答对了这道题`;
     qStatsdiv.className = "ans-explanation";
     qs[i].appendChild(qStatsdiv);
   }
 
   let result = document.createElement("div");
-  result.innerHTML = "<p>" + questionNum + "道题中，你正确回答了" + correctCount + "道题</p>" + "<p>你超过了"+ qStats[qStats.length - 1] + "%的玩家</p>";
+  result.innerHTML = `<p>${questionNum}道题中，你正确回答了${correctCount}道题</p><p>你超过了${qStats[qStats.length - 1]}%的玩家</p>`;
   result.className = "quiz-result";
   quizWrap.appendChild(result);
 }
