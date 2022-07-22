@@ -27,15 +27,16 @@ async def trails_quiz_handler(bot: Bot, event: Event):
     today = today.astimezone(datetime.timezone(datetime.timedelta(hours=8)))
     todaystr = "{0}-{1}-{2}".format(today.year, today.month, today.day)
     daycount = 0
-    if my_redis.get(todaystr + str(event.get_user_id())) is None:
+    redis_key = todaystr + str(event.get_user_id()) + "quiz"
+    if my_redis.get(redis_key) is None:
         tomorrow = today + datetime.timedelta(days=1)
         reset_time = datetime.datetime(year=tomorrow.year, month=tomorrow.month, day=tomorrow.day)
         today = today.replace(tzinfo=None)
         ttl = (reset_time - today).total_seconds()
-        my_redis.set(todaystr + str(event.get_user_id()), 1, ex=round(ttl))
+        my_redis.set(redis_key, 1, ex=round(ttl))
     else:
-        daycount = int(my_redis.get(todaystr + str(event.get_user_id())))
-        my_redis.incr(todaystr + str(event.get_user_id()), 1)
+        daycount = int(my_redis.get(redis_key))
+        my_redis.incr(redis_key, 1)
 
     if daycount >= 5:
         await trails_quiz.finish("今日答题次数已满，明天0时重置答题次数，可使用 .kquiz分 查看今日quiz结果。可前往https://trails-game.com/trails-quiz/ 进行答题，不限次数。", at_sender=True)

@@ -6,7 +6,7 @@ import time
 from nonebot.adapters.onebot.v11 import MessageSegment
 
 driver: nonebot.Driver = nonebot.get_driver()
-cachepath = "/home/ubuntu/cafebot/ELF_RSS/trails-quiz/nonebot_plugin/"
+cachepath = "/root/cafebot/ELF_RSS/trails-quiz/nonebot_plugin_quiz/"
 config: dict
 
 def draw_quiz_question():
