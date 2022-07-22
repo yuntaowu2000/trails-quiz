@@ -13,7 +13,7 @@ def draw_quiz_question():
     with open(os.path.join(cachepath, "quiz.json"), "r", encoding="utf-8") as f:
         questions = json.loads(f.read())
         f.close()
-
+    random.seed()
     curr_question = questions[random.randint(0, len(questions) - 1)]
     while not "MC" in curr_question["question"]["t"]:
         curr_question = questions[random.randint(0, len(questions) - 1)]
