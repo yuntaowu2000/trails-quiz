@@ -44,15 +44,23 @@ async def trails_quiz_handler(bot: Bot, event: Event):
 
     curr_question, msg = draw_quiz_question()
 
-    # set time out to be 5 mins
-    my_redis.set(str(event.get_user_id()) + "curr_question", json.dumps(curr_question), ex=300)
-    my_redis.incr(str(event.get_user_id()) + "total", 1)
-
-    await trails_quiz.send(msg, at_sender=True)
-    if "Audio" in curr_question["question"]["t"]:
-        title = await get_audio_title(bot, event)
-        msg = MessageSegment.music_custom("https://trails-game.com", curr_question["audioLink"], title, img_url="https://cdn.trails-game.com/wp-content/uploads/2021/01/cup-2021-108x108-1.png")
+    try:
         await trails_quiz.send(msg, at_sender=True)
+        if "Audio" in curr_question["question"]["t"]:
+            title = await get_audio_title(bot, event)
+            msg = MessageSegment.music_custom("https://trails-game.com", curr_question["audioLink"], title, img_url="https://cdn.trails-game.com/wp-content/uploads/2021/01/cup-2021-108x108-1.png")
+            await trails_quiz.send(msg, at_sender=True)
+
+        # set time out to be 5 mins
+        # increment the count and record the question only if the message is sent out successfully
+        my_redis.set(str(event.get_user_id()) + "curr_question", json.dumps(curr_question), ex=300)
+        my_redis.incr(str(event.get_user_id()) + "total", 1)
+    except:
+        # The question is not sent out properly
+        # reduce the count
+        # The setting at 31-39 ensures that the daycount won't be less than zero
+        my_redis.decr(redis_key, 1)
+        await trails_quiz.finish("后台题目获取失败，请重试", at_sender=True)
 
 def check_correctness_with_multi_ans(curr_question, result):
     correct = True
