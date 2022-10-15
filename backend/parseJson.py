@@ -125,6 +125,7 @@ def run():
 
     parse_text_single_choice(result, sheet, thread_list, failed_links)
     parse_img_single_choice(result, sheet, thread_list, failed_links)
+    parse_audio(result, sheet, thread_list, failed_links)
 
     for t in thread_list:
         t.join()
@@ -134,7 +135,7 @@ def run():
 
     with open("quiz.json", "w") as f:
         f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
-    parse_audio(result, sheet, thread_list, failed_links)
+
     parse_text(result, sheet, thread_list, failed_links)
     with open("out.json", "w") as f:
         f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
