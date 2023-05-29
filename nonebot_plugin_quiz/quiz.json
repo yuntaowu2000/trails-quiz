@@ -9696,7 +9696,7 @@
         ],
         "question": {
             "id": 294,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/Aurochs_Fort.png",
+            "img": "https://alioss.trails-game.com/images/sen/Aurochs_Fort.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -9729,7 +9729,7 @@
         ],
         "question": {
             "id": 295,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/twindragon.png",
+            "img": "https://alioss.trails-game.com/images/sen/twindragon.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -9927,7 +9927,7 @@
         ],
         "question": {
             "id": 301,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/juno.png",
+            "img": "https://alioss.trails-game.com/images/sen/juno.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -9960,7 +9960,7 @@
         ],
         "question": {
             "id": 302,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/Jurai_City_State.png",
+            "img": "https://alioss.trails-game.com/images/sen/Jurai_City_State.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -9993,7 +9993,7 @@
         ],
         "question": {
             "id": 303,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/Hamel.png",
+            "img": "https://alioss.trails-game.com/images/sen/Hamel.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -10125,7 +10125,7 @@
         ],
         "question": {
             "id": 307,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/nord.jpg",
+            "img": "https://alioss.trails-game.com/images/sen/nord.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -10224,7 +10224,7 @@
         ],
         "question": {
             "id": 310,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/saintark.png",
+            "img": "https://alioss.trails-game.com/images/sen/saintark.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -10257,7 +10257,7 @@
         ],
         "question": {
             "id": 311,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/parm.png",
+            "img": "https://alioss.trails-game.com/images/sen/parm.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -10290,7 +10290,7 @@
         ],
         "question": {
             "id": 312,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/ordis.png",
+            "img": "https://alioss.trails-game.com/images/sen/ordis.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -10323,7 +10323,7 @@
         ],
         "question": {
             "id": 313,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/levis.png",
+            "img": "https://alioss.trails-game.com/images/sen/levis.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -10356,7 +10356,7 @@
         ],
         "question": {
             "id": 314,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/elin.png",
+            "img": "https://alioss.trails-game.com/images/sen/elin.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -10818,7 +10818,7 @@
         ],
         "question": {
             "id": 328,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2021/07/schwarzdrach.png",
+            "img": "https://alioss.trails-game.com/images/sen/schwarzdrach.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -10851,7 +10851,7 @@
         ],
         "question": {
             "id": 329,
-            "img": "https://cdn.trails-game.com/wp-content/uploads/2020/08/raquel.png",
+            "img": "https://alioss.trails-game.com/images/sen/raquel.jpg?x-oss-process=style/resize_50",
             "s": "本张风景照/设定集的地点是？",
             "t": "MCWithTextOnly"
         }
@@ -18482,6 +18482,468 @@
     {
         "a": 0,
         "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "红色"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "紫色"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "绿色"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "蓝色"
+            }
+        ],
+        "question": {
+            "id": 561,
+            "img": "",
+            "s": "亚拉密斯学园一年生的领带是什么颜色?",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "蓝色"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "红色"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "绿色"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "紫色"
+            }
+        ],
+        "question": {
+            "id": 562,
+            "img": "",
+            "s": "亚拉密斯学园二年生的领带是什么颜色?",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "紫色"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "红色"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "绿色"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "蓝色"
+            }
+        ],
+        "question": {
+            "id": 563,
+            "img": "",
+            "s": "亚拉密斯学园三年生的领带是什么颜色?",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "黑色过膝袜"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "白色短袜"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "白色过膝袜"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "黑色短袜"
+            }
+        ],
+        "question": {
+            "id": 564,
+            "img": "",
+            "s": "黎之轨迹I中学妹的校服袜子类型为?",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "黑色短袜"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "黑色过膝袜"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "白色短袜"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "白色过膝袜"
+            }
+        ],
+        "question": {
+            "id": 565,
+            "img": "",
+            "s": "黎之轨迹II中小娜的校服袜子类型为?",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "黑色短袜"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "黑色过膝袜"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "白色短袜"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "白色过膝袜"
+            }
+        ],
+        "question": {
+            "id": 566,
+            "img": "",
+            "s": "黎之轨迹I中奥黛特的校服袜子类型为?",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "10"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "8"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "9"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "11"
+            }
+        ],
+        "question": {
+            "id": 567,
+            "img": "",
+            "s": "黎之轨迹2中，第三部「普世歡騰」章节中，主角团共时间回溯了几次？",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "克洛斯贝尔"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "利贝尔"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "帝国"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "共和国"
+            }
+        ],
+        "question": {
+            "id": 568,
+            "img": "",
+            "s": "黎之轨迹2中，贵圈真乱三人组中的歌手去哪里定居了？",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "米尔香堤"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "阿尔斯塔"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "雷格拉姆"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "拉克威尔"
+            }
+        ],
+        "question": {
+            "id": 569,
+            "img": "",
+            "s": "闪之轨迹IV中, 艾莉的母亲戴安娜居住地为?",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "1206"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "1205"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "1207"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "1208"
+            }
+        ],
+        "question": {
+            "id": 570,
+            "img": "",
+            "s": "缇妲·拉塞尔哪一年开始开发导力装甲Ⅳ?",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "23"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "21"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "25"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "27"
+            }
+        ],
+        "question": {
+            "id": 571,
+            "img": "",
+            "s": "罗伊·格兰哈特是共和国第多少任总统?",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "98"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "92"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "95"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "97"
+            }
+        ],
+        "question": {
+            "id": 572,
+            "img": "",
+            "s": "蕾恩小天使是亚拉密斯学园第多少届学生会主席?",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "《C》"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "娜狄雅"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "斯温"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "卢法斯"
+            }
+        ],
+        "question": {
+            "id": 573,
+            "img": "",
+            "s": "创之轨迹中，拉碧丝对野餐队全员的名字进行了打分，以下名字中哪个得分最低？",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
+        "explain2": "",
+        "options": [
+            {
+                "img": "",
+                "oid": 0,
+                "s": "娜狄雅"
+            },
+            {
+                "img": "",
+                "oid": 1,
+                "s": "斯温"
+            },
+            {
+                "img": "",
+                "oid": 2,
+                "s": "卢法斯"
+            },
+            {
+                "img": "",
+                "oid": 3,
+                "s": "《C》"
+            }
+        ],
+        "question": {
+            "id": 574,
+            "img": "",
+            "s": "创之轨迹中，拉碧丝对野餐队全员的名字进行了打分，以下名字中哪个得分最高？",
+            "t": "MCWithTextOnly"
+        }
+    },
+    {
+        "a": 0,
+        "explain": "",
         "explain2": "再想想? 或者百度",
         "options": [
             {
@@ -19853,9 +20315,9 @@
                 "s": "梅迪克"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/瓦尼许_hajimari.png?x-oss-process=style/resize_25",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/甘居雷特_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 3,
-                "s": "瓦尼许"
+                "s": "甘居雷特"
             }
         ],
         "question": {
@@ -20277,9 +20739,9 @@
                 "s": "达拉"
             },
             {
-                "img": "https://alioss.trails-game.com/images/hajimari/vm/布里克丝_hajimari.png?x-oss-process=style/resize_25",
+                "img": "https://alioss.trails-game.com/images/hajimari/vm/葛里翁_hajimari.png?x-oss-process=style/resize_25",
                 "oid": 2,
-                "s": "布里克丝"
+                "s": "葛里翁"
             },
             {
                 "img": "https://alioss.trails-game.com/images/hajimari/vm/欧恩_hajimari.png?x-oss-process=style/resize_25",
